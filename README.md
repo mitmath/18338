@@ -30,5 +30,5 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|1|Wed|2019-09-04|Hermite, Laguerre, Jacobi Listen to Random Matrix Theory It's trying to tell us something|[Slides](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)|[Homework 1](https://github.com/mitmath/18338/blob/master/HW/Random%20matrices%20HW1.ipynb)|
+|1|Wed|2019-09-04|Hermite, Laguerre, Jacobi Listen to Random Matrix Theory It's trying to tell us something|[Slides](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[Notes](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)|[Homework 1](https://github.com/mitmath/18338/blob/master/HW/Random%20matrices%20HW1.ipynb)|
 |-|-|------|------|-----|--|
