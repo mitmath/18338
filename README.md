@@ -15,6 +15,7 @@ Steven Johnson will give an introductory tutorial on Julia on Friday September 6
 Detailed instructions for setting up and using Julia are available at https://github.com/mitmath/julia-mit.
 
 * Pre-course survey at www.tinyurl.com/18338survey
+* [Syllabus](https://github.com/mitmath/18338/blob/master/syllabus.pdf)
 
 ## Course Description:
 
