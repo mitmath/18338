@@ -25,3 +25,10 @@ Our emphasis will be on interplay between the varying mathematical tools that ha
 Additional topics will be decided based on the interests of the students. No particular prerequisites are needed though a proficiency in linear algebra and basic probability will be assumed. A familiary with numerical computing languages such as Julia, MATLAB, or Mathematica may be useful .... our primary focus will be Julia and some Mathematica.
 
 This is a graduate course that is intended to be flexible so as to cover the backgrounds of different students. Generally grading will be based on satisfactory completion of problem sets and projects or equivalents.
+
+## Schedule
+
+|#|Day| Date |  Topic | Reading| HW |
+|-|-|------|------|-----|--|
+|1|Wed|2019-09-04|Hermite, Laguerre, Jacobi Listen to Random Matrix Theory It's trying to tell us something|[Slides](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)|[Homework 1](https://github.com/mitmath/18338/blob/master/HW/Random%20matrices%20HW1.ipynb)|
+|-|-|------|------|-----|--|
