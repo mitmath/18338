@@ -27,9 +27,14 @@ Additional topics will be decided based on the interests of the students. No par
 
 This is a graduate course that is intended to be flexible so as to cover the backgrounds of different students. Generally grading will be based on satisfactory completion of problem sets and projects or equivalents.
 
+## Projects
+1. Make usage of [ApproxFun](https://github.com/JuliaApproximation/ApproxFun.jl) to explore the numerical computation of RMT laws with determinant approach, using [(Bornermann, 2010)](https://www-m3.ma.tum.de/foswiki/pub/M3/Allgemeines/FolkmarBornemannPublications/NumericalRMT.pdf) as a reference. A minimum deliverable includes Julia code to: 1) in the finite case, compute the exact distribution of LUE for extreme eigenvalues (min and max); 2) compute Tracy-Widom distribution (the infinite case).
+
 ## Schedule
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
 |1|Wed|2019-09-04|Hermite, Laguerre, Jacobi Listen to Random Matrix Theory It's trying to tell us something|[[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)|[Homework 1](https://github.com/mitmath/18338/blob/master/HW/Random%20matrices%20HW1.ipynb)|
+|2|Mon|2019-09-09|Semicircle, Quartercircle, Circular and other infinite RMT Laws|||
+|3|Wed|2019-09-11|Random Growth Model, LIS, Group Representation and Baik-Deift-Johansson theorem|||
 |-|-|------|------|-----|--|
