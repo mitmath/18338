@@ -37,4 +37,8 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 |1|Wed|2019-09-04|Hermite, Laguerre, Jacobi Listen to Random Matrix Theory It's trying to tell us something|[[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)|[Homework 1](https://github.com/mitmath/18338/blob/master/HW/Random%20matrices%20HW1.ipynb)|
 |2|Mon|2019-09-09|Semicircle, Quartercircle, Circular and other infinite RMT Laws|||
 |3|Wed|2019-09-11|Semicircle Proof, and Random Growth Model|||
+|8|Mon|2019-09-30|Guest Lecture  Benjamin Landon|||
+|9|Wed|2019-10-02|Gaussian Quadrature|||
+|10|Mon|2019-10-07|Dyson Brownian Motion|||
+|11|Wed|2019-10-09|Guest Lecture  Benjamin Landon|||
 |-|-|------|------|-----|--|
