@@ -35,11 +35,33 @@ TBA
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|1|Wed|2019-09-04|Hermite, Laguerre, Jacobi Listen to Random Matrix Theory It's trying to tell us something|[[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)|[Homework 1](https://github.com/mitmath/18338/blob/master/HW/Random%20matrices%20HW1.ipynb)|
-|2|Mon|2019-09-09|Semicircle, Quartercircle, Circular and other infinite RMT Laws|||
-|3|Wed|2019-09-11|Semicircle Proof, and Random Growth Model|||
-|8|Mon|2019-09-30|Guest Lecture  Benjamin Landon|||
-|9|Wed|2019-10-02|Gaussian Quadrature|||
-|10|Mon|2019-10-07|Dyson Brownian Motion|||
-|11|Wed|2019-10-09|Guest Lecture  Benjamin Landon|||
-|-|-|------|------|-----|--|
+| 1  | Wed | 2-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
+|    | Mon | 7-Sep  | Labor Day                                                                                |         |    |
+| 2  | Wed | 9-Sep  | Semicircle, Quartercircle, Circular and other infinite RMT Laws                          |         |    |
+| 3  | Mon | 14-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                   |         |    |
+| 4  | Wed | 16-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                     |         |    |
+| 5  | Mon | 21-Sep | Tracy-Widom Law                                                                          |         |    |
+| 6  | Wed | 23-Sep | Tracy-Widom, Fredholm Determinant and Determinantal Point Processes                      |         |    |
+| 7  | Mon | 28-Sep | Random Growth Model                                                                      |         |    |
+| 8  | Wed | 30-Sep | Growth, LIS, Group Representation and Baik-Deift-Johansson theorem                       |         |    |
+| 9  | Mon | 5-Oct  | RMT for ML: DPP                                                                          |         |    |
+| 10 | Wed | 7-Oct  | Random Matrix Theory: Computation and Simulation                                         |         |    |
+|    | Mon | 12-Oct | Columbus day                                                                             |         |    |
+| 11 | Tue | 13-Oct | Spiked Model, Universality and Beyond Universality                                       |         |    |
+| 12 | Wed | 14-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |         |    |
+| 13 | Mon | 19-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |         |    |
+| 14 | Wed | 21-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |         |    |
+| 15 | Mon | 26-Oct | From Gaussian Ensembles to Stochastic Operators                                          |         |    |
+| 16 | Wed | 28-Oct | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications I           |         |    |
+| 17 | Mon | 2-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications II          |         |    |
+| 18 | Wed | 4-Nov  | Free Probability I                                                                       |         |    |
+| 19 | Mon | 9-Nov  | Free Probability II                                                                      |         |    |
+|    | Wed | 11-Nov | Veterans Day                                                                             |         |    |
+| 20 | Mon | 16-Nov | Free Probability III                                                                     |         |    |
+| 21 | Wed | 18-Nov | Symmetric Spaces and RMT                                                                 |         |    |
+|    | Mon | 23-Nov | Thanksgiving vacation                                                                    |         |    |
+|    | Wed | 25-Nov | Thanksgiving vacation                                                                    |         |    |
+| 22 | Mon | 30-Nov | RMT for Deep Learning                                                                    |         |    |
+| 23 | Wed | 2-Dec  | Project or Code Presentation I                                                           |         |    |
+| 24 | Mon | 7-Dec  | Project or Code Presentation II                                                          |         |    |
+| 25 | Wed | 9-Dec  | Project  or Code Presentation III                                                        |         |    |
