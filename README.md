@@ -1,7 +1,6 @@
 # 18.338: Eigenvalues of random matrices
 
 | [18.338 front page](http://web.mit.edu/18.338)  |
-[juliabox](http://www.juliabox.com) |
 [piazza](https://piazza.com/class/jzqloe0yrhy2yf) |
 [gradescope]() |
 [Julia](https://julialang.org/) |
