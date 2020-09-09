@@ -27,7 +27,7 @@ TBA
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-| 1  | Wed | 2-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
+| 1  | Wed | 2-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       | [PS1](https://github.com/mitmath/18338/blob/master/ps1.pdf)   |
 |    | Mon | 7-Sep  | Labor Day                                                                                |         |    |
 | 2  | Wed | 9-Sep  | Semicircle, Quartercircle, Circular and other infinite RMT Laws                          |  |  |
 | 3  | Mon | 14-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                   |  |  |
