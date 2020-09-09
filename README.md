@@ -1,10 +1,11 @@
 # 18.338: Eigenvalues of random matrices
 
 | [18.338 front page](http://web.mit.edu/18.338)  |
-[piazza 18.338 2020](piazza.com/mit/fall2020/18338) |
+[piazza 18.338 2020](http://piazza.com/mit/fall2020/18338) |
 [Julia](https://julialang.org/) |
 
 [2019 18.338](https://github.com/mitmath/18338/tree/2019)
+
 
 ## Lecturer: Prof. Alan Edelman
 
