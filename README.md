@@ -31,9 +31,9 @@ TBA
 | 1  | Wed | 2-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       | [PS1](https://github.com/mitmath/18338/blob/master/ps1.pdf)   |
 |    | Mon | 7-Sep  | Labor Day                                                                                |         |    |
 | 2  | Wed | 9-Sep  | Semicircle, Quartercircle, Circular and other infinite RMT Laws                          |  |  |
-| 3  | Mon | 14-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                   |  |  |
-| 4  | Wed | 16-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                     |  |  |
-| 5  | Mon | 21-Sep | Tracy-Widom Law                                                                          |  |  |
+| 3  | Mon | 14-Sep | Semicircle (Cont.), and Random matrix decomposition                   |  |  |
+| 4  | Wed | 16-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                     |  |  |
+| 5  | Mon | 21-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                                                                          |  |  [PS1](https://github.com/mitmath/18338/blob/master/ps2.pdf)|
 | 6  | Wed | 23-Sep | Tracy-Widom, Fredholm Determinant and Determinantal Point Processes                      |  |  |
 | 7  | Mon | 28-Sep | Symmetric Spaces and RMT                                                                 |  |  |
 | 8  | Wed | 30-Sep | Random Growth Model                                                                      |  |  |
