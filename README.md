@@ -33,7 +33,7 @@ TBA
 | 2  | Wed | 9-Sep  | Semicircle, Quartercircle, Circular and other infinite RMT Laws                          |  |  |
 | 3  | Mon | 14-Sep | Semicircle (Cont.), and Random matrix decomposition                   |  |  |
 | 4  | Wed | 16-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                     |  |  |
-| 5  | Mon | 21-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                                                                          |  |  [PS1](https://github.com/mitmath/18338/blob/master/ps2.pdf)|
+| 5  | Mon | 21-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                                                                          |  |  [PS2](https://github.com/mitmath/18338/blob/master/ps2.pdf)|
 | 6  | Wed | 23-Sep | Tracy-Widom, Fredholm Determinant and Determinantal Point Processes                      |  |  |
 | 7  | Mon | 28-Sep | Symmetric Spaces and RMT                                                                 |  |  |
 | 8  | Wed | 30-Sep | Random Growth Model                                                                      |  |  |
