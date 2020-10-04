@@ -39,7 +39,7 @@ TBA
 | 8  | Wed | 30-Sep | Random Growth Model                                                                      |  |  |
 | 9  | Mon | 5-Oct  | Growth, LIS, Group Representation and Baik-Deift-Johansson theorem                       |  |  |
 | 10 | Wed | 7-Oct  | RMT for ML: DPP                                                                          |  |  |
-|    | Mon | 12-Oct | Columbus day                                                                             |  |  |
+|    | Mon | 12-Oct | Indigineous People's Day                                                                             |  |  |
 | 11 | Tue | 13-Oct | Random Matrix Theory: Computation and Simulation                                         |  |  |
 | 12 | Wed | 14-Oct | Spiked Model, Universality and Beyond Universality                                       |  |  |
 | 13 | Mon | 19-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
