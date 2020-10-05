@@ -34,12 +34,12 @@ TBA
 | 3  | Mon | 14-Sep | Semicircle (Cont.), and Random matrix decomposition                   |  |  |
 | 4  | Wed | 16-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                     |  |  |
 | 5  | Mon | 21-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                                                                          |[[GSVD]](http://www-math.mit.edu/~edelman/talks/2018/gsvd.pptx)[[Jacobi Ensembles]](http://www-math.mit.edu/~edelman/talks/2016/beta-jacobi-ensembles.pdf)  |  [PS2](https://github.com/mitmath/18338/blob/master/ps2.pdf)|
-| 6  | Wed | 23-Sep | Tracy-Widom, Fredholm Determinant and Determinantal Point Processes                      |  |  |
+| 6  | Wed | 23-Sep | Jacobi Ensemble (Cont.)                   |  |  |
 | 7  | Mon | 28-Sep | Symmetric Spaces and RMT                                                                 |  |  |
-| 8  | Wed | 30-Sep | Random Growth Model                                                                      |  |  |
-| 9  | Mon | 5-Oct  | Growth, LIS, Group Representation and Baik-Deift-Johansson theorem                       |  |  |
+| 8  | Wed | 30-Sep | Tracy-Widom                                                                      | [[Notebook]](https://github.com/mitmath/18338/blob/master/notebooks/TracyWidomTwoWays.ipynb) |  |
+| 9  | Mon | 5-Oct  | Random Growth Model                      |  |  |
 | 10 | Wed | 7-Oct  | RMT for ML: DPP                                                                          |  |  |
-|    | Mon | 12-Oct | Columbus day                                                                             |  |  |
+|    | Mon | 12-Oct | Indigineous People's Day                                                                             |  |  |
 | 11 | Tue | 13-Oct | Random Matrix Theory: Computation and Simulation                                         |  |  |
 | 12 | Wed | 14-Oct | Spiked Model, Universality and Beyond Universality                                       |  |  |
 | 13 | Mon | 19-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
