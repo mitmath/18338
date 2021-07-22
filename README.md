@@ -56,5 +56,10 @@ TBA
 |    | Wed | 25-Nov | Thanksgiving vacation                                                                    |  |  |
 | 22 | Mon | 30-Nov | RMT for Deep Learning                                                                    |  |  |
 | 23 | Wed | 2-Dec  | Project or Code Presentation I                                                           |  |  |
+|    |     |        | The Simplex Algorithm and Random Matrices | [[Slides]](https://github.com/mitmath/18338/blob/master/projects/TT_slides.pdf) [[Report]](https://github.com/mitmath/18338/blob/master/projects/TT_report.pdf)  |  |
 | 24 | Mon | 7-Dec  | Project or Code Presentation II                                                          |  |  |
+|    |     |        | Exploring Densities of Gaussian Quadratic Forms | [[Slides]](https://github.com/mitmath/18338/blob/master/projects/ML_slides.pdf) [[Report]](https://github.com/mitmath/18338/blob/master/projects/ML_report.pdf)  |  |
+|    |     |        | Deriving a closed form for the Cauchy transform of two laws | [[Report]](https://github.com/mitmath/18338/blob/master/projects/PH_report.pdf)  |  |
 | 25 | Wed | 9-Dec  | Project  or Code Presentation III                                                        |  |  |
+|    |     |        | Determinantal Point Processes and β-ensembles | [[Report]](https://github.com/mitmath/18338/blob/master/projects/SI_report.pdf)  |  |
+|    |     |        | Computation of Equilibrium Measure | [[Slides]](https://github.com/mitmath/18338/blob/master/projects/SL_slides.pdf) [[Report]](https://github.com/mitmath/18338/blob/master/projects/SL_report.pdf)  |  |
