@@ -1,15 +1,15 @@
-# 18.338: Eigenvalues of random matrices
+# 18.338: Eigenvalues of random matrices, Fall 2021
 
-| [18.338 front page](http://web.mit.edu/18.338)  |
-[piazza 18.338 2020](http://piazza.com/mit/fall2020/18338) |
-[Julia](https://julialang.org/) |
-
+[2020 18.338](https://github.com/mitmath/18338/tree/2020)
 [2019 18.338](https://github.com/mitmath/18338/tree/2019)
 
 
 ## Lecturer: Prof. Alan Edelman
 
-This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2020 semester.
+This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2021 semester.
+
+## Location and Time
+The class will be held at 4-261 from 3--4:30pm every Monday and Wednesday. 
 
 ## Course Description:
 
@@ -24,42 +24,36 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 ## Projects
 TBA
 
-## Schedule
+## Schedule (Tentative)
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-| 1  | Wed | 2-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       | [PS1](https://github.com/mitmath/18338/blob/master/ps1.pdf)   |
-|    | Mon | 7-Sep  | Labor Day                                                                                |         |    |
-| 2  | Wed | 9-Sep  | Semicircle, Quartercircle, Circular and other infinite RMT Laws                          |  |  |
-| 3  | Mon | 14-Sep | Semicircle (Cont.), and Random matrix decomposition                   |  |  |
-| 4  | Wed | 16-Sep | Random matrix decomposition, Cauchy-Binet Formula and its consequences                     |  |  |
-| 5  | Mon | 21-Sep | Jacobi Ensemble: angles between subspaces, GSVD and CS decomposition                                                                          |[[GSVD]](http://www-math.mit.edu/~edelman/talks/2018/gsvd.pptx)[[Jacobi Ensembles]](http://www-math.mit.edu/~edelman/talks/2016/beta-jacobi-ensembles.pdf)  |  [PS2](https://github.com/mitmath/18338/blob/master/ps2.pdf)|
-| 6  | Wed | 23-Sep | Jacobi Ensemble (Cont.)                   |  |  |
-| 7  | Mon | 28-Sep | Symmetric Spaces and RMT                                                                 |  |  |
-| 8  | Wed | 30-Sep | Tracy-Widom                                                                      | [[Notebook]](https://github.com/mitmath/18338/blob/master/notebooks/TracyWidomTwoWays.ipynb) |  |
-| 9  | Mon | 5-Oct  | Random Growth Model                      |  |  |
-| 10 | Wed | 7-Oct  | RMT for ML: DPP                                                                          |  |  |
-|    | Mon | 12-Oct | Indigineous People's Day                                                                             |  |  |
-| 11 | Tue | 13-Oct | Random Matrix Theory: Computation and Simulation                                         |  |  |
-| 12 | Wed | 14-Oct | Spiked Model, Universality and Beyond Universality                                       |  |  |
-| 13 | Mon | 19-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
-| 14 | Wed | 21-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |  |  |
-| 15 | Mon | 26-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |  |  |
-| 16 | Wed | 28-Oct | From Gaussian Ensembles to Stochastic Operators                                          |  |  |
-| 17 | Mon | 2-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications I           |  |  |
-| 18 | Wed | 4-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications II          |  |  |
-| 19 | Mon | 9-Nov  | Free Probability I                                                                       |  |  |
-|    | Wed | 11-Nov | Veterans Day                                                                             |  |  |
-| 20 | Mon | 16-Nov | Free Probability II                                                                      |  |  |
-| 21 | Wed | 18-Nov | Free Probability III                                                                     |  |  |
-|    | Mon | 23-Nov | Thanksgiving vacation                                                                    |  |  |
-|    | Wed | 25-Nov | Thanksgiving vacation                                                                    |  |  |
-| 22 | Mon | 30-Nov | RMT for Deep Learning                                                                    |  |  |
-| 23 | Wed | 2-Dec  | Project or Code Presentation I                                                           |  |  |
-|    |     |        | The Simplex Algorithm and Random Matrices | [[Slides]](https://github.com/mitmath/18338/blob/master/projects/TT_slides.pdf) [[Report]](https://github.com/mitmath/18338/blob/master/projects/TT_report.pdf)  |  |
-| 24 | Mon | 7-Dec  | Project or Code Presentation II                                                          |  |  |
-|    |     |        | Exploring Densities of Gaussian Quadratic Forms | [[Slides]](https://github.com/mitmath/18338/blob/master/projects/ML_slides.pdf) [[Report]](https://github.com/mitmath/18338/blob/master/projects/ML_report.pdf)  |  |
-|    |     |        | Deriving a closed form for the Cauchy transform of two laws | [[Report]](https://github.com/mitmath/18338/blob/master/projects/PH_report.pdf)  |  |
-| 25 | Wed | 9-Dec  | Project  or Code Presentation III                                                        |  |  |
-|    |     |        | Determinantal Point Processes and β-ensembles | [[Report]](https://github.com/mitmath/18338/blob/master/projects/SI_report.pdf)  |  |
-|    |     |        | Computation of Equilibrium Measure | [[Slides]](https://github.com/mitmath/18338/blob/master/projects/SL_slides.pdf) [[Report]](https://github.com/mitmath/18338/blob/master/projects/SL_report.pdf)  |  |
+|    | Wed | 8-Sep |  *Canceled*          |  |  |
+| 1  | Fri | 10-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
+| 2 | Mon | 13-Sep  |  Random matrix decomposition, Cauchy-Binet Formula and its consequences | | 
+|   | Wed | 15-Sep | *Canceled*          |  |  |
+| 3 | Fri | 17-Sep | Determinantal Point Processes (DPP) I               |  |  |
+| 4 | Mon | 20-Sep | Determinantal Point Processes (DPP) II | |
+| 5 | Wed | 22-Sep | Random Growth I                   |  |  |
+| 6 | Mon | 27-Sep | Random Growth II                         |  |  |
+| 7  | Wed | 29-Sep | Random Growth and Aztc Diamond                                                            |  |  |
+| 8  | Mon | 4-Oct  | Random Growth Model                      |  |  |
+| 9 | Wed | 6-Oct  | Longest Increasing Subsequences                                                                         |  |  |
+|    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
+| 10 | Wed | 13-Oct | LIS, Group Representation, and Baik-Deift-Johansson theorem          |  |  |
+| 11 | Mon | 18-Oct | RMT in Machine Learning (ML): DPPs                                 |  |  |
+| 12 | Wed | 20-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
+| 13 | Mon | 25-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |  |  |
+| 14 | Wed | 27-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |  |  |
+| 15 | Mon | 1-Nov | From Gaussian Ensembles to Stochastic Operators                                          |  |  |
+| 16 | Wed | 3-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications I           |  |  |
+| 17 | Mon | 8-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications II          |  |  |
+| 18 | Wed | 10-Nov | Tracy-Widom I                                                                      |  |  |
+| 19 | Mon | 15-Nov | Tracy-Widom II                                                                             |  |  |
+| 20 | Wed | 17-Nov | Free Probability I                                                                       |  |  |
+| 21  | Mon | 22-Nov| Free Probability II                                                                      |  |  |
+| 21 | Wed | 24-Nov | Free Probability III                                                                    |  |  |
+| 22 | Mon | 29-Nov | RMT in ML: Deep Learning                                                                    |  |  |
+| 23 | Wed | 1-Dec | Project Presentation I                                                                 |  |  |
+| 24 | Mon | 6-Dec  | Project Presentation II                                                           |  |  |
+| 25 | Wed | 8-Dec  | Project Presentation III                                                          |  |  |
