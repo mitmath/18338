@@ -31,18 +31,18 @@ TBA
 |-|-|------|------|-----|--|
 |    | Wed | 8-Sep |  *Canceled*          |  |  |
 | 1  | Fri | 10-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
-| 2 | Mon | 13-Sep  |  Random matrix decomposition, Cauchy-Binet Formula and its consequences | | 
+| 2 | Mon | 13-Sep  |  Random matrix decomposition, Cauchy-Binet Formula and infinite RMT Laws | | 
 |   | Wed | 15-Sep | *Canceled*          |  |  |
 | 3 | Fri | 17-Sep | Determinantal Point Processes (DPP) I               |  |  |
 | 4 | Mon | 20-Sep | Determinantal Point Processes (DPP) II | |
 | 5 | Wed | 22-Sep | Random Growth I                   |  |  |
 | 6 | Mon | 27-Sep | Random Growth II                         |  |  |
 | 7  | Wed | 29-Sep | Random Growth and Aztc Diamond                                                            |  |  |
-| 8  | Mon | 4-Oct  | Random Growth Model                      |  |  |
-| 9 | Wed | 6-Oct  | Longest Increasing Subsequences                                                                         |  |  |
+| 8  | Mon | 4-Oct  | Longest Increasing Subsequences                       |  |  |
+| 9 | Wed | 6-Oct  |  LIS, Group Representation, and Baik-Deift-Johansson theorem                                                                       |  |  |
 |    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
-| 10 | Wed | 13-Oct | LIS, Group Representation, and Baik-Deift-Johansson theorem          |  |  |
-| 11 | Mon | 18-Oct | RMT in Machine Learning (ML): DPPs                                 |  |  |
+| 10 | Wed | 13-Oct | RMT in Machine Learning (ML): DPPs          |  |  |
+| 11 | Mon | 18-Oct | Symmetric Spaces and RMT                                 |  |  |
 | 12 | Wed | 20-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
 | 13 | Mon | 25-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |  |  |
 | 14 | Wed | 27-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |  |  |
