@@ -1,7 +1,8 @@
 # 18.338: Eigenvalues of random matrices, Fall 2021
 
-[2020 18.338](https://github.com/mitmath/18338/tree/2020)
-[2019 18.338](https://github.com/mitmath/18338/tree/2019)
+## Previous versions:
+* [2020 18.338](https://github.com/mitmath/18338/tree/2020)
+* [2019 18.338](https://github.com/mitmath/18338/tree/2019)
 
 
 ## Lecturer: Prof. Alan Edelman
