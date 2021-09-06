@@ -53,7 +53,7 @@ TBA
 | 19 | Mon | 15-Nov | Tracy-Widom II                                                                             |  |  |
 | 20 | Wed | 17-Nov | Free Probability I                                                                       |  |  |
 | 21  | Mon | 22-Nov| Free Probability II                                                                      |  |  |
-| 21 | Wed | 24-Nov | Free Probability III                                                                    |  |  |
+| 21 | Wed | 24-Nov | *Canceled for Thanksgiving travel*                                                                    |  |  |
 | 22 | Mon | 29-Nov | RMT in ML: Deep Learning                                                                    |  |  |
 | 23 | Wed | 1-Dec | Project Presentation I                                                                 |  |  |
 | 24 | Mon | 6-Dec  | Project Presentation II                                                           |  |  |
