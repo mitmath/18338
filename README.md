@@ -1,5 +1,16 @@
 # 18.338: Eigenvalues of random matrices, Fall 2021
 
+## Annoucement
+<h3>Please take note that for the first two weeks, Wednesday is now Friday meaning there will be no class on Wednesday Sept 8 nor Wednesday Sept 15th.  There will however be class on Friday Sept 10 and Friday Sept 17th. No matter what classes are in 4-261 from 3 to 4:30.
+After the first two weeks it will be Monday and Wednesday as announced.  If you can't make the two Friday's i'll try my best to make materials available. 
+
+Please share with any other students who may not have regged but you believe will enroll.
+</h3>
+    
+  
+
+   
+
 ## Previous versions:
 * [2020 18.338](https://github.com/mitmath/18338/tree/2020)
 * [2019 18.338](https://github.com/mitmath/18338/tree/2019)
