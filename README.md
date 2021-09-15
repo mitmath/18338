@@ -7,7 +7,7 @@ After the first two weeks it will be Monday and Wednesday as announced.  If you 
 Please share with any other students who may not have regged but you believe will enroll.
 </h3>
 
-* Piazza sign-up link: piazza.com/mit/fall2021/18338 (lecture notes available on Piazza)
+* Piazza sign-up [link](piazza.com/mit/fall2021/18338) (lecture notes available on Piazza)
   
 
    
