@@ -34,6 +34,9 @@ Additional topics will be decided based on the interests of the students. No par
 
 This is a graduate course that is intended to be flexible so as to cover the backgrounds of different students. Generally grading will be based on satisfactory completion of problem sets and projects or equivalents.  Homework will be peer graded, and we will look to a rotating student for solutions.
 
+## Homeworks
+[[Hw 1]](https://github.com/mitmath/18338/blob/master/ps1.pdf) is due 9/29 Wednesday 11:59pm. Submit your homework through [[18338 canvas]](https://canvas.mit.edu/courses/10369) website.
+
 ## Projects
 TBA
 
@@ -43,12 +46,12 @@ TBA
 |-|-|------|------|-----|--|
 |    | Wed | 8-Sep |  *Canceled*          |  |  |
 | 1  | Fri | 10-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
-| 2 | Mon | 13-Sep  |  Random matrix decomposition, Cauchy-Binet Formula and infinite RMT Laws | | 
+| 2 | Mon | 13-Sep  |  Integrability and Universality in probability by Alexei Borodin | | 
 |   | Wed | 15-Sep | *Canceled*          |  |  |
-| 3 | Fri | 17-Sep | Determinantal Point Processes (DPP) I               |  |  |
-| 4 | Mon | 20-Sep | Determinantal Point Processes (DPP) II | |
-| 5 | Wed | 22-Sep | Random Growth I                   |  |  |
-| 6 | Mon | 27-Sep | Random Growth II                         |  |  |
+| 3 | Fri | 17-Sep | Matrix Calculus and Jacobians of Matrix decompositions          |  |  |
+| 4 | Mon | 20-Sep | Random matrix decomposition and finite RMT | |
+| 5 | Wed | 22-Sep | Cauchy-Binet Formula and infinite RMT Laws                   |  |  |
+| 6 | Mon | 27-Sep | Determinantal Point Processes (DPP) I                         |  |  |
 | 7  | Wed | 29-Sep | Random Growth and Aztc Diamond                                                            |  |  |
 | 8  | Mon | 4-Oct  | Longest Increasing Subsequences                       |  |  |
 | 9 | Wed | 6-Oct  |  LIS, Group Representation, and Baik-Deift-Johansson theorem                                                                       |  |  |
