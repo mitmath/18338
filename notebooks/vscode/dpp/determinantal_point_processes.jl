@@ -174,7 +174,7 @@ NamedArray( μ , (labels,labels) )
 
 # ╔═╡ 4fc92447-0a66-44d8-993e-0cb5fceacde8
 md"""
-## Linking the L and K definitions thourgh the Möbius matrices
+## Linking the L and K definitions through the Möbius matrices
 """
 
 # ╔═╡ 3b3aae07-a166-40f9-9973-17e2945c038b
