@@ -14,7 +14,7 @@ macro bind(def, element)
 end
 
 # ╔═╡ 1b58d214-210a-11ec-091e-f9ac59377f7e
-using LinearAlgebra, Combinatorics, Printf, PlutoUI
+using LinearAlgebra, Combinatorics, Printf, PlutoUI, NamedArrays
 
 # ╔═╡ ad9b1c90-3a07-4363-9525-f64e65aa6ed5
 TableOfContents(title="📚 Table of Contents", indent=true, depth=4, aside=true)
@@ -145,22 +145,69 @@ with_terminal() do
     end
 end
 
+# ╔═╡ d52d1efe-7248-49e5-aa69-8ea4bdce4a05
+md"""
+# Möbius Inversion (subsets)
+the ζ matrix indicates if A ⊆ B
+
+the μ matrix is the inverse ("inclusion-exclusion principle")
+"""
+
+# ╔═╡ a3ec8e0c-e021-4040-9f70-242686866d6d
+begin
+	ζ = Int.([ A ⊆ B for A∈collect(𝒫), B∈collect(𝒫) ])
+	μ =   Int.(inv(ζ))
+	labels = string.(𝒫);labels[1] = "∅"
+end
+
+# ╔═╡ 967cae80-f548-4c0d-9b01-399f5947e444
+ζ
+
+# ╔═╡ 7675b448-9e5e-40f6-afca-43fb66f33ff4
+μ 
+
+# ╔═╡ 4cbc0dd1-2d16-47f8-9fbc-ae43e255ca02
+NamedArray( ζ , (labels,labels) )
+
+# ╔═╡ 3c870eb7-881d-4636-bdbd-f879407ea854
+NamedArray( μ , (labels,labels) )
+
+# ╔═╡ 4fc92447-0a66-44d8-993e-0cb5fceacde8
+md"""
+## Linking the L and K definitions thourgh the Möbius matrices
+"""
+
+# ╔═╡ 3b3aae07-a166-40f9-9973-17e2945c038b
+begin
+	SetPDF = [det(L[𝓘,𝓘])/det(L+I) for 𝓘∈𝒫] # vector of L definition
+	SetCDF = [det(K[𝓘,𝓘])  for 𝓘∈𝒫]  # vector of K definition
+	(SetCDF  ≈ ζ  * SetPDF)  && (SetPDF  ≈ μ * SetCDF)
+end
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
 Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+NamedArrays = "86f7a689-2022-50b4-a561-43c23ac3c673"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [compat]
 Combinatorics = "~1.0.2"
+NamedArrays = "~0.9.6"
 PlutoUI = "~0.7.12"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
+
+[[ArgTools]]
+uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
+
+[[Artifacts]]
+uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
@@ -170,9 +217,33 @@ git-tree-sha1 = "08c8b6831dc00bfea825826be0bc8336fc369860"
 uuid = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
 version = "1.0.2"
 
+[[Compat]]
+deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "SHA", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
+git-tree-sha1 = "31d0151f5716b655421d9d75b7fa74cc4e744df2"
+uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
+version = "3.39.0"
+
+[[DataStructures]]
+deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
+git-tree-sha1 = "7d9d316f04214f7efdbb6398d545446e246eff02"
+uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+version = "0.18.10"
+
 [[Dates]]
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
+[[DelimitedFiles]]
+deps = ["Mmap"]
+uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+
+[[Distributed]]
+deps = ["Random", "Serialization", "Sockets"]
+uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
+[[Downloads]]
+deps = ["ArgTools", "LibCURL", "NetworkOptions"]
+uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 
 [[HypertextLiteral]]
 git-tree-sha1 = "72053798e1be56026b81d4e2682dbe58922e5ec9"
@@ -189,11 +260,32 @@ version = "0.2.2"
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
+[[InvertedIndices]]
+git-tree-sha1 = "bee5f1ef5bf65df56bdd2e40447590b272a5471f"
+uuid = "41ab1584-1d38-5bbf-9106-f11c6c58b48f"
+version = "1.1.0"
+
 [[JSON]]
 deps = ["Dates", "Mmap", "Parsers", "Unicode"]
 git-tree-sha1 = "8076680b162ada2a031f707ac7b4953e30667a37"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.2"
+
+[[LibCURL]]
+deps = ["LibCURL_jll", "MozillaCACerts_jll"]
+uuid = "b27032c2-a3e7-50c8-80cd-2d36dbcbfd21"
+
+[[LibCURL_jll]]
+deps = ["Artifacts", "LibSSH2_jll", "Libdl", "MbedTLS_jll", "Zlib_jll", "nghttp2_jll"]
+uuid = "deac9b47-8bc7-5906-a0fe-35ac56dc84c0"
+
+[[LibGit2]]
+deps = ["Base64", "NetworkOptions", "Printf", "SHA"]
+uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
+
+[[LibSSH2_jll]]
+deps = ["Artifacts", "Libdl", "MbedTLS_jll"]
+uuid = "29816b5a-b9ab-546f-933c-edad1886dfa8"
 
 [[Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
@@ -209,14 +301,39 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
+[[MbedTLS_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
+
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[MozillaCACerts_jll]]
+uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
+
+[[NamedArrays]]
+deps = ["Combinatorics", "DataStructures", "DelimitedFiles", "InvertedIndices", "LinearAlgebra", "Random", "Requires", "SparseArrays", "Statistics"]
+git-tree-sha1 = "2fd5787125d1a93fbe30961bd841707b8a80d75b"
+uuid = "86f7a689-2022-50b4-a561-43c23ac3c673"
+version = "0.9.6"
+
+[[NetworkOptions]]
+uuid = "ca575930-c2e3-43a9-ace4-1e988b2c1908"
+
+[[OrderedCollections]]
+git-tree-sha1 = "85f8e6578bf1f9ee0d11e7bb1b1456435479d47c"
+uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+version = "1.4.1"
 
 [[Parsers]]
 deps = ["Dates"]
 git-tree-sha1 = "9d8c00ef7a8d110787ff6f170579846f776133a9"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 version = "2.0.4"
+
+[[Pkg]]
+deps = ["Artifacts", "Dates", "Downloads", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
+uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
 [[PlutoUI]]
 deps = ["Base64", "Dates", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "Markdown", "Random", "Reexport", "UUIDs"]
@@ -228,6 +345,10 @@ version = "0.7.12"
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
+[[REPL]]
+deps = ["InteractiveUtils", "Markdown", "Sockets", "Unicode"]
+uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
@@ -237,11 +358,44 @@ git-tree-sha1 = "45e428421666073eab6f2da5c9d310d99bb12f9b"
 uuid = "189a3867-3050-52da-a836-e630ba90ab69"
 version = "1.2.2"
 
+[[Requires]]
+deps = ["UUIDs"]
+git-tree-sha1 = "4036a3bd08ac7e968e27c203d45f5fff15020621"
+uuid = "ae029012-a4dd-5104-9daa-d747884805df"
+version = "1.1.3"
+
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[[SharedArrays]]
+deps = ["Distributed", "Mmap", "Random", "Serialization"]
+uuid = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
+
+[[Sockets]]
+uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
+
+[[SparseArrays]]
+deps = ["LinearAlgebra", "Random"]
+uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[[Statistics]]
+deps = ["LinearAlgebra", "SparseArrays"]
+uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[[TOML]]
+deps = ["Dates"]
+uuid = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[[Tar]]
+deps = ["ArgTools", "SHA"]
+uuid = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
+
+[[Test]]
+deps = ["InteractiveUtils", "Logging", "Random", "Serialization"]
+uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[UUIDs]]
 deps = ["Random", "SHA"]
@@ -249,11 +403,23 @@ uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [[Unicode]]
 uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+
+[[Zlib_jll]]
+deps = ["Libdl"]
+uuid = "83775a58-1f1d-513f-b197-d71354ab007a"
+
+[[nghttp2_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "8e850ede-7688-5339-a07c-302acd2aaf8d"
+
+[[p7zip_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 """
 
 # ╔═╡ Cell order:
 # ╠═1b58d214-210a-11ec-091e-f9ac59377f7e
-# ╠═ad9b1c90-3a07-4363-9525-f64e65aa6ed5
+# ╟─ad9b1c90-3a07-4363-9525-f64e65aa6ed5
 # ╟─22907c76-da07-42fe-b641-e1a2977bb8f3
 # ╟─af37778e-c832-4014-b288-c8e5df86ed5f
 # ╠═2c8b8945-a6d9-48c6-a8e4-ada302a00c12
@@ -273,5 +439,13 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 # ╟─261be865-1a91-46b3-ab3b-5fc1bc80d231
 # ╠═f2ed2cf2-7705-40d3-9959-8f976d1760f7
 # ╠═2e4cafc8-c6b7-4569-8d09-1d8e50d469be
+# ╟─d52d1efe-7248-49e5-aa69-8ea4bdce4a05
+# ╠═a3ec8e0c-e021-4040-9f70-242686866d6d
+# ╠═967cae80-f548-4c0d-9b01-399f5947e444
+# ╠═7675b448-9e5e-40f6-afca-43fb66f33ff4
+# ╠═4cbc0dd1-2d16-47f8-9fbc-ae43e255ca02
+# ╠═3c870eb7-881d-4636-bdbd-f879407ea854
+# ╟─4fc92447-0a66-44d8-993e-0cb5fceacde8
+# ╠═3b3aae07-a166-40f9-9973-17e2945c038b
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
