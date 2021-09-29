@@ -199,15 +199,48 @@ let
 	L = K/(I-K)
 	
 	𝒫 = powerset(1:N)
-	SetPDF = round.( [det(L[𝓘,𝓘])/det(L+I) for 𝓘∈𝒫]  , digits=3)
+	
+	ζ = Int.([ A ⊆ B for A∈collect(𝒫), B∈collect(𝒫) ])
+    SETCDF = [det(K[𝓘,𝓘])  for 𝓘∈𝒫]
 	
 	with_terminal() do 
 	for 𝓘 ∈ 𝒫
 		@printf("  %10s : %10s \n", 𝓘, round(det(L[𝓘,𝓘])/det(L+I), digits=3)) 
     end
+		
 	println("--------------------------------------")
-	@printf("  %10s : %10s", "sum ",sum( det(L[𝓘,𝓘])/det(L+I)   for 𝓘 ∈ 𝒫 ) ) 
+	@printf("  %10s : %10s", "sum  ",sum( det(L[𝓘,𝓘])/det(L+I)   for 𝓘 ∈ 𝒫 ) ) 
+		
+	
+	
+	for i in 1:N^2
+ 	  println( round( (ζ \ SETCDF)[i], digits=3) )
+    end
+		
+		
+    end
+	
+
 end
+
+# ╔═╡ e7d077dd-c137-4e42-a94e-2e91dc200710
+md"""
+## Janossy
+"""
+
+# ╔═╡ 761439ab-c397-4720-87c9-fb84fe6d1db5
+let
+	# not fully finished
+	N = 8
+	n = 2
+	Y = Matrix(qr(randn(N,n)).Q)
+	
+ 	K = Y*Y'
+	L = zero.(K)
+	𝓘 =[2,4,6,8] # Restrict to an "I" 
+	
+	L[𝓘,𝓘] = K[𝓘,𝓘]
+ 	L = L/(I-L) # Formula (6) on p.3 
 end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -475,5 +508,7 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═3b3aae07-a166-40f9-9973-17e2945c038b
 # ╟─70af1efc-4430-41fe-9064-80950d0a1fd1
 # ╠═8b673853-cd97-4005-b31f-424c71876bd3
+# ╟─e7d077dd-c137-4e42-a94e-2e91dc200710
+# ╠═761439ab-c397-4720-87c9-fb84fe6d1db5
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
