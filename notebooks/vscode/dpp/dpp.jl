@@ -15,7 +15,7 @@ end
 
 
 ## Check identity
-# det(A+B), sum( det(mixAandB(A,B,𝓘)) for 𝓘 ∈ 𝒫 )
+det(A+B), sum( det(mixAandB(A,B,𝓘)) for 𝓘 ∈ 𝒫 )
 
 
 ## Generate a random DPP
