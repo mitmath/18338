@@ -35,7 +35,9 @@ Additional topics will be decided based on the interests of the students. No par
 This is a graduate course that is intended to be flexible so as to cover the backgrounds of different students. Generally grading will be based on satisfactory completion of problem sets and projects or equivalents.  Homework will be peer graded, and we will look to a rotating student for solutions.
 
 ## Homeworks
-[[Hw 1]](https://github.com/mitmath/18338/blob/master/ps1.pdf) is due 9/29 Wednesday 11:59pm. Submit your homework through [[18338 canvas]](https://canvas.mit.edu/courses/10369) website.
+[Hw 1](https://github.com/mitmath/18338/blob/master/ps1.pdf) is due 9/29 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
+
+[Hw 2](https://github.com/mitmath/18338/blob/master/ps2.pdf) is due 10/13 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
 
 ## Projects
 TBA
@@ -52,7 +54,7 @@ TBA
 | 4 | Mon | 20-Sep | Random matrix decomposition and finite RMT | |
 | 5 | Wed | 22-Sep | Cauchy-Binet Formula and infinite RMT Laws                   |  |  |
 | 6 | Mon | 27-Sep | Determinantal Point Processes (DPP) I                         |  |  |
-| 7  | Wed | 29-Sep | Random Growth and Aztc Diamond                                                            |  |  |
+| 7  | Wed | 29-Sep | Determinantal Point Processes (DPP) II                                                           |  |  |
 | 8  | Mon | 4-Oct  | Longest Increasing Subsequences                       |  |  |
 | 9 | Wed | 6-Oct  |  LIS, Group Representation, and Baik-Deift-Johansson theorem                                                                       |  |  |
 |    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
