@@ -1,21 +1,36 @@
 # Generate a random DPP
 using Combinatorics, Printf, LinearAlgebra
-N = 5
-Y = randn(N,N)
-L = Y'Y
+N = 4
+Y = randn(N,N) # not orthogonal
+L = Y'Y # not projection
 K = L/(L+I)
+  
+# pdfs for 𝓘
 for 𝓘 ∈ powerset(1:N)
     @printf("  %10s :", 𝓘) 
-    @printf(" %s\n",  det(L[𝓘,𝓘])/det(L+I) )
+    @printf(" %s ",  det(L[𝓘,𝓘])/det(L+I) )
+    H = setdiff( 1:N,𝓘 )
+    @printf(" %s\n",  det(inv(L)[H,H])/det(inv(L)+I) )  # complementary DPP
 end
 
   print("         Sum : ")
   println(sum(  det(L[𝓘,𝓘])/det(L+I)  for 𝓘 ∈ powerset(1:N) ))
 
+Pr(𝓘) = det(L[𝓘,𝓘])/det(L+I) 
 
-for 𝓘 ∈ powerset(1:N)
-    v = zeros(N)
-    v[𝓘] .= 1
-     I𝓘 = Diagonal(  1 .- v     )
-    println(  (-1)^length(𝓘)  * det(I𝓘 - K), " ",det(L[𝓘,𝓘])/det(I+L))
+# cdfs for 𝓘
+println("cdfs")
+for H ∈ powerset(1:N)
+   print( sum( Pr(𝓘) for 𝓘∈ powerset(1:N) if 𝓘 ⊇  H) , " ")
+   print( det(K[H,H]), " ")
+   Hc = setdiff(1:N, H)
+   
+   println( sum( Pr(setdiff(1:N,𝓘)) for 𝓘∈ powerset(1:N) if 𝓘 ⊆ setdiff(1:N, H)) , " ")
  end
+
+
+# for H ∈ powerset(1:N)
+#   print( sum( Pr(𝓘) for 𝓘∈ powerset(1:N) if 𝓘∩ H  == []) , " ")
+#   II = setdiff(1:N,H)
+#   println( det(I-K[H,H])) 
+# end

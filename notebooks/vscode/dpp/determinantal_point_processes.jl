@@ -53,7 +53,7 @@ and  the mixture of $A$ and $B$ matrix
 ``C_\mathcal{I}`` is defined by
 $C_\mathcal{I}[:,i] = \left\{ \begin{array}{cc}
  A[:,i] & \text{if } i \notin \mathcal{I} \\
- B[:,i] & \text{if } i \notin \mathcal{I}
+ B[:,i] & \text{if } i \in \mathcal{I}
 \end{array} \right.$
 """
 
@@ -71,7 +71,6 @@ md"""
 
 # ╔═╡ c67b7269-5e43-480c-a7f7-c7bb5bd1bbf7
 let  
-	### Verification
 	A = randn(N,N)
 	B = randn(N,N)
 	det(A+B), sum(det(mixAandB(A,B,𝓘)) for 𝓘∈𝒫 ) #check identity
