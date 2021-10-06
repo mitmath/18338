@@ -55,8 +55,8 @@ TBA
 | 5 | Wed | 22-Sep | Cauchy-Binet Formula and infinite RMT Laws                   |  |  |
 | 6 | Mon | 27-Sep | Determinantal Point Processes (DPP) I                         |  |  |
 | 7  | Wed | 29-Sep | Determinantal Point Processes (DPP) II                                                           |  |  |
-| 8  | Mon | 4-Oct  | Longest Increasing Subsequences                       |  |  |
-| 9 | Wed | 6-Oct  |  LIS, Group Representation, and Baik-Deift-Johansson theorem                                                                       |  |  |
+| 8  | Mon | 4-Oct  | Determinantal Point Processes (DPP) III                   |  |  |
+| 9 | Wed | 6-Oct  |  Determinantal Point Processes (DPP) IV                    |  |  |
 |    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
 | 10 | Wed | 13-Oct | RMT in Machine Learning (ML): DPPs          |  |  |
 | 11 | Mon | 18-Oct | Symmetric Spaces and RMT                                 |  |  |
