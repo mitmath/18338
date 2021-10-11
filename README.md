@@ -50,13 +50,13 @@ TBA
 | 1  | Fri | 10-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
 | 2 | Mon | 13-Sep  |  Integrability and Universality in probability by Alexei Borodin | | 
 |   | Wed | 15-Sep | *Canceled*          |  |  |
-| 3 | Fri | 17-Sep | Matrix Calculus and Jacobians of Matrix decompositions          |  |  |
-| 4 | Mon | 20-Sep | Random matrix decomposition and finite RMT | |
-| 5 | Wed | 22-Sep | Cauchy-Binet Formula and infinite RMT Laws                   |  |  |
+| 3 | Fri | 17-Sep | Matrix Calculus and Jacobians of Matrix Decompositions          |  |  |
+| 4 | Mon | 20-Sep | Random Matrix Decomposition and Finite RMT | |
+| 5 | Wed | 22-Sep | Cauchy-Binet Formula and Infinite RMT Laws                   |  |  |
 | 6 | Mon | 27-Sep | Determinantal Point Processes (DPP) I                         |  |  |
 | 7  | Wed | 29-Sep | Determinantal Point Processes (DPP) II                                                           |  |  |
-| 8  | Mon | 4-Oct  | Determinantal Point Processes (DPP) III                   |  |  |
-| 9 | Wed | 6-Oct  |  Determinantal Point Processes (DPP) IV                    |  |  |
+| 8  | Mon | 4-Oct  | Algorithms for Sampling DPPs I                  |  |  |
+| 9 | Wed | 6-Oct  |  Algorithms for Sampling Dpps II                    |  |  |
 |    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
 | 10 | Wed | 13-Oct | RMT in Machine Learning (ML): DPPs          |  |  |
 | 11 | Mon | 18-Oct | Symmetric Spaces and RMT                                 |  |  |
