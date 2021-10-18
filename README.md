@@ -59,7 +59,7 @@ TBA
 | 9 | Wed | 6-Oct  |  Algorithms for Sampling Dpps II                    |  |  |
 |    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
 | 10 | Wed | 13-Oct | Growth Process          |  |  |
-| 11 | Mon | 18-Oct | Symmetric Spaces and RMT                                 |  |  |
+| 11 | Mon | 18-Oct | Computing Equilibrium Distributions by Sheehan Olver                        |  |  |
 | 12 | Wed | 20-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
 | 13 | Mon | 25-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |  |  |
 | 14 | Wed | 27-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |  |  |
