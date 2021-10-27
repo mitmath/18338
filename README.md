@@ -39,7 +39,7 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 [Hw 2](https://github.com/mitmath/18338/blob/master/ps2.pdf) is due 10/13 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
 
-[Hw 3](https://github.com/mitmath/18338/blob/master/ps3.pdf) is due 11/3 Wednesday 11:59pm. Submit your homework through [18338 canvas](ttps://canvas.mit.edu/courses/10369) website.
+[Hw 3](https://github.com/mitmath/18338/blob/master/ps3.pdf) is due 11/3 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
 
 ## Projects
 TBA
@@ -63,8 +63,8 @@ TBA
 | 10 | Wed | 13-Oct | Growth Process          |  |  |
 | 11 | Mon | 18-Oct | Computing Equilibrium Distributions by Sheehan Olver                        |  |  |
 | 12 | Wed | 20-Oct | Continuous DPPs   |  |  |
-| 13 | Mon | 25-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |  |  |
-| 14 | Wed | 27-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |  |  |
+| 13 | Mon | 25-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)                               |  |  |
+| 14 | Wed | 27-Oct | LIS and RSK algorithm                             |  |  |
 | 15 | Mon | 1-Nov | From Gaussian Ensembles to Stochastic Operators                                          |  |  |
 | 16 | Wed | 3-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications I           |  |  |
 | 17 | Mon | 8-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications II          |  |  |
