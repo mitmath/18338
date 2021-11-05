@@ -41,6 +41,8 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 [Hw 3](https://github.com/mitmath/18338/blob/master/ps3.pdf) is due 11/3 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
 
+Submit your project proposal through canvas website, due 11/10 Wednesday.
+
 ## Projects
 TBA
 
@@ -65,8 +67,8 @@ TBA
 | 12 | Wed | 20-Oct | Continuous DPPs   |  |  |
 | 13 | Mon | 25-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)                               |  |  |
 | 14 | Wed | 27-Oct | LIS and RSK algorithm                             |  |  |
-| 15 | Mon | 1-Nov | From Gaussian Ensembles to Stochastic Operators                                          |  |  |
-| 16 | Wed | 3-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications I           |  |  |
+| 15 | Mon | 1-Nov | LIS and Group representation                              |  |  |
+| 16 | Wed | 3-Nov  | LIS and Schur polynomials           |  |  |
 | 17 | Mon | 8-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications II          |  |  |
 | 18 | Wed | 10-Nov | Tracy-Widom I                                                                      |  |  |
 | 19 | Mon | 15-Nov | Tracy-Widom II                                                                             |  |  |
