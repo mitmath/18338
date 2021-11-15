@@ -71,8 +71,8 @@ TBA
 | 16 | Wed | 3-Nov  | LIS and Schur polynomials           |  |  |
 | 17 | Mon | 8-Nov  | Free Probability I         |  |  |
 | 18 | Wed | 10-Nov | Free Probability II                                                                 |  |  |
-| 19 | Mon | 15-Nov |                                                                         |  |  |
-| 20 | Wed | 17-Nov |                                                                       |  |  |
+| 19 | Mon | 15-Nov | Free Probability III : Free Cumulants                            |  |  |
+| 20 | Wed | 17-Nov | *Canceled*                               |  |  |
 | 21  | Mon | 22-Nov|                                                                       |  |  |
 | 21 | Wed | 24-Nov | *Canceled for Thanksgiving travel*                                                                    |  |  |
 | 22 | Mon | 29-Nov | RMT in ML: Deep Learning                                                                    |  |  |
