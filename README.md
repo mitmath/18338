@@ -7,7 +7,7 @@ After the first two weeks it will be Monday and Wednesday as announced.  If you 
 Please share with any other students who may not have regged but you believe will enroll.
 </h3>
 
-* Piazza sign-up [link](piazza.com/mit/fall2021/18338) (lecture notes available on Piazza)
+* Piazza sign-up [link](https://piazza.com/mit/fall2021/18338) (lecture notes available on Piazza)
   
 
    
@@ -39,6 +39,10 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 [Hw 2](https://github.com/mitmath/18338/blob/master/ps2.pdf) is due 10/13 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
 
+[Hw 3](https://github.com/mitmath/18338/blob/master/ps3.pdf) is due 11/3 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
+
+Submit your project proposal through canvas website, due 11/10 Wednesday.
+
 ## Projects
 TBA
 
@@ -50,26 +54,26 @@ TBA
 | 1  | Fri | 10-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
 | 2 | Mon | 13-Sep  |  Integrability and Universality in probability by Alexei Borodin | | 
 |   | Wed | 15-Sep | *Canceled*          |  |  |
-| 3 | Fri | 17-Sep | Matrix Calculus and Jacobians of Matrix decompositions          |  |  |
-| 4 | Mon | 20-Sep | Random matrix decomposition and finite RMT | |
-| 5 | Wed | 22-Sep | Cauchy-Binet Formula and infinite RMT Laws                   |  |  |
+| 3 | Fri | 17-Sep | Matrix Calculus and Jacobians of Matrix Decompositions          |  |  |
+| 4 | Mon | 20-Sep | Random Matrix Decomposition and Finite RMT | |
+| 5 | Wed | 22-Sep | Cauchy-Binet Formula and Infinite RMT Laws                   |  |  |
 | 6 | Mon | 27-Sep | Determinantal Point Processes (DPP) I                         |  |  |
 | 7  | Wed | 29-Sep | Determinantal Point Processes (DPP) II                                                           |  |  |
-| 8  | Mon | 4-Oct  | Longest Increasing Subsequences                       |  |  |
-| 9 | Wed | 6-Oct  |  LIS, Group Representation, and Baik-Deift-Johansson theorem                                                                       |  |  |
+| 8  | Mon | 4-Oct  | Algorithms for Sampling DPPs I                  |  |  |
+| 9 | Wed | 6-Oct  |  Algorithms for Sampling Dpps II                    |  |  |
 |    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
-| 10 | Wed | 13-Oct | RMT in Machine Learning (ML): DPPs          |  |  |
-| 11 | Mon | 18-Oct | Symmetric Spaces and RMT                                 |  |  |
-| 12 | Wed | 20-Oct | Orthogonal Polynomials, Tridiagonal Matrices, Gaussian Quadratures, Lanczos and all that |  |  |
-| 13 | Mon | 25-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion I                               |  |  |
-| 14 | Wed | 27-Oct | Eigenvalue Perturbation Theory and Dyson-Brownian Motion II                              |  |  |
-| 15 | Mon | 1-Nov | From Gaussian Ensembles to Stochastic Operators                                          |  |  |
-| 16 | Wed | 3-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications I           |  |  |
-| 17 | Mon | 8-Nov  | Jack Polynomials, Multivariate Orthogonal Polynomials and their applications II          |  |  |
-| 18 | Wed | 10-Nov | Tracy-Widom I                                                                      |  |  |
-| 19 | Mon | 15-Nov | Tracy-Widom II                                                                             |  |  |
-| 20 | Wed | 17-Nov | Free Probability I                                                                       |  |  |
-| 21  | Mon | 22-Nov| Free Probability II                                                                      |  |  |
+| 10 | Wed | 13-Oct | Growth Process          |  |  |
+| 11 | Mon | 18-Oct | Computing Equilibrium Distributions by Sheehan Olver                        |  |  |
+| 12 | Wed | 20-Oct | Continuous DPPs   |  |  |
+| 13 | Mon | 25-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)                               |  |  |
+| 14 | Wed | 27-Oct | LIS and RSK algorithm                             |  |  |
+| 15 | Mon | 1-Nov | LIS and Group representation                              |  |  |
+| 16 | Wed | 3-Nov  | LIS and Schur polynomials           |  |  |
+| 17 | Mon | 8-Nov  | Free Probability I         |  |  |
+| 18 | Wed | 10-Nov | Free Probability II                                                                 |  |  |
+| 19 | Mon | 15-Nov | Free Probability III : Free Cumulants                            |  |  |
+| 20 | Wed | 17-Nov | *Canceled*                               |  |  |
+| 21  | Mon | 22-Nov|                                                                       |  |  |
 | 21 | Wed | 24-Nov | *Canceled for Thanksgiving travel*                                                                    |  |  |
 | 22 | Mon | 29-Nov | RMT in ML: Deep Learning                                                                    |  |  |
 | 23 | Wed | 1-Dec | Project Presentation I                                                                 |  |  |

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+using LinearAlgebra, Statistics, Combinatorics, Distributions
+
+HH(x) = (w = x + norm(x)*[1;zeros(length(x)-1)]; I-2w*w'/w'w)
+=======
 using LinearAlgebra, Combinatorics, Distributions, StatsBase
+>>>>>>> df5b3b8d70a2d067c5e14563c9190335b937ecd1
 
 function randprojDPP(Y)
     n = size(Y,2)
