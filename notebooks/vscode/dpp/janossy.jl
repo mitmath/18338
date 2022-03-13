@@ -12,10 +12,11 @@ using Combinatorics, Printf, LinearAlgebra
 N = 6
 n = 3
 Y = Matrix(qr(randn(N,n)).Q)
-
+#Y = randn(N,n)
 K = Y*Y'
+#K /= I+K
 L = zero.(K)
-𝓘 =[1,2,3] # Restrict to a Janossy set 
+𝓘 =[2,4,6] # Restrict to a Janossy set 
 
 L[𝓘,𝓘] = K[𝓘,𝓘]
 
@@ -31,6 +32,9 @@ for ℋ ∈ powerset(𝓘)
 
     # we sum over all J of size n such that J ∩ (Janossy set 𝓘) == ℋ
     p = sum( Float64[det(K[J,J]) for J ∈ combinations(1:N,n)  if  J ∩ 𝓘 == ℋ] ) # determinants of size n
+    
+    
+    
     # equivalently we take ℋ and add n-|ℋ| elements that are all in the Janossy set
     # this has the advantage of no rejecting
     #r = sum( Float64[det(K[J,J]) for J ∈ union.([ℋ],combinations( setdiff(1:N,𝓘), n-length(ℋ)))])
@@ -66,4 +70,6 @@ for ℋ ∈ powerset(𝓘)
 end  
 println("total probability = ",sum(probs))
 
-L
+display(L)
+display(L/(I+L))
+display(K)

@@ -1,6 +1,6 @@
 # Generate a random DPP
 using Combinatorics, Printf, LinearAlgebra
-N = 4
+N = 2
 Y = randn(N,N) # not orthogonal
 L = Y'Y # not projection
 K = L/(L+I)
@@ -9,8 +9,8 @@ K = L/(L+I)
 for 𝓘 ∈ powerset(1:N)
     @printf("  %10s :", 𝓘) 
     @printf(" %s ",  det(L[𝓘,𝓘])/det(L+I) )
-    H = setdiff( 1:N,𝓘 )
-    @printf(" %s\n",  det(inv(L)[H,H])/det(inv(L)+I) )  # complementary DPP
+    𝓘c = setdiff( 1:N,𝓘 )
+    @printf(" %s\n",  det(inv(L)[𝓘c,𝓘c])/det(inv(L)+I) )  # complementary DPP
 end
 
   print("         Sum : ")
@@ -34,3 +34,14 @@ for H ∈ powerset(1:N)
 #   II = setdiff(1:N,H)
 #   println( det(I-K[H,H])) 
 # end
+println()
+
+for 𝓘 ∈ powerset(1:N)
+
+  print( sum( det(L[J,J])/det(L+I) for J∈ powerset(1:N) if J ⊇ 𝓘), " ")
+  print( det(K[𝓘,𝓘]), " ")
+  print(  sum( det(L[J,J])/det(L+I) for J∈ powerset(1:N) if J ⊆ 𝓘), " ") 
+  𝓘c = setdiff(1:N,𝓘)
+  print( det( (I-K)[𝓘c,𝓘c]))
+  println()
+end

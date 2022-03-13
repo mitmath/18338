@@ -6,7 +6,8 @@ function randprojDPP(Y)
     for k=1:n
         p = mean(abs.(Y).^2, dims=2)
         𝓘[k] = rand(Categorical(p[:]))
-        Y=(Y*qr(Y[𝓘[k],:]).Q )[:,2:end] # just a householder matrix 
+        Y=(Y*qr(Y[𝓘[k],:]).Q )[:,2:end] 
+        display(Y[𝓘[k],:]) 
     end
     return(sort(𝓘))
 end
@@ -17,10 +18,12 @@ function randDPP(Y,Λ)
 end
 
 ### test--------------------------------------
-# N = 5
-# Λ = rand(N)
-# Y = Matrix(qr(randn(N,N)).Q)
-# L = Y * diagm(Λ) * Y'
+N = 15
+
+Λ = rand(N)
+Y = Matrix(qr(randn(N,N)).Q)
+L = Y * diagm(Λ) * Y'
+randDPP(Y,Λ)
 
 # hist = Dict( 𝓘=>0 for 𝓘 ∈ powerset(1:N) )
 # t = 500_000
@@ -33,20 +36,23 @@ end
 # end
 
 ### random wishart query--------------------------------------
-function randwish(N,trials)
-data = fill(0,trials)
-for i=1:trials
-   Y = randn(N,N)+im*randn(N,N)
-   (Λ,X) = eigen(Y*Y')
-   data[i] = length(randDPP(X,Λ))
-end
+# function randwish(N,trials)
+# data = fill(0,trials)
+# for i=1:trials
+#    Y = randn(N,N)+im*randn(N,N)
+#    (Λ,X) = eigen(Y*Y')
+#    data[i] = length(randDPP(X,Λ))
+# end
 
-c = countmap(data)
-for i ∈ sort( [k for k∈keys(c)])
-    println(i," => ",c[i])
-end
+# c = countmap(data)
+# for i ∈ sort( [k for k∈keys(c)])
+#     println(i," => ",c[i])
+# end
 
-end
+# end
 
-randwish(100,10)
+# randwish(100,1000)
 
+
+# q = rand(5)
+# rand.(Bernoulli.(q),10)
