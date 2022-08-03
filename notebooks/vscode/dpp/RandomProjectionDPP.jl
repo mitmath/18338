@@ -37,3 +37,6 @@ for 𝓘∈combinations(1:N,3)
 end
 
 
+for i=1:5
+    println(i)
+end
