@@ -1,13 +1,8 @@
 # 18.338: Eigenvalues of random matrices, Fall 2021
 
 ## Annoucement
-<h3>Please take note that for the first two weeks, Wednesday is now Friday meaning there will be no class on Wednesday Sept 8 nor Wednesday Sept 15th.  There will however be class on Friday Sept 10 and Friday Sept 17th. No matter what classes are in 4-261 from 3 to 4:30.
-After the first two weeks it will be Monday and Wednesday as announced.  If you can't make the two Friday's i'll try my best to make materials available. 
 
-Please share with any other students who may not have regged but you believe will enroll.
-</h3>
-
-* Piazza sign-up [link](https://piazza.com/mit/fall2021/18338) (lecture notes available on Piazza)
+* Piazza sign-up link will be available soon (lecture notes available on Piazza)
   
 
    
@@ -20,10 +15,10 @@ Please share with any other students who may not have regged but you believe wil
 
 ## Lecturer: Prof. Alan Edelman
 
-This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2021 semester.
+This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2022 semester.
 
 ## Location and Time
-The class will be held at 4-261 from 3--4:30pm every Monday and Wednesday. 
+The class will be held at 2-139 from 3--4:30pm every Monday and Wednesday. 
 
 ## Course Description:
 
@@ -36,47 +31,41 @@ Additional topics will be decided based on the interests of the students. No par
 This is a graduate course that is intended to be flexible so as to cover the backgrounds of different students. Generally grading will be based on satisfactory completion of problem sets and projects or equivalents.  Homework will be peer graded, and we will look to a rotating student for solutions.
 
 ## Homeworks
-[Hw 1](https://github.com/mitmath/18338/blob/master/ps1.pdf) is due 9/29 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
-
-[Hw 2](https://github.com/mitmath/18338/blob/master/ps2.pdf) is due 10/13 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
-
-[Hw 3](https://github.com/mitmath/18338/blob/master/ps3.pdf) is due 11/3 Wednesday 11:59pm. Submit your homework through [18338 canvas](https://canvas.mit.edu/courses/10369) website.
-
-Submit your project proposal through canvas website, due 11/10 Wednesday.
 
 ## Projects
-TBA
+
+Submit your project proposal through canvas website, due 11/7 Monday.
 
 ## Schedule (Tentative)
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|    | Wed | 8-Sep |  *Canceled*          |  |  |
-| 1  | Fri | 10-Sep  | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad                              |  [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)       |    |
-| 2 | Mon | 13-Sep  |  Integrability and Universality in probability by Alexei Borodin | | 
-|   | Wed | 15-Sep | *Canceled*          |  |  |
-| 3 | Fri | 17-Sep | Matrix Calculus and Jacobians of Matrix Decompositions          |  |  |
-| 4 | Mon | 20-Sep | Random Matrix Decomposition and Finite RMT | |
-| 5 | Wed | 22-Sep | Cauchy-Binet Formula and Infinite RMT Laws                   |  |  |
-| 6 | Mon | 27-Sep | Determinantal Point Processes (DPP) I                         |  |  |
-| 7  | Wed | 29-Sep | Determinantal Point Processes (DPP) II                                                           |  |  |
-| 8  | Mon | 4-Oct  | Algorithms for Sampling DPPs I                  |  |  |
-| 9 | Wed | 6-Oct  |  Algorithms for Sampling Dpps II                    |  |  |
-|    | Mon | 11-Oct | Indigineous People's Day                                                                             |  |  |
-| 10 | Wed | 13-Oct | Growth Process          |  |  |
-| 11 | Mon | 18-Oct | Computing Equilibrium Distributions by Sheehan Olver                        |  |  |
-| 12 | Wed | 20-Oct | Continuous DPPs   |  |  |
-| 13 | Mon | 25-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)                               |  |  |
-| 14 | Wed | 27-Oct | LIS and RSK algorithm                             |  |  |
-| 15 | Mon | 1-Nov | LIS and Group representation                              |  |  |
-| 16 | Wed | 3-Nov  | LIS and Schur polynomials           |  |  |
-| 17 | Mon | 8-Nov  | Free Probability I         |  |  |
-| 18 | Wed | 10-Nov | Free Probability II                                                                 |  |  |
-| 19 | Mon | 15-Nov | Free Probability III : Free Cumulants                            |  |  |
-| 20 | Wed | 17-Nov | *Canceled*                               |  |  |
-| 21  | Mon | 22-Nov|                                                                       |  |  |
-| 21 | Wed | 24-Nov | *Canceled for Thanksgiving travel*                                                                    |  |  |
-| 22 | Mon | 29-Nov | RMT in ML: Deep Learning                                                                    |  |  |
-| 23 | Wed | 1-Dec | Project Presentation I                                                                 |  |  |
-| 24 | Mon | 6-Dec  | Project Presentation II                                                           |  |  |
-| 25 | Wed | 8-Dec  | Project Presentation III                                                          |  |  |
+| 1 | W | 7-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)  |  |
+| 2 | M | 12-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  |    |
+| 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  |   | 
+| 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  |  |  |
+| 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  |  |  |
+| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  |  |  |
+| 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
+| 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  |  |
+| 9 | W | 5-Oct  | Continuous DPPs  |  |  |
+|   | M | 10-Oct  | Indigenous People's Day    |  |  |
+| 10 | W | 12-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)  |  |  |
+| 11 | M | 17-Oct | LIS and RSK algorithm   |  |  |
+| 12 | W | 19-Oct | LIS and Group representation   |  |  |
+| 13 | M | 24-Oct | LIS and Schur polynomials   |  |  |
+| 14 | W | 26-Oct | Growth Process   |  |  |
+| 15 | M | 31-Oct | Free Probability I   |  |  |
+| 16 | W | 2-Nov |  Free Probability II    |  |  |
+| 17 | M | 7-Nov |  Free Probability III : Free Cumulants     |  |  |
+| 18 | W | 9-Nov |         |  |  |
+| 19 | M | 14-Nov |        |  |  |
+| 20 | W | 16-Nov |        |  |  |
+| 21 | M | 21-Nov |        |  |  |
+|    | W | 23-Nov | *Canceled for Thanksgiving travel*  |  |  |
+| 22 | M | 28-Nov |        |  |  |
+| 23 | W | 30-Nov |        |  |  |
+| 24 | M | 5-Nov  | RMT in ML: Deep Learning       |  |  |
+| 25 | W | 7-Dec  | Project Presentation I         |  |  |
+| 26 | M | 12-Dec  | Project Presentation II       |  |  |
+| 27 | W | 14-Dec  | Project Presentation III      |  |  |
