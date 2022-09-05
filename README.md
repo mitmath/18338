@@ -13,7 +13,8 @@ Please share with any other students who may not have regged but you believe wil
    
 
 ## Previous versions:
-* [2020 18.338](https://github.com/mitmath/18338/tree/2020)
+* [2021 18.338](https://github.com/mitmath/18338/tree/2021-fall)
+* [2020 18.338](https://github.com/mitmath/18338/tree/2020-fall)
 * [2019 18.338](https://github.com/mitmath/18338/tree/2019)
 
 
