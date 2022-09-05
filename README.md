@@ -8,10 +8,17 @@
    
 
 ## Previous versions:
-* [2021 18.338](https://github.com/mitmath/18338/tree/2021-fall)
-* [2020 18.338](https://github.com/mitmath/18338/tree/2020-fall)
-* [2019 18.338](https://github.com/mitmath/18338/tree/2019)
-
+* [2021 Fall 18.338](https://github.com/mitmath/18338/tree/2021-fall)
+* [2020 Fall 18.338](https://github.com/mitmath/18338/tree/2020-fall)
+* [2019 Fall 18.338](https://github.com/mitmath/18338/tree/2019)
+* [2018 Spring 18.338](https://web.mit.edu/18.338/www/2018s/index.html)
+* [2016 Spring 18.338](https://web.mit.edu/18.338/www/2016s/index.html)
+* [2015 Spring 18.338](https://web.mit.edu/18.338/www/2015s/index.html)
+* [2013 Spring 18.338](https://web.mit.edu/18.338/www/2013s/index.html)
+* [2012 Spring 18.338](https://web.mit.edu/18.338/www/2012s/index.html)
+* [2006 Fall 18.338](https://web.mit.edu/18.338/www/2006f/index.html)
+* [2005 Spring 18.325](http://web.mit.edu/18.325/www/)
+* [2004 Spring 18.996](https://web.mit.edu/18.338/Spring04/index.html)
 
 ## Lecturer: Prof. Alan Edelman
 
@@ -55,10 +62,10 @@ Submit your project proposal through canvas website, due 11/7 Monday.
 | 12 | W | 19-Oct | LIS and Group representation   |  |  |
 | 13 | M | 24-Oct | LIS and Schur polynomials   |  |  |
 | 14 | W | 26-Oct | Growth Process   |  |  |
-| 15 | M | 31-Oct | Free Probability I   |  |  |
-| 16 | W | 2-Nov |  Free Probability II    |  |  |
-| 17 | M | 7-Nov |  Free Probability III : Free Cumulants     |  |  |
-| 18 | W | 9-Nov |         |  |  |
+| 15 | M | 31-Oct | Project presentation (Midterm)  |  |  |
+| 16 | W | 2-Nov |  Free Probability I    |  |  |
+| 17 | M | 7-Nov |  Free Probability II   |  |  |
+| 18 | W | 9-Nov |  Free Probability III : Free Cumulants       |  |  |
 | 19 | M | 14-Nov |        |  |  |
 | 20 | W | 16-Nov |        |  |  |
 | 21 | M | 21-Nov |        |  |  |
