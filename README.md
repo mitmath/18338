@@ -47,7 +47,7 @@ Submit your project proposal through canvas website, due 11/7 Monday.
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-| 1 | W | 7-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](http://math.mit.edu/~edelman/talks/2014/mit_02_24_2014.pptx)[[Notes]](http://web.mit.edu/18.338/www/2018s/handouts/lec1.pdf)  |  |
+| 1 | W | 7-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/notebooks/HLJslides.pdf)  |  |
 | 2 | M | 12-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  |    |
 | 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  |   | 
 | 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  |  |  |
