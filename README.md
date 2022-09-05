@@ -65,7 +65,7 @@ Submit your project proposal through canvas website, due 11/7 Monday.
 |    | W | 23-Nov | *Canceled for Thanksgiving travel*  |  |  |
 | 22 | M | 28-Nov |        |  |  |
 | 23 | W | 30-Nov |        |  |  |
-| 24 | M | 5-Nov  | RMT in ML: Deep Learning       |  |  |
+| 24 | M | 5-Dec  | RMT in ML: Deep Learning       |  |  |
 | 25 | W | 7-Dec  | Project Presentation I         |  |  |
 | 26 | M | 12-Dec  | Project Presentation II       |  |  |
 | 27 | W | 14-Dec  | Project Presentation III      |  |  |
