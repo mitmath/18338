@@ -39,11 +39,15 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 ## Homeworks
 
+There will be a few homeworks to start class off including access to the course textbook (being written) where comments are being asked for.
+
 ## Projects
 
 Please check out [the list of possible class projects](https://github.com/mitmath/18338/blob/master/project_lists.pdf). You are also welcome to work on your own topic. 
 
-There will be a 3-minute midterm presentation (project proposal) on 10/31.
+There will be a  project proposal (maybe a page) due Oct 26 and short 3-minute midterm presentation (project proposal) on 10/31.
+The proposal should have references, a short computation or a bit of mathematics or both, something to show that you are on your way.
+
 
 A full project report is due is 12/14.
 
