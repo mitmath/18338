@@ -41,7 +41,11 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 ## Projects
 
-Submit your project proposal through canvas website, due 11/7 Monday.
+Please check out [the list of possible class project](https://github.com/mitmath/18338/blob/master/18338projectlists.pdf)s. You are also welcome to work on your own topic. 
+
+There will be a 3-minute midterm presentation for a project proposal on 10/31.
+
+A full project report is due is 12/14.
 
 ## Schedule (Tentative)
 
