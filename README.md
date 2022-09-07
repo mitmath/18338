@@ -41,7 +41,7 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 
 ## Projects
 
-Please check out [the list of possible class project](https://github.com/mitmath/18338/blob/master/18338projectlists.pdf)s. You are also welcome to work on your own topic. 
+Please check out [the list of possible class projects](https://github.com/mitmath/18338/blob/master/18338projectlists.pdf). You are also welcome to work on your own topic. 
 
 There will be a 3-minute midterm presentation for a project proposal on 10/31.
 
