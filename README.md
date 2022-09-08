@@ -42,9 +42,9 @@ There will be a few homeworks to start class off including access to the course 
 
 ## Projects
 
-Please check out [the list of possible class projects](https://github.com/mitmath/18338/blob/master/project_lists.pdf). You are also welcome to work on your own topic. 
+Please check out [the list of possible class projects](https://github.com/mitmath/18338/blob/master/project_lists.pdf). You are also welcome to work on your own topic. On the second and fourth Fridays, @ 3-4pm, Sungwoo will have office hours for class projects. Students are strongly encouraged to talk to Sungwoo before the end of September, if they are looking for a class project topic. 
 
-There will be a  project proposal (maybe a page) due Oct 26 and short 3-minute midterm presentation (project proposal) on 10/31.
+There will be a project proposal (maybe a page) due Oct 26 and short 3-minute midterm presentation (project proposal) on 10/31.
 The proposal should have references, a short computation or a bit of mathematics or both, something to show that you are on your way.
 
 
