@@ -2,8 +2,7 @@
 
 ## Annoucement
 
-* Piazza sign-up link will be available soon (lecture notes available on Piazza)
-  
+Announcements will be made in piazza most of the times. If you have not received piazza invitation yet, please email sw2030@mit.edu.
 
    
 
