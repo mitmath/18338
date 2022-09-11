@@ -39,6 +39,9 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 ## Homeworks
 
 There will be a few homeworks to start class off including access to the course textbook (being written) where comments are being asked for.
+Submit your homework via canvas.mit.edu
+
+* [Homework 1](https://github.com/mitmath/18338/blob/master/fall2022hw1.pdf) Due 9/19 Monday 11:59pm. 
 
 ## Projects
 
