@@ -59,10 +59,10 @@ A full project report is due is 12/14.
 | 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  |   | 
 | 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  |  |  |
 | 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  |  |  |
-| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  |  |  |
+| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  |  |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
 | 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  |  |
-| 9 | W | 5-Oct  | Continuous DPPs  |  |  |
+| 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  |  |  |
 |   | M | 10-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 12-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)  |  |  |
 | 11 | M | 17-Oct | LIS and RSK algorithm   |  |  |
