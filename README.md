@@ -41,7 +41,10 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 There will be a few homeworks to start class off including access to the course textbook (being written) where comments are being asked for.
 Submit your homework via canvas.mit.edu
 
-* [Homework 1](https://github.com/mitmath/18338/blob/master/fall2022hw1.pdf) Due 9/19 Monday 11:59pm. 
+|#|Due| Reading| Link |
+|-|---|----|------|
+| 1 | 9/19 Monday | Ch 5, 9, 10 | [HW 1](https://github.com/mitmath/18338/blob/master/fall2022hw1.pdf) |
+| 2 | | | |
 
 ## Projects
 
@@ -58,9 +61,9 @@ A full project report is due is 12/14.
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
 | 1 | W | 7-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/notebooks/HLJslides.pdf)  |  |
-| 2 | M | 12-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  |    |
-| 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  |   | 
-| 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  |  |  |
+| 2 | M | 12-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
+| 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
+| 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  | Ch 9, 10  |  |
 | 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  |  |  |
 | 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  |  |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
