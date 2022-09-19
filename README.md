@@ -44,7 +44,7 @@ Submit your homework via canvas.mit.edu
 |#|Due| Reading| Link |
 |-|---|----|------|
 | 1 | 9/19 Monday | Ch 5, 9, 10 | [HW 1](https://github.com/mitmath/18338/blob/master/fall2022hw1.pdf) |
-| 2 | | | |
+| 2 | 9/26 Monday | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/fall2022hw2.pdf) |
 
 ## Projects
 
@@ -65,7 +65,7 @@ A full project report is due is 12/14.
 | 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  | Ch 9, 10  | HW1  |
 | 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  |  |  |
-| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  |  |
+| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  | HW 2 |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
 | 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  |  |
 | 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  |  |  |
