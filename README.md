@@ -39,7 +39,7 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 ## Homeworks
 
 There will be a few homeworks to start class off including access to the course textbook (being written) where comments are being asked for.
-Submit your homework via canvas.mit.edu
+Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas, please email sw2030@mit.edu
 
 |#|Due| Reading| Link |
 |-|---|----|------|
@@ -65,7 +65,7 @@ A full project report is due is 12/14.
 | 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  | Ch 9, 10  | HW1  |
 | 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  |  |  |
-| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  | HW 2 |
+| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  | HW2 |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
 | 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  |  |
 | 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  |  |  |
