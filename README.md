@@ -64,7 +64,7 @@ A full project report is due is 12/14.
 | 2 | M | 12-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
 | 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  | Ch 9, 10  | HW1  |
-| 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  |  |  |
+| 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  | Notes in progress |  |
 | 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  | HW2 |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
 | 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  |  |
