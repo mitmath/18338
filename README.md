@@ -43,8 +43,8 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Due| Reading| Link |
 |-|---|----|------|
-| 1 | 9/19 Monday | Ch 5, 9, 10 | [HW 1](https://github.com/mitmath/18338/blob/master/fall2022hw1.pdf) |
-| 2 | 10/3 Monday | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/fall2022hw2.pdf) |
+| 1 | 9/19 Monday | Ch 5, 9, 10 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw1.pdf) |
+| 2 | 10/3 Monday | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw2.pdf) |
 
 ## Projects
 
@@ -58,16 +58,16 @@ A full project report is due is 12/14.
 
 ## Schedule (Tentative)
 
-|#|Day| Date |  Topic | Reading| HW |
+|#|Day| Date |  Topic | Reading| HW Due |
 |-|-|------|------|-----|--|
-| 1 | W | 7-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/notebooks/HLJslides.pdf)  |  |
+| 1 | W | 7-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/HLJslides.pdf)  |  |
 | 2 | M | 12-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
 | 3 | W | 14-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 19-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  | Ch 9, 10  | HW1  |
-| 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  | Notes in progress |  |
-| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  | HW2 |
+| 5 | W | 21-Sep | Determinantal Point Processes (DPP) I  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
+| 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  |  |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
-| 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  |  |
+| 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  | HW2 |
 | 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  |  |  |
 |   | M | 10-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 12-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)  |  |  |
