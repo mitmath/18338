@@ -71,17 +71,17 @@ A full project report is due is 12/14.
 | 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  |  |  |
 |   | M | 10-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 12-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)  |  |  |
-| 11 | M | 17-Oct | LIS and RSK algorithm   |  |  |
+| 11 | M | 17-Oct | LIS and RSK algorithm   |  | HW3 |
 | 12 | W | 19-Oct | LIS and Group representation   |  |  |
 | 13 | M | 24-Oct | LIS and Schur polynomials   |  |  |
-| 14 | W | 26-Oct | Growth Process   |  |  |
+| 14 | W | 26-Oct | Multivariate Orthogonal Polynomials   |  |  |
 | 15 | M | 31-Oct | Project presentation (Midterm)  |  |  |
-| 16 | W | 2-Nov |  Free Probability I    |  |  |
-| 17 | M | 7-Nov |  Free Probability II   |  |  |
-| 18 | W | 9-Nov |  Free Probability III : Free Cumulants       |  |  |
-| 19 | M | 14-Nov |        |  |  |
-| 20 | W | 16-Nov |        |  |  |
-| 21 | M | 21-Nov |        |  |  |
+| 16 | W | 2-Nov | Growth Process   |  |  |
+| 17 | M | 7-Nov | Aztec Diamond and Airy Process    |  |  |
+| 18 | W | 9-Nov |     |  |  |
+| 19 | M | 14-Nov | Free Probability I   |  |  |
+| 20 | W | 16-Nov | Free Probability I   |  |  |
+| 21 | M | 21-Nov | Free Probability III : Free Cumulants   |  |  |
 |    | W | 23-Nov | *Canceled for Thanksgiving travel*  |  |  |
 | 22 | M | 28-Nov |        |  |  |
 | 23 | W | 30-Nov |        |  |  |
