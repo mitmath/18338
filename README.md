@@ -45,6 +45,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |-|---|----|------|
 | 1 | 9/19 Monday | Ch 5, 9, 10 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw1.pdf) |
 | 2 | 10/3 Monday | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw2.pdf) |
+| 3 | 10/17 Monday | Dpp notes | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw3.pdf) |
 
 ## Projects
 
