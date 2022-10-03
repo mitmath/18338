@@ -20,7 +20,7 @@ function randDPP(Y,Λ)
 end
 
 ### test--------------------------------------
-N = 5
+N = 2
 
 Λ = rand(N)
 Y = Matrix(qr(randn(N,N)).Q)
@@ -28,15 +28,17 @@ L = Y * diagm(Λ) * Y'
 K = L/(L+I)
 randDPP(Y,Λ)
 
-# hist = Dict( 𝓘=>0 for 𝓘 ∈ powerset(1:N) )
-# t = 500_000
-# for i=1:t
-#     hist[randDPP(Y,Λ)] += 1
-# end
+hist = Dict( 𝓘=>0 for 𝓘 ∈ powerset(1:N) )
+t = 10000
+for i=1:t
+    hist[randDPP(Y,Λ)] += 1
+end
 
-# for 𝓘∈powerset(1:N)
-#    println(round( hist[𝓘]/t,digits=3)," ",round.(det(L[𝓘,𝓘])/det(L+I),digits=3), " ",𝓘)
-# end
+println("$t trials N=$N")
+println("Expnt Theory")
+for 𝓘∈powerset(1:N)
+   println(round( hist[𝓘]/t,digits=3)," ",round.(det(L[𝓘,𝓘])/det(L+I),digits=3), " ",𝓘)
+end
 
 ### random wishart query--------------------------------------
 # function randwish(N,trials)
