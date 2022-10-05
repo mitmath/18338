@@ -69,7 +69,7 @@ A full project report is due is 12/14.
 | 6 | M | 26-Sep | Determinantal Point Processes (DPP) II  (Sungwoo) |  |  |
 | 7 | W | 28-Sep | Algorithms for Sampling DPPs I   |  |  |
 | 8 | M | 3-Oct  | Algorithms for Sampling DPPs II  |  | HW2 |
-| 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  | [[Notebook]](https://github.com/mitmath/18338/bloc/master/JuliaNotebooks) |  |
+| 9 | W | 5-Oct  | Continuous DPPs (Sungwoo)  | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb) |  |
 |   | M | 10-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 12-Oct | Continuous DPPs continued, Longest Increasing Sequence (LIS)  |  |  |
 | 11 | M | 17-Oct | LIS and RSK algorithm   |  | HW3 |
