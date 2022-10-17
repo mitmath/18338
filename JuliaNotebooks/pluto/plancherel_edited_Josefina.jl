@@ -26,6 +26,9 @@ using HypertextLiteral
 # ╔═╡ 62beb6d2-e250-4833-ae3f-00b73cfc0093
 using Oscar
 
+# ╔═╡ 594c87ae-c065-4db2-bd24-1ba7cbcaf9b1
+using NamedArrays
+
 # ╔═╡ ecf3cfc9-3d92-4419-85a5-758050a2654b
 
 
@@ -229,9 +232,12 @@ end
 	  
 
 # ╔═╡ e170ffa0-2464-4e88-9448-8962aaffb877
-Oscar.with_unicode() do
-         show(character_table(symmetric_group(4)))
-       end;
+let
+	n=4
+	A=[Combinatorics.character(λ,μ) for λ ∈ partitions(n),μ ∈ partitions(n)]
+	labels = string.(collect(partitions(n)))
+	NamedArray(A,(labels,labels))
+end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -240,6 +246,7 @@ AbstractAlgebra = "c3fe647b-3220-5bb0-a1ea-a7954cac585d"
 Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
 HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+NamedArrays = "86f7a689-2022-50b4-a561-43c23ac3c673"
 Oscar = "f1435218-dba5-11e9-1e4d-f1a5fab5fc13"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
@@ -249,6 +256,7 @@ Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 AbstractAlgebra = "~0.27.4"
 Combinatorics = "~1.0.2"
 HypertextLiteral = "~0.9.4"
+NamedArrays = "~0.9.6"
 Oscar = "~0.10.2"
 Plots = "~1.31.7"
 PlutoUI = "~0.7.40"
@@ -260,7 +268,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0-rc4"
 manifest_format = "2.0"
-project_hash = "c64f17778dc609783915e4391edffde4771bb94f"
+project_hash = "d19589656e7c5f20503b5abc7fcdd625c10c381e"
 
 [[deps.AbstractAlgebra]]
 deps = ["GroupsCore", "InteractiveUtils", "LinearAlgebra", "MacroTools", "Markdown", "Random", "RandomExtensions", "SparseArrays", "Test"]
@@ -664,6 +672,11 @@ git-tree-sha1 = "49510dfcb407e572524ba94aeae2fced1f3feb0f"
 uuid = "3587e190-3f89-42d0-90ee-14403ec27112"
 version = "0.1.8"
 
+[[deps.InvertedIndices]]
+git-tree-sha1 = "bee5f1ef5bf65df56bdd2e40447590b272a5471f"
+uuid = "41ab1584-1d38-5bbf-9106-f11c6c58b48f"
+version = "1.1.0"
+
 [[deps.IrrationalConstants]]
 git-tree-sha1 = "7fd44fd4ff43fc60815f8e764c0f352b83c49151"
 uuid = "92d709cd-6900-40b7-9082-c6be49f344b6"
@@ -886,6 +899,12 @@ deps = ["OpenLibm_jll"]
 git-tree-sha1 = "a7c3d1da1189a1c2fe843a3bfa04d18d20eb3211"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
 version = "1.0.1"
+
+[[deps.NamedArrays]]
+deps = ["Combinatorics", "DataStructures", "DelimitedFiles", "InvertedIndices", "LinearAlgebra", "Random", "Requires", "SparseArrays", "Statistics"]
+git-tree-sha1 = "2fd5787125d1a93fbe30961bd841707b8a80d75b"
+uuid = "86f7a689-2022-50b4-a561-43c23ac3c673"
+version = "0.9.6"
 
 [[deps.Ncurses_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1604,6 +1623,7 @@ version = "1.4.1+0"
 # ╟─151da69c-1aa2-424b-ae72-873faa61586a
 # ╠═5a8bc928-c9a6-4e33-a9b9-05736ce6fa9c
 # ╠═62beb6d2-e250-4833-ae3f-00b73cfc0093
+# ╠═594c87ae-c065-4db2-bd24-1ba7cbcaf9b1
 # ╠═e170ffa0-2464-4e88-9448-8962aaffb877
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
