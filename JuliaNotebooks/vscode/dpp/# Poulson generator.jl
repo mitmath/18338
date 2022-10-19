@@ -1,5 +1,5 @@
 # Poulson generator
-using Distributions
+using Distributions, LinearAlgebra, Combinatorics
 
 function randDPP_P(Kernel)
    K = copy(Kernel)
