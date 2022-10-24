@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.12
+# v0.19.11
 
 using Markdown
 using InteractiveUtils
@@ -220,24 +220,49 @@ end
 
 # ╔═╡ 5a8bc928-c9a6-4e33-a9b9-05736ce6fa9c
 let
-  n= 5
+  n= 4
    hist = Dict([(λ, 0) for λ ∈ partitions(n)])
    for π ∈ permutations(1:n)
 	   λ = Vector(Nan2Pretty(rsk(π)).part)
 	  
 	   hist[λ]+=1
    end
-	hist, character_table(symmetric_group(n))
+	hist #character_table(symmetric_group(n))
+
+   smallhist = zeros(Int,n)
+	for i ∈ hist
+		smallhist[length(i.first )] +=  i.second
+	end
+	smallhist
+	
 end
 	  
 
+# ╔═╡ 76415a52-2df8-498b-9450-f3e2c9aebdae
+hist
+
 # ╔═╡ e170ffa0-2464-4e88-9448-8962aaffb877
 let
-	n=4
+	n=5
 	A=[Combinatorics.character(λ,μ) for λ ∈ partitions(n),μ ∈ partitions(n)]
 	labels = string.(collect(partitions(n)))
 	NamedArray(A,(labels,labels))
 end
+
+# ╔═╡ ee4099ce-3c58-4cf9-9623-396f62e759d3
+[λ for λ in partitions(10)]
+
+# ╔═╡ ece12796-caaa-4add-a560-72721a248cc2
+[Nan2Pretty(rsk(π)) for π ∈ permutations(1:4)]
+
+# ╔═╡ 82a6d3ed-d259-4302-8d01-54734bd3fd58
+[ Π' * ([ 1 0 0; 0 1 0 ; 0 0 1][:,π])*Π  for   π in permutations(1:3) ] 
+
+# ╔═╡ be5e22dc-c3d1-485e-8824-8674c3a0eaff
+Π = (I-ones(3,3)/3))[:,1:2]
+
+# ╔═╡ 03a40383-dd42-466f-a656-7c1e804b6172
+Π^2
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -268,13 +293,13 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0-rc4"
 manifest_format = "2.0"
-project_hash = "d19589656e7c5f20503b5abc7fcdd625c10c381e"
+project_hash = "9d35311f24ae10de9a4b802f16c5640395383247"
 
 [[deps.AbstractAlgebra]]
 deps = ["GroupsCore", "InteractiveUtils", "LinearAlgebra", "MacroTools", "Markdown", "Random", "RandomExtensions", "SparseArrays", "Test"]
-git-tree-sha1 = "ba2beb5f2a3170a0ef87953daefd97135cf46ecd"
+git-tree-sha1 = "e506dcc52d993ec7c69ea754b3bbd507d4737891"
 uuid = "c3fe647b-3220-5bb0-a1ea-a7954cac585d"
-version = "0.27.4"
+version = "0.27.5"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -428,18 +453,6 @@ version = "1.0.0"
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
 
-[[deps.DecFP]]
-deps = ["DecFP_jll", "Printf", "Random", "SpecialFunctions"]
-git-tree-sha1 = "a8269e0a6af8c9d9ae95d15dcfa5628285980cbb"
-uuid = "55939f99-70c6-5e9b-8bb0-5071ed7d61fd"
-version = "1.3.1"
-
-[[deps.DecFP_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "e9a8da19f847bbfed4076071f6fef8665a30d9e5"
-uuid = "47200ebd-12ce-5be5-abb7-8e082af23329"
-version = "2.0.3+1"
-
 [[deps.DelimitedFiles]]
 deps = ["Mmap"]
 uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
@@ -529,9 +542,9 @@ version = "1.0.10+0"
 
 [[deps.GAP]]
 deps = ["Downloads", "GAP_jll", "GAP_lib_jll", "GAP_pkg_juliainterface_jll", "GMP_jll", "Libdl", "MacroTools", "Markdown", "Pkg", "REPL", "Random", "Scratch"]
-git-tree-sha1 = "dd1c4bdebff9afd7110eabb658a19484f25b2a78"
+git-tree-sha1 = "3606d1a861cf4c82b5f78465525d6da22a071a92"
 uuid = "c863536a-3901-11e9-33e7-d5cd0df7b904"
-version = "0.8.4"
+version = "0.8.3"
 
 [[deps.GAP_jll]]
 deps = ["Artifacts", "GMP_jll", "JLLWrappers", "Libdl", "Pkg", "Readline_jll", "Zlib_jll"]
@@ -635,9 +648,9 @@ version = "2.8.1+1"
 
 [[deps.Hecke]]
 deps = ["AbstractAlgebra", "Dates", "Distributed", "InteractiveUtils", "LazyArtifacts", "Libdl", "LinearAlgebra", "Markdown", "Nemo", "Pkg", "Printf", "Profile", "Random", "RandomExtensions", "Requires", "Serialization", "SparseArrays", "Test"]
-git-tree-sha1 = "03a27c769e7e044aac0064200b8ea738dc58bd78"
+git-tree-sha1 = "cc0e64ceaa13b2788a7ea175374ad43ae8a18de7"
 uuid = "3e1990a7-5d81-5526-99ce-9ba3ff248f21"
-version = "0.15.5"
+version = "0.15.4"
 
 [[deps.Hyperscript]]
 deps = ["Test"]
@@ -885,10 +898,10 @@ uuid = "90100e71-7732-535a-9be7-2e9affd1cfc1"
 version = "1.19.1+0"
 
 [[deps.Mongoc]]
-deps = ["Dates", "DecFP", "Logging", "MongoC_jll", "Serialization"]
-git-tree-sha1 = "0b9b590a6f027a0031af0559013bbae15c94d899"
+deps = ["Dates", "MongoC_jll", "Serialization"]
+git-tree-sha1 = "36200aae6c6c7118b5af874f3ec29ff4e8c944f7"
 uuid = "4fe8b98c-fc19-5c23-8ec2-168ff83495f2"
-version = "0.7.1"
+version = "0.6.2"
 
 [[deps.MozillaCACerts_jll]]
 uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
@@ -958,9 +971,9 @@ version = "1.2.1"
 
 [[deps.OpenSSL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "e60321e3f2616584ff98f0a4f18d98ae6f89bbb3"
+git-tree-sha1 = "a94dc0169bffbf7e5250fb7e1efb1a85b09105c7"
 uuid = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
-version = "1.1.17+0"
+version = "1.1.18+0"
 
 [[deps.OpenSpecFun_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "Pkg"]
@@ -998,9 +1011,9 @@ version = "1.2.1+0"
 
 [[deps.Parsers]]
 deps = ["Dates"]
-git-tree-sha1 = "6c01a9b494f6d2a9fc180a08b182fcb06f0958a0"
+git-tree-sha1 = "595c0b811cf2bab8b0849a70d9bd6379cc1cfb52"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.4.2"
+version = "2.4.1"
 
 [[deps.Perl_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "Readline_jll"]
@@ -1039,15 +1052,15 @@ version = "1.31.7"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "Markdown", "Random", "Reexport", "UUIDs"]
-git-tree-sha1 = "a602d7b0babfca89005da04d89223b867b55319f"
+git-tree-sha1 = "6e33d318cf8843dade925e35162992145b4eb12f"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.40"
+version = "0.7.44"
 
 [[deps.Polymake]]
 deps = ["BinaryWrappers", "CxxWrap", "FLINT_jll", "JSON", "Libdl", "Markdown", "Mongoc", "MozillaCACerts_jll", "Ninja_jll", "Perl_jll", "Pkg", "REPL", "Scratch", "SparseArrays", "TOPCOM_jll", "lib4ti2_jll", "libpolymake_julia_jll", "polymake_jll"]
-git-tree-sha1 = "58f4885cd1b9924dc309663965b60bd4156fc81c"
+git-tree-sha1 = "f12883c7cefc17b70597bd59a36c079b439dc09d"
 uuid = "d720cf60-89b5-51f5-aff5-213f193123e7"
-version = "0.8.1"
+version = "0.8.0"
 
 [[deps.Preferences]]
 deps = ["TOML"]
@@ -1511,9 +1524,9 @@ version = "1.6.38+0"
 
 [[deps.libpolymake_julia_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "FLINT_jll", "JLLWrappers", "Libdl", "Pkg", "TOPCOM_jll", "lib4ti2_jll", "libcxxwrap_julia_jll", "polymake_jll"]
-git-tree-sha1 = "a92e6e20d388b95f3437cc2d702c8d1887e24764"
+git-tree-sha1 = "c0be75471bb92cde567939620d2fae4da56f2ee9"
 uuid = "4d8266f6-2b3b-57e3-ad7a-d431eaaac945"
-version = "0.8.2+0"
+version = "0.8.1+0"
 
 [[deps.libsingular_julia_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "Singular_jll", "libcxxwrap_julia_jll"]
@@ -1622,8 +1635,14 @@ version = "1.4.1+0"
 # ╠═8ed1391a-d152-4203-b6c0-aec2588e7aef
 # ╟─151da69c-1aa2-424b-ae72-873faa61586a
 # ╠═5a8bc928-c9a6-4e33-a9b9-05736ce6fa9c
+# ╠═76415a52-2df8-498b-9450-f3e2c9aebdae
 # ╠═62beb6d2-e250-4833-ae3f-00b73cfc0093
 # ╠═594c87ae-c065-4db2-bd24-1ba7cbcaf9b1
 # ╠═e170ffa0-2464-4e88-9448-8962aaffb877
+# ╠═ee4099ce-3c58-4cf9-9623-396f62e759d3
+# ╠═ece12796-caaa-4add-a560-72721a248cc2
+# ╠═82a6d3ed-d259-4302-8d01-54734bd3fd58
+# ╠═be5e22dc-c3d1-485e-8824-8674c3a0eaff
+# ╠═03a40383-dd42-466f-a656-7c1e804b6172
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

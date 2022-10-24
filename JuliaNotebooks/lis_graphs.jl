@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.12
+# v0.19.11
 
 using Markdown
 using InteractiveUtils
@@ -14,8 +14,11 @@ using LinearAlgebra
 using Combinatorics
 
 # ╔═╡ d7e35052-6d2a-40db-ab66-185a1111f62d
-p = randperm(10)
+#p = randperm(10)
 #p = [8, 3, 7, 9, 2, 5, 4, 1, 10, 6]
+
+# ╔═╡ d72e6f79-6b33-4c85-bb74-5511fb929201
+p = randperm(10)
 
 # ╔═╡ ae83febb-14ca-4872-9cc0-dd812be46e31
 leaves = (1:length(p))[accumulate(min,p) .== p];
@@ -39,14 +42,21 @@ begin
 	
 	for i=1:n, j=i+1:n
 		if p[i]<p[j]
-			semicircle!(i,j,  i∈leaves ? :red : :blue)
+			#semicircle!(i,j,  i∈leaves ? :red : :blue)
+			semicircle!(i,j)
 		end
 	end
 	plot!()
 end
 
 # ╔═╡ 4ac16425-0ff2-4598-9dc0-004261e30ed8
-M = [i<j  &  p[i]<p[j]  for i=1:n, j=1:n]
+M = [i<j  &&  p[i]<p[j]  for i=1:n, j=1:n]
+
+# ╔═╡ ebe7d0d2-8fa9-4bfb-a486-cc667c871c52
+M^2
+
+# ╔═╡ 761c478a-2952-468b-9aa3-12eb3bf1ec10
+M^3
 
 # ╔═╡ 92a3ba7e-ba59-42da-9606-324624011248
 Int.(inv(I-M))
@@ -56,6 +66,9 @@ M^4
 
 # ╔═╡ d1b88ec0-4849-4162-9441-dd474172472b
 [p[i] for i=1:n if sum(M[:,i])==0 ]
+
+# ╔═╡ 5750ee86-f992-4978-958e-0d23a39b880f
+M^2
 
 # ╔═╡ 6f70c466-466a-421f-8965-3b765c0d5fc6
 collect(partitions(3))
@@ -79,7 +92,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0-rc4"
 manifest_format = "2.0"
-project_hash = "708f256a310e98f3ac30a151a37b18ac23b54e16"
+project_hash = "6b1c1d605e71ec8aad2021e7d7e7697faeeecac0"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
@@ -540,9 +553,9 @@ version = "1.2.1"
 
 [[deps.OpenSSL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "e60321e3f2616584ff98f0a4f18d98ae6f89bbb3"
+git-tree-sha1 = "a94dc0169bffbf7e5250fb7e1efb1a85b09105c7"
 uuid = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
-version = "1.1.17+0"
+version = "1.1.18+0"
 
 [[deps.OpenSpecFun_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "Pkg"]
@@ -568,9 +581,9 @@ version = "10.40.0+0"
 
 [[deps.Parsers]]
 deps = ["Dates"]
-git-tree-sha1 = "6c01a9b494f6d2a9fc180a08b182fcb06f0958a0"
+git-tree-sha1 = "595c0b811cf2bab8b0849a70d9bd6379cc1cfb52"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.4.2"
+version = "2.4.1"
 
 [[deps.Pipe]]
 git-tree-sha1 = "6842804e7867b115ca9de748a0cf6b364523c16d"
@@ -1008,11 +1021,15 @@ version = "1.4.1+0"
 # ╠═3f2a2737-4e51-484f-a9bd-602553cc8dc4
 # ╠═d7e35052-6d2a-40db-ab66-185a1111f62d
 # ╠═ae83febb-14ca-4872-9cc0-dd812be46e31
-# ╠═4ac16425-0ff2-4598-9dc0-004261e30ed8
+# ╠═ebe7d0d2-8fa9-4bfb-a486-cc667c871c52
+# ╠═761c478a-2952-468b-9aa3-12eb3bf1ec10
 # ╠═92a3ba7e-ba59-42da-9606-324624011248
 # ╠═27853cce-221b-44b6-ba74-d9d3930099c4
 # ╠═d1b88ec0-4849-4162-9441-dd474172472b
 # ╠═e4fb1d42-81a2-4401-a302-0c719af6f8ff
+# ╠═d72e6f79-6b33-4c85-bb74-5511fb929201
+# ╠═4ac16425-0ff2-4598-9dc0-004261e30ed8
+# ╠═5750ee86-f992-4978-958e-0d23a39b880f
 # ╠═6dc44d6d-0282-49ec-b2ed-7905fb3d68fb
 # ╠═283567a3-d332-4257-b23d-9792961ed5ed
 # ╠═02bc81e1-bfac-4a8d-b08e-fa86ddcdbc12
