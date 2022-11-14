@@ -46,6 +46,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 1 | 9/19 Monday | Ch 5, 9, 10 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw1.pdf) |
 | 2 | 10/3 Monday | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw2.pdf) |
 | 3 | 10/17 Monday | Dpp notes | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw3.pdf) |
+| 4 | 10/31 Monday |  | [Project Proposal](https://docs.google.com/document/d/1xW9tE7v1tDmGnN4C1w8cmesiwyeQBaD3HmdLLa6h0ss/edit?usp=sharing) |
 
 ## Projects
 
@@ -75,7 +76,7 @@ A full project report is due is 12/14.
 | 11 | M | 17-Oct | LIS and RSK algorithm   |  | HW3 |
 | 12 | W | 19-Oct | LIS and Group representation   |  |  |
 | 13 | M | 24-Oct | LIS and Schur polynomials   |  |  |
-| 14 | W | 26-Oct | Multivariate Orthogonal Polynomials   |  |  |
+| 14 | W | 26-Oct | How many zeros of a random polynomial are real?  | [[Paper]](https://arxiv.org/abs/math/9501224) |  |
 | 15 | M | 31-Oct | Project presentation (Midterm)  |  |  |
 | 16 | W | 2-Nov | Growth Process   |  |  |
 | 17 | M | 7-Nov | Aztec Diamond and Airy Process    |  |  |
