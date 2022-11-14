@@ -38,6 +38,9 @@ spy(Z)
 # ╔═╡ 6413318e-6adb-4588-b542-fb3f72030896
 μ = Int.(inv(Z))
 
+# ╔═╡ 4d1e87a7-fc4a-4d57-bc74-924d6c86ad3e
+sort(unique(abs.(μ[:])))
+
 # ╔═╡ 55c153da-d387-4986-8b4e-c0ae6bede587
 theory = [ prod(-catalannum.(length.(NC[j]).-1)) for j=1:catalan]
 
@@ -541,6 +544,7 @@ version = "17.4.0+0"
 # ╠═28281dba-2de2-4a70-aeff-80da3bc5cebb
 # ╠═33b35158-5860-46d3-b79f-ebece9ea5982
 # ╠═6413318e-6adb-4588-b542-fb3f72030896
+# ╠═4d1e87a7-fc4a-4d57-bc74-924d6c86ad3e
 # ╠═55c153da-d387-4986-8b4e-c0ae6bede587
 # ╠═a3a26b42-f0ce-4503-9fb2-84fdcd043542
 # ╟─00000000-0000-0000-0000-000000000001
