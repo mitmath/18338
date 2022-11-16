@@ -30,13 +30,29 @@ NC = ncpartitions(n)
 ≤(v1,v2) = all(any(v1' .⊆ v2, dims=1))
 
 # ╔═╡ 28281dba-2de2-4a70-aeff-80da3bc5cebb
-Z = UpperTriangular([NC[i] ≤ NC[j] for i=1:catalan, j=1:catalan])
+Z = Bool.(UpperTriangular([NC[i] ≤ NC[j] for i=1:catalan, j=1:catalan]))
+
+# ╔═╡ b4fcadf3-6a36-42d1-92ec-fcd6e829ed8a
+function inv_element(v1,v2)
+  if ~(v1 ≤ v2) 
+	  z=0
+  else
+	 z= v1,v2
+  end
+  z
+  end
+
+# ╔═╡ a60af98e-23d2-4c6a-86a7-4c20b6216529
+inv_element(NC[3],NC[5])
 
 # ╔═╡ 33b35158-5860-46d3-b79f-ebece9ea5982
 spy(Z)
 
 # ╔═╡ 6413318e-6adb-4588-b542-fb3f72030896
 μ = Int.(inv(Z))
+
+# ╔═╡ 23e54203-831e-4266-8dbf-a8d9eab19bdb
+
 
 # ╔═╡ 4d1e87a7-fc4a-4d57-bc74-924d6c86ad3e
 sort(unique(abs.(μ[:])))
@@ -46,6 +62,48 @@ theory = [ prod(-catalannum.(length.(NC[j]).-1)) for j=1:catalan]
 
 # ╔═╡ a3a26b42-f0ce-4503-9fb2-84fdcd043542
 [ theory μ[1,:]]
+
+# ╔═╡ 0e260987-ec48-4a85-b40f-9d13347d01c1
+Z
+
+# ╔═╡ 653452ec-8b59-49a1-9dfc-7e935ea50a66
+@bind ω Slider(NC, default=NC[2], show_value=true) 
+
+# ╔═╡ 43bc7799-61f6-4947-a9e9-d8f34b578631
+i(ω) = findfirst([ω] .== NC)
+
+# ╔═╡ 6f2975f4-859d-49bd-94e9-89fb9740297c
+≥(ω) = Z[i(ω),:]
+
+# ╔═╡ 167ee4b1-900e-40f6-9797-293d17d0dc3f
+nge(ω) = map(~,(≥(ω)))
+
+# ╔═╡ afb4be31-f91d-4680-b3f0-9bbc44b75a31
+p = [findall(nge(ω));findall(≥(ω))]
+
+# ╔═╡ 81642c3e-8f96-4d0c-bd34-265072fe5519
+Z[p, findall(≥(ω))] 
+
+# ╔═╡ 16b32e8e-cb6d-4bd5-bca4-ce714f4fbc6a
+Z[findall(≥(ω)), findall(≥(ω))]  * μ[findall(≥(ω)),end]
+
+# ╔═╡ d397a93b-5133-4e99-923c-989ec626e621
+m = Z[p, findall(≥(ω)) ] * μ[findall(≥(ω)),end]
+
+# ╔═╡ fe0b5cec-946b-40fc-a39e-a2e12ecdafa8
+μ[1,p[m.==1]]
+
+# ╔═╡ c7e026dd-b74d-4531-9fdb-8b65589856e4
+sum(μ[1,p[m.==1]] )
+
+# ╔═╡ f936a389-b48f-4514-b28f-85d17bcaa8c9
+NC[[findall(nge(ω));findall(≥(ω))][m.==1]]
+
+# ╔═╡ 9b92b4ca-bfd0-434a-8ef1-996a928bb086
+ω
+
+# ╔═╡ a4aaa2c1-299e-4dbc-8663-a9c0f3222427
+μ[[1],:] * Z[:, findall(≥(ω))] 
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -67,7 +125,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0-rc4"
 manifest_format = "2.0"
-project_hash = "72db12534fb25f2de73ef908e9e6075f89e19dd9"
+project_hash = "80e3c076371af863bde0c375d8481b248284d403"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -542,10 +600,27 @@ version = "17.4.0+0"
 # ╠═e1be3e1f-fb88-4edc-9b6c-36aa895cd123
 # ╠═3301ec00-bdc4-412b-be38-3afdb41a01ca
 # ╠═28281dba-2de2-4a70-aeff-80da3bc5cebb
+# ╠═b4fcadf3-6a36-42d1-92ec-fcd6e829ed8a
+# ╠═a60af98e-23d2-4c6a-86a7-4c20b6216529
 # ╠═33b35158-5860-46d3-b79f-ebece9ea5982
 # ╠═6413318e-6adb-4588-b542-fb3f72030896
+# ╠═23e54203-831e-4266-8dbf-a8d9eab19bdb
 # ╠═4d1e87a7-fc4a-4d57-bc74-924d6c86ad3e
 # ╠═55c153da-d387-4986-8b4e-c0ae6bede587
 # ╠═a3a26b42-f0ce-4503-9fb2-84fdcd043542
+# ╠═0e260987-ec48-4a85-b40f-9d13347d01c1
+# ╠═653452ec-8b59-49a1-9dfc-7e935ea50a66
+# ╠═43bc7799-61f6-4947-a9e9-d8f34b578631
+# ╠═6f2975f4-859d-49bd-94e9-89fb9740297c
+# ╠═167ee4b1-900e-40f6-9797-293d17d0dc3f
+# ╠═afb4be31-f91d-4680-b3f0-9bbc44b75a31
+# ╠═81642c3e-8f96-4d0c-bd34-265072fe5519
+# ╠═16b32e8e-cb6d-4bd5-bca4-ce714f4fbc6a
+# ╠═d397a93b-5133-4e99-923c-989ec626e621
+# ╠═fe0b5cec-946b-40fc-a39e-a2e12ecdafa8
+# ╠═c7e026dd-b74d-4531-9fdb-8b65589856e4
+# ╠═f936a389-b48f-4514-b28f-85d17bcaa8c9
+# ╠═9b92b4ca-bfd0-434a-8ef1-996a928bb086
+# ╠═a4aaa2c1-299e-4dbc-8663-a9c0f3222427
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
