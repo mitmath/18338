@@ -105,6 +105,32 @@ NC[[findall(nge(ω));findall(≥(ω))][m.==1]]
 # ╔═╡ a4aaa2c1-299e-4dbc-8663-a9c0f3222427
 μ[[1],:] * Z[:, findall(≥(ω))] 
 
+# ╔═╡ a904840e-adec-48f4-99e5-9d73c0416339
+md"# Exploring the Kronecker Product"
+
+# ╔═╡ 026e390f-1989-40a1-ac4a-cdea6f1e0e82
+md"""
+We partition $n$ into $1:k$ and $k+1:n$ for $k=1,..,n-1$
+"""
+
+# ╔═╡ 7b5772bd-099a-4720-bc0d-c33181d3591e
+<(ω) = Z[:,i(ω)]
+
+# ╔═╡ e6522fea-b077-43bb-bc95-2451c14371b1
+ @bind k Slider(1:(n-1), default=2, show_value = true)
+
+# ╔═╡ 6a2c6871-ff7f-401e-8f46-4471133d06ea
+σ = [ [1:k;],[k+1:n;]]
+
+# ╔═╡ b8459500-0d28-4ac3-b40c-1cc709e04bef
+NCK =[μ for μ∈NC if μ ≤ σ]
+
+# ╔═╡ 6fa8dfe1-7649-4d09-a50e-6f47f729e9d8
+inv(Z[<(σ),<(σ)])
+
+# ╔═╡ ac4d8598-81ff-400d-8455-9b3dbe4acf4f
+
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -622,5 +648,13 @@ version = "17.4.0+0"
 # ╠═f936a389-b48f-4514-b28f-85d17bcaa8c9
 # ╠═9b92b4ca-bfd0-434a-8ef1-996a928bb086
 # ╠═a4aaa2c1-299e-4dbc-8663-a9c0f3222427
+# ╟─a904840e-adec-48f4-99e5-9d73c0416339
+# ╟─026e390f-1989-40a1-ac4a-cdea6f1e0e82
+# ╠═6a2c6871-ff7f-401e-8f46-4471133d06ea
+# ╠═b8459500-0d28-4ac3-b40c-1cc709e04bef
+# ╠═7b5772bd-099a-4720-bc0d-c33181d3591e
+# ╠═e6522fea-b077-43bb-bc95-2451c14371b1
+# ╠═6fa8dfe1-7649-4d09-a50e-6f47f729e9d8
+# ╠═ac4d8598-81ff-400d-8455-9b3dbe4acf4f
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
