@@ -31,7 +31,7 @@ begin
 	end
     outside_matrix(τ) = [outside(τ[i],τ[j]) for i=1:length(τ), j=1:length(τ)]	
 	level(τ) = sum( outside_matrix(τ) , dims=1 )
-end
+end;
 
 # ╔═╡ 12c72b2c-c577-43c0-b7b7-3e783805172a
 function kreweras(τ)
@@ -57,7 +57,7 @@ function kreweras(τ)
 		end
 	end
 	answer,levs
-end
+end;
 
 # ╔═╡ fd85dbba-6410-4e37-b2fb-44bdfd4e9b64
 
