@@ -18,20 +18,18 @@ end
 using Combinatorics, Plots, PlutoUI
 
 # ╔═╡ 49eec773-6835-4eaa-91d9-f7590e8b5280
-@bind n Slider(1:11; default=7, show_value=true)
+@bind n Slider(1:11; default=5, show_value=true)
 
 # ╔═╡ fd01d2d8-1402-48d2-9014-1b0953b196d5
 begin
 	NC = ncpartitions(n)
-	
+	≤(v1,v2) = all(any(v1' .⊆ v2, dims=1))
 	function outside(b1,b2) # is block1 outside block2
        a=findlast( b1.< b2[1]) 
 	   b=findfirst( b1.> b2[end])
 	   ~(isnothing(a) || isnothing(b) || a>b )	 	
 	end
-
-    outside_matrix(τ) = [outside(τ[i],τ[j]) for i=1:length(τ), j=1:length(τ)]
-	
+    outside_matrix(τ) = [outside(τ[i],τ[j]) for i=1:length(τ), j=1:length(τ)]	
 	level(τ) = sum( outside_matrix(τ) , dims=1 )
 end
 
@@ -74,8 +72,7 @@ end
 kreweras(τ)[1]
 
 # ╔═╡ d51f85ca-e7ef-4ff4-af85-df68ba7205ed
-begin 
-	
+begin 	
  levs = level(τ)
  m = maximum(levs)+1
  plot(legend=false, axis=([], false), size=(max(100,15*n),60))
@@ -91,26 +88,35 @@ end
 
 # ╔═╡ e6385d3c-fcab-49c2-967f-208f23840caf
 begin
-	κ,κlev = kreweras(τ) 
 	plot!()
+	κ,κlev = kreweras(τ) 
 	for i=1:length(κ)
-
-		 if κ[i][end] < τ[1][end] || (κ[i]==[n])
-		 plot!( [κ[i][1]+.5,κ[i][end]+.5], [.5+κlev[i],.5+κlev[i]],color=:red, lw=2)
-		 else
-		 plot!( [κ[i][1]+.5,κ[i][end]+.5], [-.5+κlev[i],-.5+κlev[i]],color=:red, lw=2)
-		 end
-		 for j∈κ[i]
-			 if κ[i][end] < τ[1][end] || (κ[i]==[n])
-			 plot!([j+.5,j+.5],[.5+κlev[i],m], color=:red, lw=2)
-			 else
-			 plot!([j+.5,j+.5],[-.5+κlev[i],m], color=:red, lw=2)
-			 end
-			 annotate!(j,m,text(j,:bottom,7))
+         o = (κ[i][end] < τ[1][end] || (κ[i]==[n]) )-.5+κlev[i] #offset
+		 plot!( [κ[i][1]+.5,κ[i][end]+.5], [o,o],color=:red, lw=2)	#horiz 
+		 for j∈κ[i]		 
+			 plot!([j+.5,j+.5],[o,m], color=:red, lw=2)	#vert	 
 		 end
 	 end
 	plot!()
 end
+
+# ╔═╡ fc2c3e77-a796-4799-ac9f-cd38f4d9baed
+# ╠═╡ disabled = true
+#=╠═╡
+kperm = [findfirst([sort(kreweras(σ)[1])].==NC) for σ∈NC];
+  ╠═╡ =#
+
+# ╔═╡ 07ffb85e-6d80-4ffe-a99f-afc778a48b3c
+# ╠═╡ disabled = true
+#=╠═╡
+ζ = [μ≤σ for μ∈NC, σ∈NC];
+  ╠═╡ =#
+
+# ╔═╡ f99bad79-ac09-4705-b333-0643709cd012
+# ╠═╡ disabled = true
+#=╠═╡
+ζ[kperm,kperm] == ζ'
+  ╠═╡ =#
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1098,12 +1104,15 @@ version = "1.4.1+0"
 # ╔═╡ Cell order:
 # ╠═9d7d2ce0-6c27-11ed-3f30-b923d2d7a957
 # ╠═49eec773-6835-4eaa-91d9-f7590e8b5280
-# ╠═fd01d2d8-1402-48d2-9014-1b0953b196d5
-# ╠═12c72b2c-c577-43c0-b7b7-3e783805172a
+# ╟─fd01d2d8-1402-48d2-9014-1b0953b196d5
+# ╟─12c72b2c-c577-43c0-b7b7-3e783805172a
 # ╠═362bd535-00ff-46e9-8942-31ef1a2d5712
 # ╠═082fd8fd-83d3-4134-b01e-447ee0c111c9
-# ╠═fd85dbba-6410-4e37-b2fb-44bdfd4e9b64
+# ╟─fd85dbba-6410-4e37-b2fb-44bdfd4e9b64
 # ╟─e6385d3c-fcab-49c2-967f-208f23840caf
-# ╠═d51f85ca-e7ef-4ff4-af85-df68ba7205ed
+# ╟─d51f85ca-e7ef-4ff4-af85-df68ba7205ed
+# ╠═fc2c3e77-a796-4799-ac9f-cd38f4d9baed
+# ╠═07ffb85e-6d80-4ffe-a99f-afc778a48b3c
+# ╠═f99bad79-ac09-4705-b333-0643709cd012
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
