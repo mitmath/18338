@@ -30,17 +30,52 @@ begin
 	   ~(isnothing(a) || isnothing(b) || a>b )	 	
 	end
 
-	level(τ) = sum( [outside(τ[i],τ[j]) for i=1:length(τ), j=1:length(τ)], dims=1 )
+    outside_matrix(τ) = [outside(τ[i],τ[j]) for i=1:length(τ), j=1:length(τ)]
+	
+	level(τ) = sum( outside_matrix(τ) , dims=1 )
+end
+
+# ╔═╡ 12c72b2c-c577-43c0-b7b7-3e783805172a
+function kreweras(τ)
+	μ = copy(τ)
+	μ[1] = push!(copy(μ[1]),n+1)
+	l = level(μ)
+	m = outside_matrix(μ)
+	answer = Vector{Vector{Int}}[]
+	levs = Int[]
+	for i=1:length(μ)
+	    b = μ[i]    
+	    for j=1:(length(b)-1)
+		 if b[j+1]==b[j]+1
+			 next = [b[j]]
+		 else
+		   z1 = (l .== l[i]+1)[:]    
+	       z2 = outside.([[b[j],b[j+1]]],μ)
+	       z = findall( z1.&& z2)
+		   next = sort(unique([first.(μ[z]).-1;last.(μ[z])]))
+		 end
+	    answer = [answer; [next]]
+		levs = [levs;l[i]] # needed for plotting
+		end
+	end
+	answer,levs
 end
 
 # ╔═╡ fd85dbba-6410-4e37-b2fb-44bdfd4e9b64
-@bind i Slider(1:length(NC), default=length(NC),show_value=true)
 
-# ╔═╡ 1812bf76-c279-4cb7-96c0-a6b022483f34
-τ=NC[i]
+	@bind i Slider(1:length(NC), default=length(NC),show_value=true)
+	
+
+
+# ╔═╡ 362bd535-00ff-46e9-8942-31ef1a2d5712
+τ = NC[i]
+
+# ╔═╡ 082fd8fd-83d3-4134-b01e-447ee0c111c9
+kreweras(τ)[1]
 
 # ╔═╡ d51f85ca-e7ef-4ff4-af85-df68ba7205ed
 begin 
+	
  levs = level(τ)
  m = maximum(levs)+1
  plot(legend=false, axis=([], false), size=(max(100,15*n),60))
@@ -52,6 +87,29 @@ begin
 	 end
  end
  plot!()
+end
+
+# ╔═╡ e6385d3c-fcab-49c2-967f-208f23840caf
+begin
+	κ,κlev = kreweras(τ) 
+	plot!()
+	for i=1:length(κ)
+
+		 if κ[i][end] < τ[1][end] || (κ[i]==[n])
+		 plot!( [κ[i][1]+.5,κ[i][end]+.5], [.5+κlev[i],.5+κlev[i]],color=:red, lw=2)
+		 else
+		 plot!( [κ[i][1]+.5,κ[i][end]+.5], [-.5+κlev[i],-.5+κlev[i]],color=:red, lw=2)
+		 end
+		 for j∈κ[i]
+			 if κ[i][end] < τ[1][end] || (κ[i]==[n])
+			 plot!([j+.5,j+.5],[.5+κlev[i],m], color=:red, lw=2)
+			 else
+			 plot!([j+.5,j+.5],[-.5+κlev[i],m], color=:red, lw=2)
+			 end
+			 annotate!(j,m,text(j,:bottom,7))
+		 end
+	 end
+	plot!()
 end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -1041,8 +1099,11 @@ version = "1.4.1+0"
 # ╠═9d7d2ce0-6c27-11ed-3f30-b923d2d7a957
 # ╠═49eec773-6835-4eaa-91d9-f7590e8b5280
 # ╠═fd01d2d8-1402-48d2-9014-1b0953b196d5
+# ╠═12c72b2c-c577-43c0-b7b7-3e783805172a
+# ╠═362bd535-00ff-46e9-8942-31ef1a2d5712
+# ╠═082fd8fd-83d3-4134-b01e-447ee0c111c9
 # ╠═fd85dbba-6410-4e37-b2fb-44bdfd4e9b64
-# ╠═1812bf76-c279-4cb7-96c0-a6b022483f34
+# ╟─e6385d3c-fcab-49c2-967f-208f23840caf
 # ╠═d51f85ca-e7ef-4ff4-af85-df68ba7205ed
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
