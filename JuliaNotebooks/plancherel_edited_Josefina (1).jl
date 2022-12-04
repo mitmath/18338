@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.18.0
+# v0.19.12
 
 using Markdown
 using InteractiveUtils
@@ -15,10 +15,7 @@ macro bind(def, element)
 end
 
 # ╔═╡ 47692b8b-f316-4508-b0a3-d8063a946811
-using Combinatorics,Random,LinearAlgebra, AbstractAlgebra, PlutoUI
-
-# ╔═╡ 5a45f941-dde6-4b55-93bd-4a7b402981ac
-using Plots
+using Combinatorics,Random,LinearAlgebra, AbstractAlgebra, PlutoUI, Plots
 
 # ╔═╡ d7cb6647-b94f-4866-8d4d-465fddc87f43
 using HypertextLiteral
@@ -79,37 +76,20 @@ function Nan2Pretty(r)
 		YoungTableau(Generic.Partition(shape),entries)
 end
 
-# ╔═╡ c0acd969-0071-4c0e-8d08-11a112018d17
-
-
-# ╔═╡ bb5e03d0-6c72-46c0-8871-ad0e1eafddf8
-
-
 # ╔═╡ ce4a8dfb-caa5-4bbb-a823-53384067a921
 @bind n Slider(1:100,default=10,show_value=true)
 
 # ╔═╡ 1bf3594d-ec1f-40ee-9d27-73e18fad58d3
-begin
-	
-	π = randperm(n)
-	y = Nan2Pretty(rsk(π))
-	
-end
-
-# ╔═╡ 4069cdb5-9d27-4c54-98d9-de5007796b4b
-Dump(y)
+π = randperm(n);
 
 # ╔═╡ 36f24ded-a1d2-4d1c-872e-95d1e4be0ee3
 @bind k Slider(1:n,default=n,show_value=true)
 
-# ╔═╡ fcc7e52a-28eb-4d70-8447-39ab552dd593
-begin
-	yy = Nan2Pretty(rsk(randperm(50)));
-end
+# ╔═╡ 5c233eed-3b79-4925-8516-837e0ab5216b
+@bind N Slider(500:700,show_value=true)
 
 # ╔═╡ f1365a86-cf21-41bd-8936-ff067ee4b13d
 begin
-	N = 500
 	Z = rsk(randperm(N))
 	I = findall(x->x>0,Z)
 	X = [x[1] for x in I] #row indices with non-nan entries
@@ -125,19 +105,10 @@ begin
 	p2= plot!(sort(u), Ω(sort(u)),linewidth=:5,ylims=(0,2.5),xlims=(-2.5,2.5),ratio=1)
 end
 
-# ╔═╡ 417ec51c-7fd0-4fba-9330-b295dfaca68c
-
-
 # ╔═╡ b5459a73-68d2-4a40-a77d-788c46418b24
 # Reference:
 # Borodin, A., Okounkov, A., & Olshanski, G. (2000). Asymptotics of Plancherel measures for symmetric groups. Journal of the American Mathematical Society, 13(3), 481-515.
 # Equation for \Omega(u) at the bottom of page 2 
-
-# ╔═╡ a9d01dd4-6a71-49c7-9449-432900b03d3f
-ra = randperm(10)
-
-# ╔═╡ 1bbe4480-13ce-495a-ab54-891300f79dae
-Nan2Pretty(rsk(ra))
 
 # ╔═╡ a1a72935-ec34-4670-a2d3-385410d97873
 md"""
@@ -184,9 +155,7 @@ function fit_to_width(result)
 end
 
 # ╔═╡ 42a9cd22-161c-4467-bfc4-6d8d7b70bb48
-
-	fit_to_width(Nan2Pretty(rsk(π[1:k])))
-
+fit_to_width(Nan2Pretty(rsk(π[1:k])))
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -312,7 +281,7 @@ deps = ["Random", "Serialization", "Sockets"]
 uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
 [[Downloads]]
-deps = ["ArgTools", "LibCURL", "NetworkOptions"]
+deps = ["ArgTools", "FileWatching", "LibCURL", "NetworkOptions"]
 uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 
 [[EarCut_jll]]
@@ -338,6 +307,9 @@ deps = ["Artifacts", "Bzip2_jll", "FreeType2_jll", "FriBidi_jll", "JLLWrappers",
 git-tree-sha1 = "d8a578692e3077ac998b50c0217dfd67f21d1e5f"
 uuid = "b22a6f82-2f65-5046-a5b2-351ab43fb4e5"
 version = "4.4.0+0"
+
+[[FileWatching]]
+uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[FixedPointNumbers]]
 deps = ["Statistics"]
@@ -704,9 +676,9 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[Qt5Base_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Fontconfig_jll", "Glib_jll", "JLLWrappers", "Libdl", "Libglvnd_jll", "OpenSSL_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libxcb_jll", "Xorg_xcb_util_image_jll", "Xorg_xcb_util_keysyms_jll", "Xorg_xcb_util_renderutil_jll", "Xorg_xcb_util_wm_jll", "Zlib_jll", "xkbcommon_jll"]
-git-tree-sha1 = "ad368663a5e20dbb8d6dc2fddeefe4dae0781ae8"
+git-tree-sha1 = "c6c0f690d0cc7caddb74cef7aa847b824a16b256"
 uuid = "ea2cea3b-5b76-57ae-a6ef-0a8af62496e1"
-version = "5.15.3+0"
+version = "5.15.3+1"
 
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets", "Unicode"]
@@ -1066,20 +1038,13 @@ version = "0.9.1+5"
 # ╠═47692b8b-f316-4508-b0a3-d8063a946811
 # ╠═fbce962e-3b29-11ec-13b9-0badb5434821
 # ╠═cde34da9-888f-45c8-9ccd-42978ab49764
-# ╠═c0acd969-0071-4c0e-8d08-11a112018d17
 # ╠═1bf3594d-ec1f-40ee-9d27-73e18fad58d3
-# ╠═4069cdb5-9d27-4c54-98d9-de5007796b4b
-# ╠═bb5e03d0-6c72-46c0-8871-ad0e1eafddf8
 # ╠═ce4a8dfb-caa5-4bbb-a823-53384067a921
 # ╠═36f24ded-a1d2-4d1c-872e-95d1e4be0ee3
 # ╠═42a9cd22-161c-4467-bfc4-6d8d7b70bb48
-# ╠═5a45f941-dde6-4b55-93bd-4a7b402981ac
-# ╠═fcc7e52a-28eb-4d70-8447-39ab552dd593
+# ╠═5c233eed-3b79-4925-8516-837e0ab5216b
 # ╠═f1365a86-cf21-41bd-8936-ff067ee4b13d
-# ╠═417ec51c-7fd0-4fba-9330-b295dfaca68c
 # ╠═b5459a73-68d2-4a40-a77d-788c46418b24
-# ╠═a9d01dd4-6a71-49c7-9449-432900b03d3f
-# ╠═1bbe4480-13ce-495a-ab54-891300f79dae
 # ╟─a1a72935-ec34-4670-a2d3-385410d97873
 # ╠═9f44a0bb-e259-454c-9553-5223e6257e24
 # ╠═d7cb6647-b94f-4866-8d4d-465fddc87f43

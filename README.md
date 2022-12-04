@@ -48,12 +48,15 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 3 | 10/17 Monday | Dpp notes | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2022hw3.pdf) |
 | 4 | 10/31 Monday |  | [Project Proposal](https://docs.google.com/document/d/1xW9tE7v1tDmGnN4C1w8cmesiwyeQBaD3HmdLLa6h0ss/edit?usp=sharing) |
 
+
 ## Projects
 
 Please check out [the list of possible class projects](https://github.com/mitmath/18338/blob/master/project_lists.pdf). You are also welcome to work on your own topic. On the second and fourth Fridays, @ 3-4pm, Sungwoo will have office hours for class projects. Students are strongly encouraged to talk to Sungwoo before the end of September, if they are looking for a class project topic. 
 
 There will be a project proposal (maybe a page) due Oct 26 and short 3-minute midterm presentation (project proposal) on 10/31.
 The proposal should have references, a short computation or a bit of mathematics or both, something to show that you are on your way.
+
+Please sign up for the final project presentation [here](https://docs.google.com/document/d/11mSnB3_4ad2n4zQ9qlm0Lw5PEyWylJcwKgtAsazh_vM/edit?usp=sharing)
 
 
 A full project report is due is 12/14.
@@ -78,16 +81,16 @@ A full project report is due is 12/14.
 | 13 | M | 24-Oct | LIS and Schur polynomials   |  |  |
 | 14 | W | 26-Oct | How many zeros of a random polynomial are real?  | [[Paper]](https://arxiv.org/abs/math/9501224) |  |
 | 15 | M | 31-Oct | Project presentation (Midterm)  |  |  |
-| 16 | W | 2-Nov | Growth Process   |  |  |
+| 16 | W | 2-Nov |    |  |  |
 | 17 | M | 7-Nov | Aztec Diamond and Airy Process    |  |  |
 | 18 | W | 9-Nov |     |  |  |
 | 19 | M | 14-Nov | Free Probability I   |  |  |
 | 20 | W | 16-Nov | Free Probability I   |  |  |
 | 21 | M | 21-Nov | Free Probability III : Free Cumulants   |  |  |
 |    | W | 23-Nov | *Canceled for Thanksgiving travel*  |  |  |
-| 22 | M | 28-Nov |        |  |  |
-| 23 | W | 30-Nov |        |  |  |
-| 24 | M | 5-Dec  | RMT in ML: Deep Learning       |  |  |
+| 22 | M | 28-Nov | Growth Process I       |  |  |
+| 23 | W | 30-Nov | Growth Process II       |  |  |
+| 24 | M | 5-Dec  | Growth Process III       |  |  |
 | 25 | W | 7-Dec  | Project Presentation I         |  |  |
 | 26 | M | 12-Dec  | Project Presentation II       |  |  |
 | 27 | W | 14-Dec  | Project Presentation III      |  |  |
