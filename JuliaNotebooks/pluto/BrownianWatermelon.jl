@@ -15,19 +15,19 @@ macro bind(def, element)
 end
 
 # ╔═╡ 1ad7dac5-0b72-434a-8f57-f363130d6848
-using Plots, LinearAlgebra, PlutoUI
+using Plots, LinearAlgebra, PlutoUI, FastGaussQuadrature
 
 # ╔═╡ bad17a96-74b0-11ed-2994-abd9abb7948a
 md"# Brownian Watermelon"
-
-# ╔═╡ 19777b41-36b4-4d68-a4a2-0bac1997d21a
-@bind n Slider(1:100,default=5, show_value=true)
 
 # ╔═╡ 3b25b6c1-b941-4bf9-92b2-2b85514e9402
 md"""
   Watermelon? $(@bind watermelon CheckBox())
   $(@bind go Button("Recompute"))
 """
+
+# ╔═╡ 19777b41-36b4-4d68-a4a2-0bac1997d21a
+@bind n Slider(1:100,default=5, show_value=true)
 
 # ╔═╡ 62344b2f-f8d1-478d-b32d-a1777252665a
 begin
@@ -43,14 +43,49 @@ begin
  plot!()
 end
 
+# ╔═╡ 9412fa62-ce9f-4a22-94e8-66425f7044de
+begin
+	GOE(n) = Symmetric(sym(randn(n,n)))
+	GUE(n) = Hermitian(sym(randn(n,n)+im*randn(n,n)))
+end
+
+# ╔═╡ 2a1c8811-036f-454b-8e33-744c21231cba
+x, w = gausshermite(n)
+
+# ╔═╡ aa6dccb1-be26-4271-a078-0b109e59843b
+let
+endpoint = 5
+	s=1000; 
+	δt = 1/s
+	h=(0:δt:endpoint)
+	 plot()
+  # v = [GOE(n)/√2]
+	v = [GUE(n)/√8]
+   for i=h
+	   #next = (1-1/s)*v[end] .+ (sqrt(δt)).*GOE(n)
+	   next = (1-(δt))*v[end] .+ (sqrt(δt)).*GUE(n)
+	  # push!(v,Symmetric(next))
+	   push!(v,Hermitian(next))
+   end
+
+   e = eigvals.(v)
+	f = sum(e)./length(e)
+	for j=1:n  plot!(h,[e[i][j] for i=1:length(h)],legend=false); end
+	for j=1:n plot!([0,endpoint],2*[x[j],x[j]  ]) end
+	scatter!(fill(endpoint,length(f)),f)
+ plot!()
+ end
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
+FastGaussQuadrature = "442a2c76-b920-505d-bb47-c5924d526838"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
+FastGaussQuadrature = "~0.5.0"
 Plots = "~1.37.0"
 PlutoUI = "~0.7.49"
 """
@@ -61,7 +96,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0-rc4"
 manifest_format = "2.0"
-project_hash = "4199a66cf8e9efb5f7aa3d2322581f430331fdb9"
+project_hash = "1f47f1c3ef875d56434d211ccd19689bc780ed4c"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -201,6 +236,12 @@ deps = ["Artifacts", "Bzip2_jll", "FreeType2_jll", "FriBidi_jll", "JLLWrappers",
 git-tree-sha1 = "74faea50c1d007c85837327f6775bea60b5492dd"
 uuid = "b22a6f82-2f65-5046-a5b2-351ab43fb4e5"
 version = "4.4.2+2"
+
+[[deps.FastGaussQuadrature]]
+deps = ["LinearAlgebra", "SpecialFunctions", "StaticArrays"]
+git-tree-sha1 = "1dfc97ea0df8b3689c2608db8bf28b3fc4f4147b"
+uuid = "442a2c76-b920-505d-bb47-c5924d526838"
+version = "0.5.0"
 
 [[deps.FileWatching]]
 uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
@@ -719,6 +760,17 @@ git-tree-sha1 = "d75bda01f8c31ebb72df80a46c88b25d1c79c56d"
 uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
 version = "2.1.7"
 
+[[deps.StaticArrays]]
+deps = ["LinearAlgebra", "Random", "StaticArraysCore", "Statistics"]
+git-tree-sha1 = "ffc098086f35909741f71ce21d03dadf0d2bfa76"
+uuid = "90137ffa-7385-5640-81b9-e52037218182"
+version = "1.5.11"
+
+[[deps.StaticArraysCore]]
+git-tree-sha1 = "6b7ba252635a5eff6a0b0664a41ee140a1c9e72a"
+uuid = "1e83bf80-4336-4d27-bf5d-d5a4f845583c"
+version = "1.4.0"
+
 [[deps.Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
 uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
@@ -1023,8 +1075,11 @@ version = "1.4.1+0"
 # ╔═╡ Cell order:
 # ╠═1ad7dac5-0b72-434a-8f57-f363130d6848
 # ╟─bad17a96-74b0-11ed-2994-abd9abb7948a
-# ╠═19777b41-36b4-4d68-a4a2-0bac1997d21a
 # ╟─3b25b6c1-b941-4bf9-92b2-2b85514e9402
 # ╠═62344b2f-f8d1-478d-b32d-a1777252665a
+# ╠═9412fa62-ce9f-4a22-94e8-66425f7044de
+# ╠═aa6dccb1-be26-4271-a078-0b109e59843b
+# ╠═19777b41-36b4-4d68-a4a2-0bac1997d21a
+# ╠═2a1c8811-036f-454b-8e33-744c21231cba
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
