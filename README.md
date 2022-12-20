@@ -115,7 +115,7 @@ A full project report is due is 12/14.
 | | Madhav Sankaranarayanan| Determinantal Point Processes and Growth Models| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Madhav%20Sankaranarayanan/18.338%20Project%20Presentation.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Madhav%20Sankaranarayanan/18.338%20Project%20Report-1.pdf)|[link](https://github.com/mitmath/18338/tree/master/projects/2021/Madhav%20Sankaranarayanan) |
 | | Saaketh Vedantam| Analyzing Higher Order Effects on Eigenvalues| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Saaketh%20Vedantam/Presentation.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2021/Saaketh%20Vedantam/Final%20Report.pdf) | |
 | |Theo Diamandis | Randomization to Speed up Convex Optimization| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Theo%20Diamandis/presentation.jl)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Theo%20Diamandis/tdiamand-report.pdf)| |
-| | | | | | |
+| 2020 |Max Li |Exploring Densities of Gaussian Quadratic Forms | | | |
 | | | | | | |
 | | | | | | |
 | | | | | | |
