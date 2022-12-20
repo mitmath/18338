@@ -104,9 +104,9 @@ A full project report is due is 12/14.
 | |Evelyn Ringoot |Largest Singular Values of Bi-Diagonal matrices in Julia | | | |
 | | Guanghao Ye & Lichen Zhang |How to Sample Uniform Spanning Trees, DPPs, and NDPPs | | | |
 | |Bowen Zhu  |Multivariate Orthogonal Polynomials Symbolically in Julia | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| | Kyle Fridberg | Random Reflections in R^2 | | | |
+| |Luke Robitaille | Moments of Wachter Law | | | |
+| 2021  | | | | | |
 | | | | | | |
 | | | | | | |
 |2012|Chenhui Hu | Spectral Perturbation of Small-World Networks | | | |
