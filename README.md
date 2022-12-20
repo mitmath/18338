@@ -98,7 +98,17 @@ A full project report is due is 12/14.
 ## Previous and current Projects 
 
 |Year|Name|Topic|Slides|Report|other materials|
-|-|---|--------|-|-|-|
+|-|---|-------------|-|-|-|
+| 2022 |Xiaomin Li & Yi Tian | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
 |2012|Chenhui Hu | Spectral Perturbation of Small-World Networks | | | |
 | | Mina Karzand | Random Matrix Theory and Non-coherent MIMO Communications | | | | 
 | |Charlotte Kiang | 	RMT Applications to Control Theory | | | |
@@ -107,9 +117,4 @@ A full project report is due is 12/14.
 | | Helen Xie | RMT Applications to Transport Property | | | | 
 | | Yufei Zhao| Spectrual Distributions of Random Graphs | | | |
 | |Yi Zeng |North Pole Problem | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+ 
