@@ -107,15 +107,14 @@ A full project report is due is 12/14.
 | | Kyle Fridberg | Random Reflections in R^2 | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/kf_report.pdf) | |
 | |Luke Robitaille | Moments of Wachter Law | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/lr_report.pdf) | |
 | 2021  | Aleksandr Zimin | The Weingartens function for beta=1,2,4 and its possible generalizations using Jack polynomials| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Aleksandr%20Zimin/Jack_polynomials.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Aleksandr%20Zimin/Jack%20polynomials%20project.ipynb)| |
-| | Aviva Englander | Maximum Eigenvalues in Brownian Motion and Their Correlation with the
-Airy Process | | [link](https://github.com/mitmath/18338/blob/master/projects/2021/Aviva%20Englander/Final_Report18.338.pdf)| [link](https://github.com/mitmath/18338/tree/master/projects/2021/Aviva%20Englander)|
+| | Aviva Englander | Maximum Eigenvalues in Brownian Motion and Their Correlation with the Airy Process | | [link](https://github.com/mitmath/18338/blob/master/projects/2021/Aviva%20Englander/Final_Report18.338.pdf)| [link](https://github.com/mitmath/18338/tree/master/projects/2021/Aviva%20Englander)|
 | | Daniel Pickard |Sampling Continuous Determinantal Point Processes with ApproxFun |[link](https://github.com/mitmath/18338/blob/master/projects/2021/Daniel%20Pickard/presentation.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2021/Daniel%20Pickard/daniel_pickard_term_project.pdf) |[link](https://github.com/mitmath/18338/tree/master/projects/2021/Daniel%20Pickard) |
 | |Hussein Fellahi | Random Matrix Filtering| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Hussein%20Fellahi/18338_Presentation-2.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2021/Hussein%20Fellahi/18_338_Final_Project.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2021/Hussein%20Fellahi)|
 | |Jiahai Feng |Hypothesis testing in high dimensions |[link](https://github.com/mitmath/18338/blob/master/projects/2021/Jiahai%20Feng/slidespdf.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2021/Jiahai%20Feng/report.pdf) | |
-| | Josefina Menendez| | | | |
-| | Madhav Sankaranarayanan| | | | |
-| | Saaketh Vedantam| | | | |
-| |Theo Diamandis | | | | |
+| | Josefina Menendez| What is the expected number of points drawn from a Determinantal Point Process defined by a Wishart kernel? | | |[link](https://github.com/mitmath/18338/tree/master/projects/2021/Josefina%20Menendez) |
+| | Madhav Sankaranarayanan| Determinantal Point Processes and Growth Models| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Madhav%20Sankaranarayanan/18.338%20Project%20Presentation.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Madhav%20Sankaranarayanan/18.338%20Project%20Report-1.pdf)|[link](https://github.com/mitmath/18338/tree/master/projects/2021/Madhav%20Sankaranarayanan) |
+| | Saaketh Vedantam| Analyzing Higher Order Effects on Eigenvalues| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Saaketh%20Vedantam/Presentation.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2021/Saaketh%20Vedantam/Final%20Report.pdf) | |
+| |Theo Diamandis | Randomization to Speed up Convex Optimization| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Theo%20Diamandis/presentation.jl)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Theo%20Diamandis/tdiamand-report.pdf)| |
 | | | | | | |
 | | | | | | |
 | | | | | | |
