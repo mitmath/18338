@@ -99,7 +99,7 @@ A full project report is due is 12/14.
 
 |Year|Name|Topic|Slides|Report|other materials|
 |-|---|-------------|-|-|-|
-| 2022 |Xiaomin Li & Yi Tian | Limiting Spectral Distributions of Random Matrices under Finite-Rank Perturbations | | | |
+| 2022 |Xiaomin Li & Yi Tian | Limiting Spectral Distributions of Random Matrices under Finite-Rank Perturbations | [link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_slides.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2022/XiaominLiandYiTian) |
 | |Ron Nissim | The KPZ Equation and Fixed Point | | | |
 | |Evelyn Ringoot |Largest Singular Values of Bi-Diagonal matrices in Julia | | | |
 | | Guanghao Ye & Lichen Zhang |How to Sample Uniform Spanning Trees, DPPs, and NDPPs | | | |
