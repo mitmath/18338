@@ -115,12 +115,21 @@ A full project report is due is 12/14.
 | | Madhav Sankaranarayanan| Determinantal Point Processes and Growth Models| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Madhav%20Sankaranarayanan/18.338%20Project%20Presentation.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Madhav%20Sankaranarayanan/18.338%20Project%20Report-1.pdf)|[link](https://github.com/mitmath/18338/tree/master/projects/2021/Madhav%20Sankaranarayanan) |
 | | Saaketh Vedantam| Analyzing Higher Order Effects on Eigenvalues| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Saaketh%20Vedantam/Presentation.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2021/Saaketh%20Vedantam/Final%20Report.pdf) | |
 | |Theo Diamandis | Randomization to Speed up Convex Optimization| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Theo%20Diamandis/presentation.jl)| [link](https://github.com/mitmath/18338/blob/master/projects/2021/Theo%20Diamandis/tdiamand-report.pdf)| |
-| 2020 |Max Li |Exploring Densities of Gaussian Quadratic Forms | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| 2020 |Max Li |Exploring Densities of Gaussian Quadratic Forms | [link](https://github.com/mitmath/18338/blob/master/projects/2020/ML_slides.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2020/ML_report.pdf)| |
+| |Poorya Habibzadeh |Deriving a closed form for the Cauchy transform of two laws | |[link](https://github.com/mitmath/18338/blob/master/projects/2020/PH_report.pdf) | |
+| |Shawn Im |Determinantal Point Processes and β-ensembles | |[link](https://github.com/mitmath/18338/blob/master/projects/2020/SI_report.pdf) | |
+| |Chun-Hei Lam |Computation of Equilibrium Measure | [link](https://github.com/mitmath/18338/blob/master/projects/2020/SL_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2020/SL_report.pdf) | |
+| | Tony Tohme| Simplexmethod and random matrices| [link](https://github.com/mitmath/18338/blob/master/projects/2020/TT_slides.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2020/TT_report.pdf)| |
+| 2016 |Antoni Musolas |Differential geometrical approach to covariance estimation | | | |
+| |Manishika Agaskar |	Diffraction gain of free-space optical communications in atmospheric turbulence | | | |
+| |Hong Hu | Spectral Initialization and its Performance Analysis| | | |
+| |Anuran Makur	|Maximal Correlation Functions: Hermite, Laguerre, and Jacobi  | | | |
+| | John Urschel |On the Minimal Eigenpair of Erdos-Renyi Graphs | | | |
+| |John Napp |RMT and the complexity of linear optics | | | |
+| |Alex Wein |Random Matrix Contiguity | | | |
+| |Ravi Bajaj |Central Limit Theorem for log-Determinant of Wigner Matrices | | | |
+| |Brandon Tran |Application of phase transitions in spiked covariance matrices to synchronization problems | | | |
+| 2015 | | | | | |
 | | | | | | |
 | | | | | | |
 | | | | | | |
