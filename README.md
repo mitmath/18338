@@ -94,3 +94,22 @@ A full project report is due is 12/14.
 | 25 | W | 7-Dec  | Project Presentation I         |  |  |
 | 26 | M | 12-Dec  | Project Presentation II       |  |  |
 | 27 | W | 14-Dec  | Project Presentation III      |  |  |
+
+## Previous and current Projects 
+
+|Year|Name|Topic|Slides|Report|other materials|
+|-|---|--------|-|-|-|
+|2012|Chenhui Hu | Spectral Perturbation of Small-World Networks | | | |
+| | Mina Karzand | Random Matrix Theory and Non-coherent MIMO Communications | | | | 
+| |Charlotte Kiang | 	RMT Applications to Control Theory | | | |
+| |Yi Sun| Virasoro Constraints and the Tracy-Widom Law | | | | 
+| |Matt Welborn | Density of states of disordered systems via free addition  | | | | 
+| | Helen Xie | RMT Applications to Transport Property | | | | 
+| | Yufei Zhao| Spectrual Distributions of Random Graphs | | | |
+| |Yi Zeng |North Pole Problem | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
