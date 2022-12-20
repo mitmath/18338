@@ -97,15 +97,15 @@ A full project report is due is 12/14.
 
 ## Previous and current Projects 
 
-|Year|Name|Topic|Slides|Report|other materials|
+|Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
 | 2022 |Xiaomin Li & Yi Tian | Limiting Spectral Distributions of Random Matrices under Finite-Rank Perturbations | [link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_slides.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2022/XiaominLiandYiTian) |
-| |Ron Nissim | The KPZ Equation and Fixed Point | | | |
-| |Evelyn Ringoot |Largest Singular Values of Bi-Diagonal matrices in Julia | | | |
-| | Guanghao Ye & Lichen Zhang |How to Sample Uniform Spanning Trees, DPPs, and NDPPs | | | |
-| |Bowen Zhu  |Multivariate Orthogonal Polynomials Symbolically in Julia | | | |
-| | Kyle Fridberg | Random Reflections in R^2 | | | |
-| |Luke Robitaille | Moments of Wachter Law | | | |
+| |Ron Nissim | The KPZ Equation and Fixed Point | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/rn_report.pdf) | |
+| |Evelyn Ringoot |Largest Singular Values of Bi-Diagonal matrices in Julia | [link](https://github.com/mitmath/18338/blob/master/projects/2022/EveylneRingoot/er_slides.pptx) |[link](https://github.com/mitmath/18338/blob/master/projects/2022/EveylneRingoot/er_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2022/EveylneRingoot) |
+| | Guanghao Ye & Lichen Zhang |How to Sample Uniform Spanning Trees, DPPs, and NDPPs | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/gylz_report.pdf) | |
+| |Bowen Zhu  |Multivariate Orthogonal Polynomials Symbolically in Julia | |[link](https://github.com/mitmath/18338/blob/master/projects/2022/bz_report.pdf) | |
+| | Kyle Fridberg | Random Reflections in R^2 | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/kf_report.pdf) | |
+| |Luke Robitaille | Moments of Wachter Law | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/lr_report.pdf) | |
 | 2021  | | | | | |
 | | | | | | |
 | | | | | | |
