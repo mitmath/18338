@@ -99,11 +99,11 @@ A full project report is due is 12/14.
 
 |Year|Name|Topic|Slides|Report|other materials|
 |-|---|-------------|-|-|-|
-| 2022 |Xiaomin Li & Yi Tian | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| 2022 |Xiaomin Li & Yi Tian | Limiting Spectral Distributions of Random Matrices under Finite-Rank Perturbations | | | |
+| |Ron Nissim | The KPZ Equation and Fixed Point | | | |
+| |Evelyn Ringoot |Largest Singular Values of Bi-Diagonal matrices in Julia | | | |
+| | Guanghao Ye & Lichen Zhang |How to Sample Uniform Spanning Trees, DPPs, and NDPPs | | | |
+| |Bowen Zhu  |Multivariate Orthogonal Polynomials Symbolically in Julia | | | |
 | | | | | | |
 | | | | | | |
 | | | | | | |
