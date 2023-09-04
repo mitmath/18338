@@ -109,6 +109,6 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 | |Yi Sun| Virasoro Constraints and the Tracy-Widom Law | | | | 
 | |Matt Welborn | Density of states of disordered systems via free addition  | | | | 
 | | Helen Xie | RMT Applications to Transport Property | | | | 
-| | Yufei Zhao| Spectrual Distributions of Random Graphs | | | |
+| | Yufei Zhao| Spectral Distributions of Random Graphs | | | |
 | |Yi Zeng |North Pole Problem | | | |
  
