@@ -52,15 +52,14 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 1 | W | 6-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/HLJslides.pdf)  |  |
 | 2 | M | 11-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
 | 3 | W | 13-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
-| 4 | M | 18-Sep | Matrix Calculus and Jacobians of Matrix Decompositions  | Ch 9, 10  | HW1  |
 | 5 | W | 20-Sep | Determinantal Point Processes (DPP)  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
 | 6 | M | 25-Sep | Guest lecture (Alexei Borodin) |  |  |
-| 7 | W | 27-Sep | Algorithms for Sampling DPPs   |  |  |
-| 8 | M | 2-Oct  | Continuous DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb) | HW2 |
+| 7 | W | 27-Sep | Algorithms for Sampling DPPs   |  | HW1 |
+| 8 | M | 2-Oct  | Continuous DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb) |  |
 | 9 | W | 4-Oct  | Longest Increasing Sequence (LIS)  |  |  |
 |   | M | 9-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 11-Oct | LIS and RSK algorithm  |  |  |
-| 11 | M | 16-Oct | LIS and Group representation   |  | HW3 |
+| 11 | M | 16-Oct | LIS and Group representation   |  |  |
 | 12 | W | 18-Oct | Schur polynomials   |  |  |
 | 13 | M | 23-Oct | Jack polynomials I   |  |  |
 | 14 | W | 25-Oct | Jack polynomials II  |  |  |
