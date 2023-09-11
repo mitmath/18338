@@ -35,6 +35,16 @@ Additional topics will be decided based on the interests of the students. No par
 
 This is a graduate course that is intended to be flexible so as to cover the backgrounds of different students. Generally grading will be based on satisfactory completion of problem sets and projects or equivalents.  Homework may be peer graded, and we may look to a rotating student for solutions.  Homework may be every week or two.
 
+## Homeworks
+
+There will be a few homeworks to start class off including access to the course textbook (being written) where comments are being asked for.
+Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas, please email ywang02@mit.edu.
+
+|#|Due| Reading| Link |
+|-|---|----|------|
+| 1 | 9/27 Wed | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) |
+
+
 ## Schedule (Tentative)
 
 |#|Day| Date |  Topic | Reading| HW Due |
