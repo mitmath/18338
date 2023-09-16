@@ -52,6 +52,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 1 | W | 6-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/HLJslides.pdf)  |  |
 | 2 | M | 11-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
 | 3 | W | 13-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
+| 4 | M | 18-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | |
 | 5 | W | 20-Sep | Determinantal Point Processes (DPP)  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) | HW1 |
 | 6 | M | 25-Sep | Guest lecture (Alexei Borodin) |  |  |
 | 7 | W | 27-Sep | Algorithms for Sampling DPPs   |  |  |
