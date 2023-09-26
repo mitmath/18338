@@ -54,11 +54,11 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 2 | M | 11-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
 | 3 | W | 13-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 18-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | |
-| 5 | W | 20-Sep | Determinantal Point Processes (DPP)  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) |
-| 6 | M | 25-Sep | Guest lecture (Alexei Borodin) |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) |
+| 5 | W | 20-Sep | Determinantal Point Processes (DPP)  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) Due |
+| 6 | M | 25-Sep | Guest lecture (Alexei Borodin) |  |  |
 | 7 | W | 27-Sep | Algorithms for Sampling DPPs   |  |  |
 | 8 | M | 2-Oct  | Continuous DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb) |  |
-| 9 | W | 4-Oct  | Longest Increasing Sequence (LIS)  |  |  |
+| 9 | W | 4-Oct  | Longest Increasing Sequence (LIS)  |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) Due |
 |   | M | 9-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 11-Oct | LIS and RSK algorithm  |  |  |
 | 11 | M | 16-Oct | LIS and Group representation   |  |  |
