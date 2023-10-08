@@ -44,6 +44,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |-|---|----|------|
 | 1 | 9/20 Wed | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) |
 | 2 | 10/4 Wed | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) |
+| 3 | 10/18 Wed | DPP notes | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf) |
 
 
 ## Schedule (Tentative)
@@ -62,7 +63,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |   | M | 9-Oct  | Indigenous People's Day    |  |  |
 | 10 | W | 11-Oct | LIS and RSK algorithm  |  |  |
 | 11 | M | 16-Oct | LIS and Group representation   |  |  |
-| 12 | W | 18-Oct | Schur polynomials   |  |  |
+| 12 | W | 18-Oct | Schur polynomials   |  | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf) Due  |
 | 13 | M | 23-Oct | Jack polynomials I   |  |  |
 | 14 | W | 25-Oct | Jack polynomials II  |  |  |
 | 15 | M | 30-Oct | Project presentation (Midterm)  |  |  |
