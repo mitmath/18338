@@ -12,11 +12,41 @@
 
 \maketitle
 
+
+
+
 {\color{blue} **Blue texts are hyperlinks**}
+
+
+One of the major requirements of 18.338 is a final project.  My favorite projects include a mix of theory and Julia, but many students have chosen to concentrate
+on only one or the other of theory and coding.  You can find lists of past projects that students have completed in \href{ ??? } {???}.  
+
+
+A really nice research project: 
+Last year, Luke <last name> discovered a pattern in a triangular array of numbers that I published.  <link to Luke's project>
+These numbers are related to moments for Jacobi and are a generalization of Narayana numbers.
+These papers may be related [.... list of papers....]
+See if you find more relationships between 
+acobi moments are  these numbers.   An advanced project probably beyond the scope of a class project but a phd thesis investigation 
+is to prove these numbers are the same and/or learn and  use free probability to see connections.
+
+
+
+
+
 \subsection*{Computational}
 \begin{enumerate}
     \item Implement in Julia, numerical computations of Jack Polynomial, Hypergeometric functions of a matrix argument and/or M.O.P.s. See \href{https://arxiv.org/pdf/math/0505344.pdf}{\emph{\color{blue}The Efficient Evaluation of the Hypergeometric Function of a Matrix Argument}} and \href{https://arxiv.org/pdf/math-ph/0409066.pdf}{\emph{\color{blue}MOPS: Multivariate Orthogonal Polynomials (symbolically)}}. One could numerically demonstrate the orthogonality of the multivariate Hermite, Laguerre and Jacobi polynomials. Also one could compare Hypergeometric representations of eigenvalue statistics (both scaling limits, or finite RMTs) with the corresponding Fredholm deteriminant representations. See \href{https://arxiv.org/pdf/0804.2543.pdf}{\emph{\color{blue}On the Numerical Evaluation of Fredholm Determinants}} for implementing Fredholm determinants. (A few of these may exist in MATLAB, C++, and maybe even Julia already.)
+    
+    
+    [say something and point to Bowen]
+    
+    
     \item There are many many cool processes that are described by the Airy process. The coolest might be the Aztec diamond, but there are also, Dyson Brownian Motion (implementing DBM would need a very careful literature search), Large passage percolation, non-intersecting Brownian bridges, buses in Cuernavaca, parked cars. (Look up for various papers describing the KPZ class.) Implement any of these, and compare its limiting curve with the Airy process and see if they match up. (Sungwoo has a notebook with one approach in Julia)
+    
+    [this needs to be modernized in light of sungwoo and simeon[
+    
+    
     \item Numerically solve Painlev{\'e} differential equations, using DifferentialEquations.jl. Check out if it is possible to numerically solve especially in Jimbo-Miwa-Okamoto $\sigma$-form of the Painlev{\'e} equations. See Forrester's book, Chapter 8.1 for definitions. See if the numerical solutions match Finite RMT laws: For example Painlev{\'e} IV should match the CDF of the largest eigenvalue of $n\times n$ GUE. 
     \item Write a Julia code to demonstrate Yau's universality spacing laws, see \href{http://www.ams.org/journals/bull/0000-000-00/S0273-0979-2012-01372-1/S0273-0979-2012-01372-1.pdf}{\emph{\color{blue}Universality of Local Spectral Statistics of Random Matrices}}.
     \item Look up the presentation \href{http://www.maths.usyd.edu.au/u/olver/talks/RandomMatrix.pdf}{\emph{\color{blue}Numerical calculation of random matrix distributions and orthogonal polynomials}} given by Sheehan Olver (specifically the pictures on page 26, 27 and 47). Use his Mathematica code to reproduce his pictures and possibly explore a RMT experiment, but anyway explain what these pictures represent.
