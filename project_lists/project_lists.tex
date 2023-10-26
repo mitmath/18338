@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+
+\title{Possible Class Projects, 2023 Fall 18.338}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+{\color{blue} **Blue texts are hyperlinks**}
+
+
+One of the major requirements of 18.338 is a final project.  My favorite projects include a mix of theory and Julia, but many students have chosen to concentrate
+on only one or the other of theory and coding.  You can find lists of past projects that students have completed in \href{https://github.com/mitmath/18338#previous-projects}{\color{blue} the class github page}.  
+
+\textbf{These are merely a suggestion. It is okay to double-dip with your personal research as long as the research is happening this semester.}
+
+
+\subsection*{Featured projects}
+\begin{enumerate}
+\item  A really nice research project: Last year, \href{https://github.com/mitmath/18338/blob/master/projects/2022/lr_report.pdf}{\color{blue}Luke Robitaille} discovered a pattern in a triangular array of numbers that I published in a \href{https://www.sciencedirect.com/science/article/pii/S0024379514007307}{\color{blue}paper}. These numbers are related to moments for Jacobi ensembles and are a generalization of Narayana numbers. These numbers are may be related to the papers (Kreweras and three more) in \href{https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf}{\color{blue}Homework 3, problem 4}. 
+
+See if you can find more relationships between Jacobi moments and these numbers. An advanced project, probably beyond the scope of a class project but a Ph.D. thesis investigation, is to prove these numbers are the same and/or learn/use free probability to see connections.
+
+\item Numerically solve Painlev{\'e} differential equations, using DifferentialEquations.jl. These are better solved in original form of Painlev{\'e}'s derivations. However the solutions of these differential equations, whenever transformed in a correct way (to the $\sigma$-form), will give eigenvalue statistics of random matrices. 
+
+Check out if it is possible to numerically solve especially in Jimbo-Miwa-Okamoto $\sigma$-form of the Painlev{\'e} equations, or if you can correctly transform the original solution into $\sigma$-form. See Forrester's book, Chapter 8.1 for definitions. See if the numerical solutions match Finite RMT laws: For example Painlev{\'e} IV should match the CDF of the largest eigenvalue of $n\times n$ GUE. 
+
+\item Take a look at the formula \href{http://dlmf.nist.gov/18.22#E2}{\color{blue}18.22.2} for discrete orthogonal polynomials. In many of Kurt Johansson's papers, for example, \href{https://www.jstor.org/stable/2661375}{\color{blue} Discrete orthogonal polynomial ensembles and the Plancherel measure}, the connections of discrete orthogonal polynomial ensembles and random matrix theory has been revealed. Try to come up with ANY matrix model that has eigenvalue statistics related to any one of Hahn/Krawtchouk/Meixner/Charlier polynomial ensembles. This is also a deep research level question. 
+\end{enumerate}
+
+
+
+
+\subsection*{Computational}
+\begin{enumerate}
+    \item Implement in Julia, numerical computations of Jack Polynomial, Hypergeometric functions of a matrix argument and/or M.O.P.s. See \href{https://arxiv.org/pdf/math/0505344.pdf}{\emph{\color{blue}The Efficient Evaluation of the Hypergeometric Function of a Matrix Argument}} and \href{https://arxiv.org/pdf/math-ph/0409066.pdf}{\emph{\color{blue}MOPS: Multivariate Orthogonal Polynomials (symbolically)}}. One could numerically demonstrate the orthogonality of the multivariate Hermite, Laguerre and Jacobi polynomials. Also one could compare Hypergeometric representations of eigenvalue statistics (both scaling limits, or finite RMTs) with the corresponding Fredholm deteriminant representations. See \href{https://arxiv.org/pdf/0804.2543.pdf}{\emph{\color{blue}On the Numerical Evaluation of Fredholm Determinants}} for implementing Fredholm determinants. (A few of these may exist in MATLAB, C++, and maybe even Julia already.) Some initial development has been done by \href{https://github.com/mitmath/18338/blob/master/projects/2022/bz_report.pdf}{\color{blue}Bowen Zhu in the Fall 2022 class}.     
+    \item There are many many cool processes that are described by the Airy process. The coolest might be the Aztec diamond, but there are also, Dyson Brownian Motion (implementing DBM would need a very careful literature search), Large passage percolation, non-intersecting Brownian bridges, buses in Cuernavaca, parked cars. (Look up for various papers describing the KPZ class.) Implement any of these, and compare its limiting curve with the Airy process and see if they match up. Ask us about any existing implementations you might want to take a look. 
+    \item Write a Julia code to demonstrate Yau's universality spacing laws, see \href{http://www.ams.org/journals/bull/0000-000-00/S0273-0979-2012-01372-1/S0273-0979-2012-01372-1.pdf}{\emph{\color{blue}Universality of Local Spectral Statistics of Random Matrices}}.
+    \item Look up the presentation \href{http://www.maths.usyd.edu.au/u/olver/talks/RandomMatrix.pdf}{\emph{\color{blue}Numerical calculation of random matrix distributions and orthogonal polynomials}} given by Sheehan Olver (specifically the pictures on page 26, 27 and 47). Use his Mathematica code to reproduce his pictures and possibly explore a RMT experiment, but anyway explain what these pictures represent.
+    \item Modernize the \href{http://people.csail.mit.edu/cychan/BetaEstimator.html}{\emph{\color{blue}Cy's Beta Estimator}} for the spacing data previously done by Cy Chan in 2006, and maybe relate it to Machine learning (see Ben Taska's papers on \href{http://www.seas.upenn.edu/~taskar/}{\emph{\color{blue}Geometry of Diversity and Determinantal Point Processes}}.)
+    \item On Haar measure, look up the talk \href{http://web.mit.edu/sea06/agenda/talks/Muirhead.pdf}{\emph{\color{blue}On Powers of a Random Orthogonal Matrix}} and the paper \href{http://arxiv.org/abs/0811.2678}{\emph{\color{blue}The ``north pole problem'' and random orthogonal matrices}} by Muirhead, and do a numerical experiment to verify their results, and there may be a Jack polynomial proof. Also consider other Haar measure experiments, ask us for ideas.
+    \item Rewrite Odlyzko's Riemann Zeta Root finder in Julia, see \href{http://www.dtc.umn.edu/~odlyzko/doc/arch/zeta.zero.spacing.pdf}{\emph{\color{blue}On the Distribution of Spacings between Zeros of the Zeta Function}}. You will REALLY understand Riemann Zeta function if you do! (Mike Rubinstein at Waterloo may have some codes to look at)
+    \item Read up to page 4 of \href{http://www.math.upenn.edu/~pemantle/papers/Preprints/zeros.pdf}{\emph{\color{blue}The distribution of zeros of the derivative of a random polynomial}} by Pemantle and Rivin. Redo more carefully the experiments in r Julia. The paper mentions experiments but not so much what they saw.
+\end{enumerate}
+\subsection*{Theoretical}
+\begin{enumerate}
+    \item Give a presentation and write a summary about Brownian Carousels. See \href{https://arxiv.org/pdf/0712.2000.pdf}{\emph{\color{blue}Continuum limits of random matrices and the Brownian carousel}}. 
+    \item Extend the known table for $p(n,k)$ the probability that \texttt{a=randn(n)} has $k$ real eigenvalues. (Read the paper on \href{http://www-math.mit.edu/~edelman/homepage/papers/howmany.pdf}{\emph{\color{blue}How many eigenvalues of a random matrix are real}} by Edelman and the table in page 9 of the thesis \href{http://dspace.mit.edu/bitstream/handle/1721.1/54840/587445752.pdf?sequence=1}{\emph{\color{blue}On the computation of probabilities and eigenvalues for random and non-random matrices}} by Sundaresh. Notice that there are three conjectures. This could also be a computational project. Also check \href{http://prl.aps.org/pdf/PRL/v95/i23/e230201}{\emph{\color{blue}Statistics of Real Eigenvalues in Ginibre’s Ensemble of Random Real Matrices}}.
+    \item Hermite kernel could be generalized with a choice of non-integer $n$. See \href{https://functions.wolfram.com/HypergeometricFunctions/HermiteHGeneral/02/}{\emph{\color{blue}generalized Hermite functions}}. With DPP, one could even sample the ``eigenvalues." It might not be a probability measure, but the concept of signed probability is out there. Be the first to explore, come talk to us, this could be easily a Ph.D. thesis. 
+    \item Do the following
+    \begin{enumerate}
+        \item Explain the Weingarten formula for Haar measure (See page 380 of \emph{Lectures on the Combinatorics of Free Probability} by  Nica \& Speicher) and  find out if there is a real version ($\beta = 1$). (Maybe hard: analyze the (computational) complexity of this formula.)
+        \item What do Schur Polynomials tell us? Compare and contrast.
+    \end{enumerate}
+    \item Consider computing an exact formula for $\mathbb{E}[\text{Tr}(A^k)]$ where $A$ is an instance of $\beta$-Hermite ensemble. There is a method implemented in \href{https://arxiv.org/pdf/math-ph/0409066.pdf}{\emph{\color{blue}M.O.P.s}}. Alternatively, one can also try to use the Tridiagonal ensembles which has the best computational complexity. Ask about the ``How I met Mike" slide. 
+    \item A Monte-Carlo simulation on $k$-th largest eigenvalues of $\beta$-Hermite, with large $n$, for example $n>10^6$, does not need a full $n\times n$ matrix. However, its $m\times m$ upper left corner (of the Hermite tridiagonal model) captures large eigenvalue behaviors. For example, $m=10 n^{1/3}$ is enough for the largest eigenvalue $(k=1)$. This is connected to the eigenvectors and the location of Airy roots. Approximate and justify the choice of $m$, for a given $k$. Some experiments (in the Laguerre case) may be found in \href{https://github.com/mitmath/18338/blob/master/projects/2022/EveylneRingoot/er_report.pdf}{\color{blue}Eveylne Ringoot in the Fall 2022 class}
+    \item Generalizing Tracy and Widom's derivation. Read Chapter 9.4 of Forrester's book. Tracy and Widom's original derivation of Painlev{\'e} equation from Airy, Bessel, Sine kernels rely on certain set of conditions defining these kernels. See (9.41) of Forrester. One could work on a generalization of the condition imposed on (9.56) and see if it leads to any differential equations. See this paper by \href{https://link.springer.com/article/10.1007/BF02101734}{\color{blue}Tracy and Widom}.
+    \item Give a presentation and write a summary about Random Matrix Theories in Quantum Physics. One reference is \href{http://arxiv.org/abs/cond-mat/9707301}{\emph{\color{blue}Random Matrix Theories in Quantum Physics: Common Concepts}}.
+    \item Rigorously define $\beta$-ghost and shadows. See \href{https://math.mit.edu/~edelman/publications/random_matrix_technique.pdf}{\emph{\color{blue}The Random Matrix Technique of Ghosts and Shadows}}. 
+    \item Give a presentation and write a summary about RMT applications in Wireless communication. One reference might be \emph{Random matrix theory and wireless communications} by Tulino \& Verdu.
+    \item Find the eigenvectors of the Jacobian matrix for the change of variables from a symmetric Tridiagonal matrix $T$ to its eigenvalues and the first component of the eigenvectors of $T$.
+    \item Is it true that Hermite, Laguerre and Jacobi roots can be computed to high relative accuracy (the small ones have nearly all exact digits) but probably one must use a good: 
+    \begin{enumerate}
+        \item Tridiogonal eigensolver
+        \item Bidiagonal SVD solver
+        \item Perhaps CS decomposition that has not been invented yet or maybe in Brian Sutton's work.
+    \end{enumerate}
+    \item There should be a stochastic operator model for free probability. Specifically the eigenvalues of $A+QBQ'$ limit (for any $\beta$ simultaneously) should be a stochastic operator itself.
+    \item Compare two DPP samplers with applciations runtime analysis?
+\end{enumerate}
+
+\end{document}
+
+
