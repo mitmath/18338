@@ -85,6 +85,17 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
+| 2023 |Gaurav Arya| Differentiable Determinental Point Processes |  |[link](https://github.com/mitmath/18338/blob/master/projects/2023/aryagaurav_LATE_101101_3887118_main.pdf)| 
+| |Andrey Bryutkin & Diego Chavez| Painlevé Systems and Eigenvalue Distributions |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887228_Painleve%CC%81%20Systems%20Presentation-1.pdf) |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887229_random_matrices_final_project-2-1.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887230_testing_painleve-2.m)|
+| |Bünyamin Kartal & Maison Clouâtré| Random Quantum Density Operators | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875544_RandomQuantumDensityOperators%E2%80%94Final.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875545_Code1.ipynb) [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875546_Code2.ipynb)|
+| |Matthew Esmaili Mallory| Free Probability & The Free Central Limit Theorem | [link](https://github.com/mitmath/18338/blob/master/projects/2023/esmailimatthew_LATE_163052_3886901_Final%20Prez%20338.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/esmailimatthew_163052_3873370_Final_Project___18_338%20(1).pdf)| |
+| |Mali Halac| Determinantal Point Processes (DPPs) Improve KNN Clasifier Performance in Bioimpendence Analysis | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/halacmali_163226_3875472_MIT_18_338_Final_Paper.pdf) | |
+| |Tanshiq Kumar| Random Matrix Theory and Generalization in Neural Networks | [link](https://github.com/mitmath/18338/blob/master/projects/2023/kumartanishq_114210_3876069_338_Final_Project_Slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/kumartanishq_114210_3876068_TK_338_Final_Report_Complete.pdf)| |
+| |Yizhou Liu| Are Interactions Real | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/liuyizhou_134814_3871872_18_338_project_final.pdf)| |
+| |Shyam Narayan| Tail Bounds on the Smallest Singular Value of a Rectangular Random Matrix| [link](https://github.com/mitmath/18338/blob/master/projects/2023/NarayananShyamSlides.pptx) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/narayananshyam_86941_3874130_18.338%20Final%20Project.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2023/narayananshyam_86941_3874131_18.338%20Final%20Project%20Experiments.html) |
+| |Nicholas Stiles| | [link](https://github.com/mitmath/18338/blob/master/projects/2023/stilesnicholas18_338_project_presentation.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2023/stilesnicholas_LATE_120061_3879963_18.338%20project%20report.pdf)| |
+| |Songchen Tan| Application of RMT in some Discrete Optimization Problems | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/tansongchen_97375_3874845_Application%20of%20RMT%20in%20some%20Discrete%20Optimization%20Problems.pdf) | |
+| | Harry Walden | Roots of Random Polynomials with Integral Geometry | [link](https://github.com/mitmath/18338/blob/master/projects/2023/Roots%20of%20random%20Polynomials%20with%20integral%20geometry.pptx) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/waldenharry_154930_3866094_hjw57_18338_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2023/code)|
 | 2022 |Xiaomin Li & Yi Tian | Limiting Spectral Distributions of Random Matrices under Finite-Rank Perturbations | [link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_slides.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2022/XiaominLiandYiTian) |
 | |Ron Nissim | The KPZ Equation and Fixed Point | | [link](https://github.com/mitmath/18338/blob/master/projects/2022/rn_report.pdf) | |
 | |Evelyn Ringoot |Largest Singular Values of Bi-Diagonal matrices in Julia | [link](https://github.com/mitmath/18338/blob/master/projects/2022/EveylneRingoot/er_slides.pptx) |[link](https://github.com/mitmath/18338/blob/master/projects/2022/EveylneRingoot/er_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2022/EveylneRingoot) |
@@ -115,12 +126,12 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | |Alex Wein |Random Matrix Contiguity | | | |
 | |Ravi Bajaj |Central Limit Theorem for log-Determinant of Wigner Matrices | | | |
 | |Brandon Tran |Application of phase transitions in spiked covariance matrices to synchronization problems | | | |
-|2012|Chenhui Hu | Spectral Perturbation of Small-World Networks | | | |
-| | Mina Karzand | Random Matrix Theory and Non-coherent MIMO Communications | | | | 
-| |Charlotte Kiang | 	RMT Applications to Control Theory | | | |
-| |Yi Sun| Virasoro Constraints and the Tracy-Widom Law | | | | 
-| |Matt Welborn | Density of states of disordered systems via free addition  | | | | 
-| | Helen Xie | RMT Applications to Transport Property | | | | 
-| | Yufei Zhao| Spectral Distributions of Random Graphs | | | |
-| |Yi Zeng |North Pole Problem | | | |
+|2012|Chenhui Hu | Spectral Perturbation of Small-World Networks | [link](https://github.com/mitmath/18338/blob/master/projects/2012/ch_slides.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2012/ch_report.pdf) |  |
+| | Mina Karzand | Random Matrix Theory and Non-coherent MIMO Communications | [link](https://github.com/mitmath/18338/blob/master/projects/2012/mk_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/mk_report.pdf) | | 
+| |Charlotte Kiang | 	RMT Applications to Control Theory | [link](https://github.com/mitmath/18338/blob/master/projects/2012/ck_slides.pptx) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/ck_report.pdf) | |
+| |Yi Sun| Virasoro Constraints and the Tracy-Widom Law | [link](https://github.com/mitmath/18338/blob/master/projects/2012/ys_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/ys_report.pdf) | | 
+| |Matt Welborn | Density of states of disordered systems via free addition  | [link](https://github.com/mitmath/18338/blob/master/projects/2012/mw_slides.pptx) | | | 
+| | Helen Xie | RMT Applications to Transport Property | [link](https://github.com/mitmath/18338/blob/master/projects/2012/hx_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/hx_report.pdf) | | 
+| | Yufei Zhao| Spectral Distributions of Random Graphs | [link](https://github.com/mitmath/18338/blob/master/projects/2012/yz_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/yz_report.pdf)| |
+| |Yi Zeng |North Pole Problem | [link](https://github.com/mitmath/18338/blob/master/projects/2012/zy_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/zy_report.pdf) | |
  
