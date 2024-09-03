@@ -39,7 +39,7 @@ This is a graduate course that is intended to be flexible so as to cover the bac
 ## Homeworks
 
 There will be a few homeworks to start class off including access to the course textbook (being written) where comments are being asked for.
-Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas, please email ywang02@mit.edu.
+Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas, please email the TA.
 
 |#|Due| Reading| Link |
 |-|---|----|------|
