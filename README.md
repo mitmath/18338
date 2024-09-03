@@ -30,7 +30,7 @@ The class will be held in 2-147 from 3--4:30pm every Monday and Wednesday.
 
 We focus on the mathematics of random matrices - from the finite to the infinite, and beyond.
 
-Our emphasis will be on interplay between the varying mathematical tools that have come to play in the modern understanding of random matrix theory. We will also discuss applications of random matrix techniques to problems in engineering and science. In 2023 we may focus on DPPs and symmetric spaces.
+Our emphasis will be on interplay between the varying mathematical tools that have come to play in the modern understanding of random matrix theory. We will also discuss applications of random matrix techniques to problems in engineering and science. In 2024 we may focus on orthogonal polynomial theory. 
 
 Additional topics will be decided based on the interests of the students. No particular prerequisites are needed though a proficiency in linear algebra and basic probability will be assumed. A familiarity with numerical computing languages such as Julia, MATLAB, or Mathematica may be useful .... our primary focus will be Julia and some Mathematica.
 
@@ -43,9 +43,9 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Due| Reading| Link |
 |-|---|----|------|
-| 1 | 9/20 Wed | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) |
-| 2 | 10/4 Wed | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) |
-| 3 | 10/18 Wed | DPP notes | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf) |
+| 1 | 9/- Wed | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) |
+| 2 | 10/- Wed | Ch 1, 2, 3 | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) |
+| 3 | 10/- Wed | DPP notes | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf) |
 
 
 ## Schedule (Tentative)
