@@ -52,35 +52,35 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Day| Date |  Topic | Reading| HW Due |
 |-|-|------|------|-----|--|
-| 1 | W | 6-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/HLJslides.pdf)  |  |
-| 2 | M | 11-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
-| 3 | W | 13-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
-| 4 | M | 18-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | |
-| 5 | W | 20-Sep | Determinantal Point Processes (DPP)  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) Due |
-| 6 | M | 25-Sep | Guest lecture (Alexei Borodin) |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  |  |
-| 7 | W | 27-Sep | Algorithms for Sampling DPPs   |  |  |
-| 8 | M | 2-Oct  | Continuous DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb) |  |
-| 9 | W | 4-Oct  | Longest Increasing Sequence (LIS)  |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) Due |
-|   | M | 9-Oct  | Indigenous People's Day    |  |  |
-| 10 | W | 11-Oct | LIS and RSK algorithm  |  |  |
-| 11 | M | 16-Oct | LIS and Group representation   |  |  |
-| 12 | W | 18-Oct | Schur polynomials   |  | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf) Due  |
-| 13 | M | 23-Oct | Jack polynomials I   |  |  |
-| 14 | W | 25-Oct | Jack polynomials II  |  |  |
-| 15 | M | 30-Oct | Project presentation (Midterm)  |  |  |
-| 16 | W | 1-Nov |  Tracy-Widom I  |  |  |
-| 17 | M | 6-Nov |  Tracy-Widom II |  |  |
-| 18 | W | 8-Nov | Aztec Diamond and Airy Process    |  |  |
-| 19 | M | 13-Nov | Growth Process I   |  |  |
-| 20 | W | 15-Nov | Growth Process I   |  |  |
-| 21 | M | 20-Nov | Growth Process III   |  |  |
-|    | W | 22-Nov | *Canceled for Thanksgiving travel*  |  |  |
-| 22 | M | 27-Nov | Free Probability I       |  |  |
-| 23 | W | 29-Nov | Free Probability II       |  |  |
-| 24 | M | 4-Dec  | Free Probability III: Free Cumulants       |  |  |
-| 25 | W | 6-Dec  | Project Presentation I         |  |  |
-| 26 | M | 11-Dec  | Project Presentation II       |  |  |
-| 27 | W | 13-Dec  | Project Presentation III      |  |  |
+| 1 | W | 4-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/HLJslides.pdf)  |  |
+| 2 | M | 9-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3 |    |
+| 3 | W | 11-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
+| 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | |
+| 5 | W | 18-Sep | Orthogonal Polynomial Theory  | [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) Due |
+| 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  |  |
+| 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
+| 8 | M | 30-Sep  |DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb) |  |
+| 9 | W | 2-Oct  | Longest Increasing Sequence (LIS)  |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) Due |
+| 10 | M | 7-Oct | LIS and RSK algorithm  |  |  |
+| 11 | W | 9-Oct | LIS and Group representation   |  |  |
+|    | M | 14-Oct  | Indigenous People's Day    |  |  |
+| 12 | W | 16-Oct | Schur polynomials   |  | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw3.pdf) Due  |
+| 13 | M | 21-Oct | Jack polynomials I   |  |  |
+| 14 | W | 23-Oct | Jack polynomials II  |  |  |
+| 15 | M | 28-Oct | Project presentation (Midterm)  |  |  |
+| 16 | W | 30-Oct |  Tracy-Widom I  |  |  |
+| 17 | M | 4-Nov |  Tracy-Widom II |  |  |
+| 18 | W | 6-Nov | Aztec Diamond and Airy Process    |  |  |
+|    | M | 11-Nov | Veterans Day  |  |  |
+| 19 | W | 13-Nov | Growth Process I   |  |  |
+| 20 | M | 18-Nov | Growth Process III   |  |  |
+| 21 | W | 20-Nov | Free Probability I       |  |  |
+| 22 | M | 25-Nov | Free Probability II       |  |  |
+|    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
+| 23   | M | 2-Dec  | Free Probability III: Free Cumulants       |  |  |
+| 25 | W | 4-Dec  | Project Presentation I         |  |  |
+| 26 | M | 9-Dec  | Project Presentation II       |  |  |
+| 27 | W | 11-Dec  | Project Presentation III      |  |  |
 
 ## Previous Projects 
 
