@@ -80,9 +80,9 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 22 | M | 25-Nov | Free Probability II       |  |  |
 |    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
 | 23   | M | 2-Dec  | Free Probability III: Free Cumulants       |  |  |
-| 25 | W | 4-Dec  | Project Presentation I         |  |  |
-| 26 | M | 9-Dec  | Project Presentation II       |  |  |
-| 27 | W | 11-Dec  | Project Presentation III      |  |  |
+| 24 | W | 4-Dec  | Project Presentation I         |  |  |
+| 25 | M | 9-Dec  | Project Presentation II       |  |  |
+| 26 | W | 11-Dec  | Project Presentation III      |  |  |
 
 ## Previous Projects 
 
