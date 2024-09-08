@@ -51,9 +51,8 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 
 ## Research Questions
-|-|
 |[Combinatorics of Wachter's Law](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing)|
-
+|More Coming|
 
 ## Schedule (Tentative)
 
