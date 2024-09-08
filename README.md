@@ -54,6 +54,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |Topics|
 |-|
 |[Combinatorics of Wachter's Law](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing)|
+| [pdf listing](https://github.com/mitmath/18338/blob/master/project_lists/project_lists.pdf)|
 MOPS in Julia
 Lanczos on Multivariate Orthogonal Polynomials
 QR Multivariate implementation (in Julia, Symbolically if possible)
