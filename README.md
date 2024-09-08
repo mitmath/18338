@@ -55,6 +55,16 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |-|
 |[Combinatorics of Wachter's Law](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing)|
 |More Coming|
+MOPS in Julia
+Lanczos on Multivariate Orthogonal Polynomials
+QR Multivariate implementation (in Julia, Symbolically if possible)
+Check Hermite, Laguerre, Jacobi Eigenvalue (of Laplace-Beltrami) - check it in Julia
+second derivative of det(moment) and painleve
+Simple derivation paper applied to Laguerre and Jacobi
+See if there’s any easier derivation of TW starting from their R, S recursion
+Simple TW derivation for GOE/GSE
+Simple TW derivation for LUE/JUE
+
 
 ## Schedule (Tentative)
 
