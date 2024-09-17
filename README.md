@@ -136,6 +136,7 @@ Simple TW derivation for LUE/JUE
 | |Shawn Im |Determinantal Point Processes and β-ensembles | |[link](https://github.com/mitmath/18338/blob/master/projects/2020/SI_report.pdf) | |
 | |Chun-Hei Lam |Computation of Equilibrium Measure | [link](https://github.com/mitmath/18338/blob/master/projects/2020/SL_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2020/SL_report.pdf) | |
 | | Tony Tohme| Simplexmethod and random matrices| [link](https://github.com/mitmath/18338/blob/master/projects/2020/TT_slides.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2020/TT_report.pdf)| |
+| 2017 | Sungwoo Jeong| Jacobians of Matrix decompositions | | [link](https://github.com/mitmath/18338/blob/master/projects/2017/JacobianofMatrixDecompositions.pdf) | |
 | 2016 |Antoni Musolas |Differential geometrical approach to covariance estimation | | | |
 | |Manishika Agaskar |	Diffraction gain of free-space optical communications in atmospheric turbulence | | | |
 | |Hong Hu | Spectral Initialization and its Performance Analysis| | | |
