@@ -74,7 +74,7 @@ Simple TW derivation for LUE/JUE
 | 2 | M | 9-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3  [Research: Wachter's Law Combinatorics](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing) |    |
 | 3 | W | 11-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) Due|
-| 5 | W | 18-Sep | Matrix Calculus and Differential Forms   |   |  |
+| 5 | W | 18-Sep | Matrix Calculus and Differential Forms   |  Ch 11 |  |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||
 | 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  |  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
