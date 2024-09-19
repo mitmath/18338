@@ -77,7 +77,7 @@ Simple TW derivation for LUE/JUE
 | 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) Due |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  |  |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
-| 8 | M | 30-Sep  |DPPs | [[Notebook]] (https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)[[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
+| 8 | M | 30-Sep  |DPPs | [[Notebook]] (https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)  [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
 | 9 | W | 2-Oct  | Longest Increasing Sequence (LIS)  |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) Due |
 | 10 | M | 7-Oct | LIS and RSK algorithm  |  |  |
 | 11 | W | 9-Oct | LIS and Group representation   |  |  |
