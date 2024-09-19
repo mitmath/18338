@@ -45,7 +45,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |-|---|----|------|
 | 1 | 9/16  Monday | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) |
 | 2 | 9/23 Wed | Ch 1, 2, 3 |  [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf)  |
-| 3 | 9/30  Wed | Orthogonal Polynomial notes |  |
+| 3 | 9/30  Wed | Ch 13, 14 |  |
 | 4||||
 | 5||||
 
