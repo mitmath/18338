@@ -75,7 +75,7 @@ Simple TW derivation for LUE/JUE
 | 3 | W | 11-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) Due|
 | 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  |  |
-| | | | We are here ↑ ↑ Below is tentative | ||
+| | |  We are here ↑ ↑ Below is tentative | ||
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
 | 8 | M | 30-Sep  |DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)  [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
