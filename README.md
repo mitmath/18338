@@ -73,12 +73,12 @@ Simple TW derivation for LUE/JUE
 | 1 | W | 4-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  |  |
 | 2 | M | 9-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3  [Research: Wachter's Law Combinatorics](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing) |    |
 | 3 | W | 11-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
-| 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | |
-| 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) Due |
-| 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  |  |
+| 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) Due|
+| 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  |  |
+| 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
-| 8 | M | 30-Sep  |DPPs | [[Notebook]] (https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)[[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
-| 9 | W | 2-Oct  | Longest Increasing Sequence (LIS)  |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) Due |
+| 8 | M | 30-Sep  |DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)  [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
+| 9 | W | 2-Oct  | Longest Increasing Sequence (LIS)  |  |  |
 | 10 | M | 7-Oct | LIS and RSK algorithm  |  |  |
 | 11 | W | 9-Oct | LIS and Group representation   |  |  |
 |    | M | 14-Oct  | Indigenous People's Day    |  |  |
@@ -154,4 +154,5 @@ Simple TW derivation for LUE/JUE
 | | Helen Xie | RMT Applications to Transport Property | [link](https://github.com/mitmath/18338/blob/master/projects/2012/hx_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/hx_report.pdf) | | 
 | | Yufei Zhao| Spectral Distributions of Random Graphs | [link](https://github.com/mitmath/18338/blob/master/projects/2012/yz_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/yz_report.pdf)| |
 | |Yi Zeng |North Pole Problem | [link](https://github.com/mitmath/18338/blob/master/projects/2012/zy_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/zy_report.pdf) | |
+| 2009| Gregory Minton | | [link](https://github.com/mitmath/18338/blob/master/projects/2009/final-report.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2009/momentinterface.html)|
  
