@@ -44,8 +44,8 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |#|Due| Reading| Link |
 |-|---|----|------|
 | 1 | 9/16  Monday | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) |
-| 2 | 9/23 Wed | Ch 1, 2, 3 |  [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf)  |
-| 3 | 9/30  Wed | Orthogonal Polynomial notes |  |
+| 2 | 9/23 Monday | Ch 1, 2, 3 |  [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf)  |
+| 3 | 9/30  Monday | Ch 13, 14 |  |
 | 4||||
 | 5||||
 
@@ -73,12 +73,14 @@ Simple TW derivation for LUE/JUE
 | 1 | W | 4-Sep |  Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  |  |
 | 2 | M | 9-Sep | Semicircle, Quartercircle, Circular and other infinite RMT Laws  |  Ch 3  [Research: Wachter's Law Combinatorics](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing) |    |
 | 3 | W | 11-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
-| 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | |
-| 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw1.pdf) Due |
-| 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  |  |
+| 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) Due|
+| 5 | W | 18-Sep | Matrix Calculus and Differential Forms   |  Ch 11 |  |
+| | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||
+| 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  |  |
+| 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
 | 8 | M | 30-Sep  |DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)  [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
-| 9 | W | 2-Oct  | Longest Increasing Sequence (LIS)  |  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2023hw2.pdf) Due |
+| 9 | W | 2-Oct  | Longest Increasing Sequence (LIS)  |  |  |
 | 10 | M | 7-Oct | LIS and RSK algorithm  |  |  |
 | 11 | W | 9-Oct | LIS and Group representation   |  |  |
 |    | M | 14-Oct  | Indigenous People's Day    |  |  |
