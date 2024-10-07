@@ -78,7 +78,10 @@ Simple TW derivation for LUE/JUE
 | 6 | M | 23-Sep | Orthogonal Polynomial Intro  | Project Idea: MOPS in Julia |  |
 | 7 | W | 25-Sep |Multivariate Orthogonal Polynomial Theory   |  |  |
 | 8 | M | 30-Sep |  Univariate Orthogonal Polynomial Theory  |  |  |
-| 9 | W | 7-Oct  |   Orthongal Polynomials and RMT  | | |
+| 9 | W | 2-Oct  |   Orthogonal Polynomials and RMT  | | |
+|10|  W | 7-Oct ||||
+| 11 | W | 9-Oct ||||
+|    | M | 14-Oct  | Indigenous People's Day    |  |  |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
