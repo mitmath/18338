@@ -79,9 +79,12 @@ Simple TW derivation for LUE/JUE
 | 7 | W | 25-Sep |Multivariate Orthogonal Polynomial Theory   |  |  |
 | 8 | M | 30-Sep |  Univariate Orthogonal Polynomial Theory  |  |  |
 | 9 | W | 2-Oct  |   Orthogonal Polynomials and RMT  | | |
-|10|  W | 7-Oct ||||
-| 11 | W | 9-Oct ||||
+|10|  W | 7-Oct | Introduction to Discrete DPP |||
+| 11 | W | 9-Oct | DPPs in Random Matrix Theory |||
 |    | M | 14-Oct  | Indigenous People's Day    |  |  |
+| 12 | W | 16-Oct | Possible Class Projects  | | |
+| 13 | M | 21-Oct | Computational Experiments with DPP | | |
+| 14 | W | 23-Oct | Algorithms for DPPs | | |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
