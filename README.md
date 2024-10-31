@@ -85,6 +85,8 @@ Simple TW derivation for LUE/JUE
 | 12 | W | 16-Oct | Possible Class Projects  | | |
 | 13 | M | 21-Oct | Computational Experiments with DPP | | |
 | 14 | W | 23-Oct | Algorithms for DPPs | | |
+| 15 | M | 28-Oct | Projection DPP Algorithm / Kesten-McKay Law | | |
+| 16 | W | 30-Oct | Growth Processes, Aztec Diamonds and Tracy Widom | | |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
