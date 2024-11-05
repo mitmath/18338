@@ -87,6 +87,7 @@ Simple TW derivation for LUE/JUE
 | 14 | W | 23-Oct | Algorithms for DPPs | | |
 | 15 | M | 28-Oct | Projection DPP Algorithm / Kesten-McKay Law | | |
 | 16 | W | 30-Oct | Growth Processes, Aztec Diamonds and Tracy Widom | | |
+| 17 | M | 4-Nov |  Longest Increasing Subsequence |  |  |
 |    | M | 11-Nov | Veterans Day  |  |  |
 |    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
