@@ -89,6 +89,7 @@ Simple TW derivation for LUE/JUE
 | 16 | W | 30-Oct | Growth Processes, Aztec Diamonds and Tracy Widom | | |
 | 17 | M | 4-Nov |  Longest Increasing Subsequence |  |  |
 |    | M | 11-Nov | Veterans Day  |  |  |
+| 18 | W | 13-Nov |  Project Plan Presentations |  |  |
 |    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
