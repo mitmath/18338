@@ -88,9 +88,17 @@ Simple TW derivation for LUE/JUE
 | 15 | M | 28-Oct | Projection DPP Algorithm / Kesten-McKay Law | | |
 | 16 | W | 30-Oct | Growth Processes, Aztec Diamonds and Tracy Widom | | |
 | 17 | M | 4-Nov |  Longest Increasing Subsequence |  |  |
+| 18 | W | 6-Nov | Brownian Motion | |  |
 |    | M | 11-Nov | Veterans Day  |  |  |
-| 18 | W | 13-Nov |  Project Plan Presentations |  |  |
+| 19 | W | 13-Nov |  Project Plan Presentations |  |  |
+| 20 | M | 18-Nov |  |  |  |
+| 21 | W | 20-Nov |  |  |  |
+| 22 | M | 25-Nov | How many roots are real? |  |  |
 |    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
+| 23 | M | 2-Dec |
+| 24 | W | 4-Dec  | Project Presentation I         |  |  |
+| 25 | M | 9-Dec  | Project Presentation II       |  |  |
+| 26 | W | 11-Dec  | Project Presentation III      |  |  |
 | | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
