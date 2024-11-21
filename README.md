@@ -91,8 +91,8 @@ Simple TW derivation for LUE/JUE
 | 18 | W | 6-Nov | Brownian Motion | |  |
 |    | M | 11-Nov | Veterans Day  |  |  |
 | 19 | W | 13-Nov |  Project Plan Presentations |  |  |
-| 20 | M | 18-Nov |  |  |  |
-| 21 | W | 20-Nov |  |  |  |
+| 20 | M | 18-Nov | Free Probability Intro |  |  |
+| 21 | W | 20-Nov | Free Probability R-Transform |  |  |
 | 22 | M | 25-Nov | How many roots are real? |  |  |
 |    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
 | 23 | M | 2-Dec |
