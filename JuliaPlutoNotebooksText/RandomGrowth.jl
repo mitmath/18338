@@ -46,6 +46,9 @@ N = 16
 # ╔═╡ 341c7295-87ba-4c93-b1a3-2cd2dc69402e
 p = .2
 
+# ╔═╡ fda1f184-9ced-4947-bf4c-fc1d2b3885c2
+
+
 # ╔═╡ 46d52da5-157c-4910-97a5-44188224178a
 md"""
 ### The more clever way
@@ -69,21 +72,18 @@ md"""
 """
 
 # ╔═╡ 815a40e8-c528-4384-a4ec-e71724891ed1
-# ╠═╡ disabled = true
-#=╠═╡
 function diagonal(M, i)
 	n = size(M, 1)
 	return Iterators.map(i > n ? (i-n+1:n) : (1:i)) do j
 		CartesianIndex(j, i+1-j)
 	end
 end
-  ╠═╡ =#
 
 # ╔═╡ f2c0b6a7-e485-4f3e-8f62-0b8d38d666c3
 n_gif = 200
 
 # ╔═╡ 167c3bf2-63f5-49d9-ab25-8f50ee0e8c62
-W_corner = rand(Geometric(p), (n_gif, n_gif));
+W_corner = rand(Geometric(1-p), (n_gif, n_gif));
 
 # ╔═╡ 935d78a0-7094-4b99-b0ec-ac6352c29794
 T_corner = accumulate_corner_growth(W_corner);
@@ -335,6 +335,9 @@ md"""
 Show after step $(@bind n_steps SeekingSlider(eachindex(STEPS), 1))
 """
 
+# ╔═╡ 3a4525f4-0aa1-46f7-afd5-7a64639ea1c1
+STEPS[n_steps]
+
 # ╔═╡ c1b18124-89dc-48c8-b506-ae71687de9dd
 let (filled_squares, eligible, to_fill) = STEPS[n_steps]
 
@@ -350,7 +353,7 @@ let (filled_squares, eligible, to_fill) = STEPS[n_steps]
 	
 	scatter!(p, broadcast(.-, Tuple.(collect(eligible)), [(.5, .5)]);
 		marker=(stroke(0), :rect, isempty(to_fill) ? :orange : :red, 12), #label="Eligible Squares",
-		label=""
+		label="",
 	)
 	
 	if phase==1
@@ -367,7 +370,6 @@ let (filled_squares, eligible, to_fill) = STEPS[n_steps]
 end
 
 # ╔═╡ 622f6669-7c25-4acd-bbff-6bdc0b4f4019
-#=╠═╡
 function accumulate_corner_growth_old(W, n=size(W, 1); shifted=true, init=0)
 	T = fill!(similar(W), typemax(Int))
 	T[1, 1] = W[1, 1]#init
@@ -379,10 +381,15 @@ function accumulate_corner_growth_old(W, n=size(W, 1); shifted=true, init=0)
 	end
 	return T
 end
-  ╠═╡ =#
+
+# ╔═╡ 52aaf20c-69d3-4021-8966-4796933addcc
+let
+	W = rand(1:5,3,3)
+	display(accumulate_corner_growth(W))
+		display(accumulate_corner_growth_old(W))
+end
 
 # ╔═╡ bfe78dd0-d4c8-40ff-8ad3-88f45a6490c8
-#=╠═╡
 let n=1000, p=.5, t=1500
 	T = accumulate_corner_growth_old(rand(Geometric(p), (n, n)),t)
 	@show findlast(≤(t), view(T, 1, :))
@@ -392,7 +399,6 @@ let n=1000, p=.5, t=1500
 	map(c -> ARGB(ColorSchemes.inferno[(c / t)^2], c ≤ t), T)
 	Gray.(T .> t) |> render
 end
-  ╠═╡ =#
 
 # ╔═╡ a2aa704a-ebad-4b71-b589-84908481cc70
 md"""
@@ -2244,10 +2250,13 @@ version = "1.4.1+1"
 # ╠═341c7295-87ba-4c93-b1a3-2cd2dc69402e
 # ╠═77850345-a159-4bcc-9403-b194fd4d9134
 # ╠═d7e38b79-c876-4eb2-9c01-5806ffbb9755
+# ╠═3a4525f4-0aa1-46f7-afd5-7a64639ea1c1
 # ╠═c1b18124-89dc-48c8-b506-ae71687de9dd
+# ╠═fda1f184-9ced-4947-bf4c-fc1d2b3885c2
 # ╟─46d52da5-157c-4910-97a5-44188224178a
 # ╠═3d384485-a3a9-4a8d-afb1-8377cbe3e63b
 # ╠═622f6669-7c25-4acd-bbff-6bdc0b4f4019
+# ╠═52aaf20c-69d3-4021-8966-4796933addcc
 # ╟─15291967-a58b-4c0c-b066-2a1b53675d15
 # ╠═815a40e8-c528-4384-a4ec-e71724891ed1
 # ╠═f2c0b6a7-e485-4f3e-8f62-0b8d38d666c3
