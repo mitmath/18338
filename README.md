@@ -131,7 +131,7 @@ Simple TW derivation for LUE/JUE
 |-|---|-------------|-|-|-|
 | 2024 | Cecelia Chen | Computing Multivariate Orthogonal Bases ||[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907163_18_338_project%20(1).pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907164_MultivariateLanczos.jl%20copy.zip)
 | | Vaibhav Dixit | Evolution of Eigenvalue Spectrum of Fully Connected (Dense) Layers in DNNs |
-| | Jennifer Hritz | Constructing approximately Haar-random unitaries from GUEs| [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911299_final_project_presentation_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911299_final_project_presentation_hritz.pdf) | 
+| | Jennifer Hritz | Constructing approximately Haar-random unitaries from GUEs| [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911299_final_project_presentation_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911297_final_project_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911298_project_plots.jl)
 | | Joonsoo Lee | Derivatives of Randomized Matrix Approximation Algorithms |
 | | Donald Stralkus | Universality in Inner-Product Random Geometric Graphs |
 | | Nicholas West |
