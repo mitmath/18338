@@ -135,7 +135,7 @@ Simple TW derivation for LUE/JUE
 | | Joonsoo Lee | Derivatives of Randomized Matrix Approximation Algorithms |
 | | Donald Stralkus | Universality in Inner-Product Random Geometric Graphs |
 | | Nicholas West |
-| | Joanna Zou | k-DPPs: Fixed-Size Determinantal Point Processes for Diversity-Based Subsampling |
+| | Joanna Zou | k-DPPs: Fixed-Size Determinantal Point Processes for Diversity-Based Subsampling | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zoujoanna_129477_4904902_18338_project_presentation.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zoujoanna_129477_4904901_18_338_Final_Project_Report.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zoujoanna_129477_4904903_final_project.ipynb)
 | | Alec Zhu |  Spacing of Riemann Zeta Zeros in Julia |
 | 2023 |Gaurav Arya| Differentiable Determinental Point Processes |  |[link](https://github.com/mitmath/18338/blob/master/projects/2023/aryagaurav_LATE_101101_3887118_main.pdf)| 
 | |Andrey Bryutkin & Diego Chavez| Painlevé Systems and Eigenvalue Distributions |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887228_Painleve%CC%81%20Systems%20Presentation-1.pdf) |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887229_random_matrices_final_project-2-1.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887230_testing_painleve-2.m)|
