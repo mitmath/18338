@@ -129,10 +129,14 @@ Simple TW derivation for LUE/JUE
 
 |Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
-| 2024 |
-| |
-| |
-| |
+| 2024 | Cecelia Chen | Computing Multivariate Orthogonal Bases |
+| | Vaibhav Dixit | Evolution of Eigenvalue Spectrum of Fully Connected (Dense) Layers in DNNs |
+| | Jennifer Hritz | Constructing approximately Haar-random unitaries from GUEs|
+| | Joonsoo Lee | Derivatives of Randomized Matrix Approximation Algorithms |
+| | Donald Stralkus | Universality in Inner-Product Random Geometric Graphs |
+| | Nicholas West |
+| | Joanna Zou | k-DPPs: Fixed-Size Determinantal Point Processes for Diversity-Based Subsampling |
+| | Alec Zhu |  Spacing of Riemann Zeta Zeros in Julia |
 | 2023 |Gaurav Arya| Differentiable Determinental Point Processes |  |[link](https://github.com/mitmath/18338/blob/master/projects/2023/aryagaurav_LATE_101101_3887118_main.pdf)| 
 | |Andrey Bryutkin & Diego Chavez| Painlevé Systems and Eigenvalue Distributions |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887228_Painleve%CC%81%20Systems%20Presentation-1.pdf) |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887229_random_matrices_final_project-2-1.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887230_testing_painleve-2.m)|
 | |Bünyamin Kartal & Maison Clouâtré| Random Quantum Density Operators | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875544_RandomQuantumDensityOperators%E2%80%94Final.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875545_Code1.ipynb) [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875546_Code2.ipynb)|
