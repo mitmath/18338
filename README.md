@@ -129,7 +129,7 @@ Simple TW derivation for LUE/JUE
 
 |Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
-| 2024 | Cecelia Chen | Computing Multivariate Orthogonal Bases |
+| 2024 | Cecelia Chen | Computing Multivariate Orthogonal Bases ||[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907163_18_338_project%20(1).pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907164_MultivariateLanczos.jl%20copy.zip)
 | | Vaibhav Dixit | Evolution of Eigenvalue Spectrum of Fully Connected (Dense) Layers in DNNs |
 | | Jennifer Hritz | Constructing approximately Haar-random unitaries from GUEs|
 | | Joonsoo Lee | Derivatives of Randomized Matrix Approximation Algorithms |
