@@ -37,7 +37,7 @@ end
 # ╔═╡ 74d11d69-0e80-4b42-9fb4-5ae5564a72bd
 let
 	# full ellipse
-	L = 10
+	L = 5 # → ∞
 	p = 1/L
 	θ = LinRange(0, 2π, 100); q = 1-p
     x = √p *cos.(θ); y = √q *sin.(θ)   
@@ -45,9 +45,9 @@ let
 	#plot(x,y,aspectratio=1,legend=false,lw=5)
 	θ = LinRange(acos(√p), acos(-√p), 100)
 	x = √p *cos.(θ); y = -√q *sin.(θ)   
-	plot!(x*L,L .+ L*y,color=:red,lw=5)
+	plot!(x*L,  L*(1 .+y) ,color=:red,lw=5)
 	s = 1
-	plot!(x->x^2/2+1/2, color=:green)
+	plot!(x->(x^2+1)/2, color=:green, lw=5)
 	#plot!([0,1,0,-1,0],[1,0,-1,0,1],color=:black)
 	#scatter!([p p -p -p],[q -q q -q], color=:blue, ms=7, ylims=(-1.1,-.5))
 end

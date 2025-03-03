@@ -37,7 +37,7 @@ TableOfContents(indent=true, depth=4, aside=true)
 # ╔═╡ 21b8e04a-9e37-4040-b3e2-df2436e1960a
 md"""
 # Corner Growth
-## The naive way
+## Time-Centric
 """
 
 # ╔═╡ 8b4fdbb6-991f-4798-b293-e3f0d2a9d608
@@ -46,12 +46,9 @@ N = 16
 # ╔═╡ 341c7295-87ba-4c93-b1a3-2cd2dc69402e
 p = .2
 
-# ╔═╡ fda1f184-9ced-4947-bf4c-fc1d2b3885c2
-
-
 # ╔═╡ 46d52da5-157c-4910-97a5-44188224178a
 md"""
-### The more clever way
+## Space-centric
 """
 
 # ╔═╡ 3d384485-a3a9-4a8d-afb1-8377cbe3e63b
@@ -68,7 +65,7 @@ end
 
 # ╔═╡ 15291967-a58b-4c0c-b066-2a1b53675d15
 md"""
-## Using the geometric distribution instead
+### W = Geometric distribution 
 """
 
 # ╔═╡ 815a40e8-c528-4384-a4ec-e71724891ed1
@@ -119,19 +116,35 @@ n = 1000
 # ╔═╡ 904a3da5-5b0f-46af-98ad-f262d3f1afb5
 Tᵢ = accumulate_corner_growth(rand(Geometric(p), (n, n)));
 
+# ╔═╡ db122a84-32da-4f2c-b268-3b2b3355007c
+md"""
+###  Boundary Ellipse (Colorful)
+"""
+
 # ╔═╡ 7782eb6b-e604-4990-867e-0fc6cde3558e
 md"""
-## What if we use an exponential distribution instead of Geometric?
+###  W = Exponential distribution 
 """
 
 # ╔═╡ 939ed01e-9894-4a94-b673-ca027a3c8ec8
 Tₑ = accumulate_corner_growth(rand(Exponential(), (n, n)); shifted=false);
+
+# ╔═╡ e1905483-99a9-4d54-9718-b8da8c7f5c8f
+md"""
+### Boundary Parabola (Colorful)
+"""
 
 # ╔═╡ 9a97b92f-11a5-43da-ae20-4e68683c2628
 ω(γ, q) = (1 + √(q*γ))^2 / (1-q) - 1
 
 # ╔═╡ 41e5264d-9047-4755-b185-ee874d963d0b
 σ(γ, q) = (q/γ)^(1/6) / (1-q) * ((√γ + √q) * (1 + √(q*γ)))^(2/3)
+
+# ╔═╡ 1ee21390-e0c3-42e4-b079-d8ba6db7b331
+md"""
+## Perturbations of Boundary vs Tracy Widom
+### Compute TW as det(I-AiryK)
+"""
 
 # ╔═╡ 34b6361c-c631-4509-84df-3acbd468b2d0
 let
@@ -164,12 +177,22 @@ data = let N=100, γ=1, q=.7, num_trials=10000
 	end
 end
 
+# ╔═╡ 3e2fed99-ad01-435a-8d4e-857d4fbc5d96
+md""" 
+### Fluctuations vs TW (Geometric)
+"""
+
 # ╔═╡ a33e5804-3155-4e1e-b3f0-11f28d69fb5e
 begin
 	histogram(data; normalize=true, bins=range(-6, 4; length=51), label="(T[M, N] - N*ω(γ, q)) / (σ(γ, q) * N^(1/3))", ylims=(0, .55))
 	plot!(pdf_tracy_widom; lw=3, label="pdf(TracyWidom())")
 	title!("Corner Growth Tracy-Widom")
 end
+
+# ╔═╡ e2025ac1-033b-4678-bce5-2ab2709cf4fc
+md"""
+## Exp growth = Laguerre = svd
+"""
 
 # ╔═╡ 5ae63cc2-055f-4308-8434-ad3dccfeecbc
 data_exp = let N=1, γ=2, num_trials=10000
@@ -182,7 +205,7 @@ data_exp = let N=1, γ=2, num_trials=10000
 end
 
 # ╔═╡ 4270d02f-891c-41a0-bc15-a011893103d6
-data_legendre = let n=1, num_trials=5000
+data_laguerre = let n=1, num_trials=5000
 	map(1:num_trials) do _
 		#L = randn(n,n) + im*randn(n,n)
 		maximum(abs2, svdvals(randn(n,n) + im*randn(n,n)))
@@ -201,16 +224,21 @@ let num_trials=5000, γ=1/2
 			T = accumulate_corner_growth(rand(dist, (n, n)); shifted=false)
 			T[M, N]
 		end
-		data_legendre = map(1:num_trials) do _
+		data_laguerre = map(1:num_trials) do _
 			#L = randn(n,n) + im*randn(n,n)
 			local n = N
 			maximum(abs2, svdvals(randn(M, N) .+ im.*randn(M, N)))/2
 		end
 		histogram!(data_exp; normalize=true, bins=51, label="T[M, N])")
-		stephist!(data_legendre; normalize=true, bins=51, label="maximum(abs2, svdvals(randn(n,n) + im*randn(n,n)))", lw=2)
+		stephist!(data_laguerre; normalize=true, bins=51, label="maximum(abs2, svdvals(randn(n,n) + im*randn(n,n)))", lw=2)
 	end
-	title!("Exponential Growth vs. Leguerre")
+	title!("Exponential Growth vs. Laguerre")
 end
+
+# ╔═╡ 54bdc001-9e8e-4f2a-aa17-69b25dd673c8
+md"""
+### Fluctuations vs TW (Exponential)
+"""
 
 # ╔═╡ b889439f-58f7-4059-b57c-b2eef5229124
 let num_trials=5000, γ=1.1
@@ -229,8 +257,13 @@ let num_trials=5000, γ=1.1
 	plot!(pdf_tracy_widom; lw=3, label="pdf(TracyWidom())")
 end
 
+# ╔═╡ 2d523b93-8e42-4655-9b3f-f3c20f1edaf6
+md"""
+## Airy Process
+"""
+
 # ╔═╡ b1175f17-cfa8-493c-a78e-7d836c46a49c
-let num_trials=20000, γ=1.1
+let num_trials=20, γ=1.1
 	dist = Exponential()
 	data_exps = Vector{Float64}[]
 	for N in [100, 110] #[10, 20, 40]
@@ -243,6 +276,7 @@ let num_trials=20000, γ=1.1
 		end
 		push!(data_exps, data_exp)
 	end
+	println(collect(zip(data_exps...)))
 	p, = histogram2d(collect(zip(data_exps...)), normalize=true, bins=100)
 	serialize("/tmp/airy.dat", collect(zip(data_exps...)))
 	plot!(aspectratio=1)
@@ -328,15 +362,12 @@ begin
 		filled_squares, eligible = filled_squares′, eligible′
 	end
 	push!(STEPS, (filled_squares, ∅, ∅))
-end
+end;
 
 # ╔═╡ d7e38b79-c876-4eb2-9c01-5806ffbb9755
 md"""
 Show after step $(@bind n_steps SeekingSlider(eachindex(STEPS), 1))
 """
-
-# ╔═╡ 3a4525f4-0aa1-46f7-afd5-7a64639ea1c1
-STEPS[n_steps]
 
 # ╔═╡ c1b18124-89dc-48c8-b506-ae71687de9dd
 let (filled_squares, eligible, to_fill) = STEPS[n_steps]
@@ -370,6 +401,8 @@ let (filled_squares, eligible, to_fill) = STEPS[n_steps]
 end
 
 # ╔═╡ 622f6669-7c25-4acd-bbff-6bdc0b4f4019
+# ╠═╡ disabled = true
+#=╠═╡
 function accumulate_corner_growth_old(W, n=size(W, 1); shifted=true, init=0)
 	T = fill!(similar(W), typemax(Int))
 	T[1, 1] = W[1, 1]#init
@@ -381,15 +414,19 @@ function accumulate_corner_growth_old(W, n=size(W, 1); shifted=true, init=0)
 	end
 	return T
 end
+  ╠═╡ =#
 
 # ╔═╡ 52aaf20c-69d3-4021-8966-4796933addcc
+#=╠═╡
 let
 	W = rand(1:5,3,3)
 	display(accumulate_corner_growth(W))
 		display(accumulate_corner_growth_old(W))
 end
+  ╠═╡ =#
 
 # ╔═╡ bfe78dd0-d4c8-40ff-8ad3-88f45a6490c8
+#=╠═╡
 let n=1000, p=.5, t=1500
 	T = accumulate_corner_growth_old(rand(Geometric(p), (n, n)),t)
 	@show findlast(≤(t), view(T, 1, :))
@@ -399,6 +436,7 @@ let n=1000, p=.5, t=1500
 	map(c -> ARGB(ColorSchemes.inferno[(c / t)^2], c ≤ t), T)
 	Gray.(T .> t) |> render
 end
+  ╠═╡ =#
 
 # ╔═╡ a2aa704a-ebad-4b71-b589-84908481cc70
 md"""
@@ -478,7 +516,7 @@ SpecialFunctions = "~2.3.1"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.1"
+julia_version = "1.11.2"
 manifest_format = "2.0"
 project_hash = "d8d90ad78647f8a943adb1dcab65d749b3bdb93d"
 
@@ -2244,15 +2282,13 @@ version = "1.4.1+1"
 # ╟─1f47b590-7b8b-45d1-8f3a-ef6ac4c232df
 # ╠═d4c4dc1a-2d36-11ec-2796-c162f03598f0
 # ╠═313f5918-1e94-45a6-b1fd-29c9b5aaf35d
-# ╠═21b8e04a-9e37-4040-b3e2-df2436e1960a
+# ╟─21b8e04a-9e37-4040-b3e2-df2436e1960a
 # ╠═9d4c6014-48de-4013-ac2f-84f7adb953f8
 # ╠═8b4fdbb6-991f-4798-b293-e3f0d2a9d608
 # ╠═341c7295-87ba-4c93-b1a3-2cd2dc69402e
 # ╠═77850345-a159-4bcc-9403-b194fd4d9134
-# ╠═d7e38b79-c876-4eb2-9c01-5806ffbb9755
-# ╠═3a4525f4-0aa1-46f7-afd5-7a64639ea1c1
+# ╟─d7e38b79-c876-4eb2-9c01-5806ffbb9755
 # ╠═c1b18124-89dc-48c8-b506-ae71687de9dd
-# ╠═fda1f184-9ced-4947-bf4c-fc1d2b3885c2
 # ╟─46d52da5-157c-4910-97a5-44188224178a
 # ╠═3d384485-a3a9-4a8d-afb1-8377cbe3e63b
 # ╠═622f6669-7c25-4acd-bbff-6bdc0b4f4019
@@ -2269,21 +2305,28 @@ version = "1.4.1+1"
 # ╠═bfe78dd0-d4c8-40ff-8ad3-88f45a6490c8
 # ╠═e36e8b9f-c383-4915-97cb-c57c7ab755e2
 # ╠═904a3da5-5b0f-46af-98ad-f262d3f1afb5
+# ╟─db122a84-32da-4f2c-b268-3b2b3355007c
 # ╟─a2aa704a-ebad-4b71-b589-84908481cc70
 # ╠═5e47a00b-a38e-4071-b44b-eb1b5661b968
-# ╟─7782eb6b-e604-4990-867e-0fc6cde3558e
+# ╠═7782eb6b-e604-4990-867e-0fc6cde3558e
 # ╠═939ed01e-9894-4a94-b673-ca027a3c8ec8
+# ╟─e1905483-99a9-4d54-9718-b8da8c7f5c8f
 # ╟─f0c0b737-52ce-4980-9a0d-8dbaeebc9cee
 # ╠═df0ad4e6-761f-4d6a-a763-675542f0c2ed
 # ╠═9a97b92f-11a5-43da-ae20-4e68683c2628
 # ╠═41e5264d-9047-4755-b185-ee874d963d0b
+# ╟─1ee21390-e0c3-42e4-b079-d8ba6db7b331
 # ╠═34b6361c-c631-4509-84df-3acbd468b2d0
 # ╠═7ed16d08-9925-4959-adb1-a297283891bd
+# ╟─3e2fed99-ad01-435a-8d4e-857d4fbc5d96
 # ╠═a33e5804-3155-4e1e-b3f0-11f28d69fb5e
+# ╟─e2025ac1-033b-4678-bce5-2ab2709cf4fc
 # ╠═5ae63cc2-055f-4308-8434-ad3dccfeecbc
 # ╠═4270d02f-891c-41a0-bc15-a011893103d6
 # ╠═fd4a0cd2-66fb-4dcd-ba2a-0d5395e53657
+# ╟─54bdc001-9e8e-4f2a-aa17-69b25dd673c8
 # ╠═b889439f-58f7-4059-b57c-b2eef5229124
+# ╟─2d523b93-8e42-4655-9b3f-f3c20f1edaf6
 # ╠═b1175f17-cfa8-493c-a78e-7d836c46a49c
 # ╠═3004a0be-c096-43bb-9541-824ff4dd00f5
 # ╠═91171b75-3ab0-4d1b-a72b-c50413de6509
