@@ -263,7 +263,7 @@ md"""
 """
 
 # ╔═╡ b1175f17-cfa8-493c-a78e-7d836c46a49c
-let num_trials=20, γ=1.1
+let num_trials=20000, γ=1.1
 	dist = Exponential()
 	data_exps = Vector{Float64}[]
 	for N in [100, 110] #[10, 20, 40]
@@ -276,7 +276,6 @@ let num_trials=20, γ=1.1
 		end
 		push!(data_exps, data_exp)
 	end
-	println(collect(zip(data_exps...)))
 	p, = histogram2d(collect(zip(data_exps...)), normalize=true, bins=100)
 	serialize("/tmp/airy.dat", collect(zip(data_exps...)))
 	plot!(aspectratio=1)
