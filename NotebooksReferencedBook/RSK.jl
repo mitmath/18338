@@ -16,6 +16,9 @@ macro bind(def, element)
     #! format: on
 end
 
+# ╔═╡ 2edb0818-b2e7-41aa-adde-3f193391b4c5
+using Pkg
+
 # ╔═╡ 087084fe-a3d8-4ef5-8819-22787e885844
 using Random
 
@@ -42,8 +45,14 @@ md"""
 (This is a minor adaption by Alan Edelman of an [rs_algorithm notebook](https://simeonschaub.github.io/YoungTableaux.jl/notebooks/notebooks/rs_algorithm.html)  originally written by Simeon Schaub  June 2025.)  Original versions of some codes were written by Alan Edelman in MATLAB.
 """
 
+# ╔═╡ 1afa2ffe-f980-4f03-8efd-36abcfaf9cc1
+Pkg.status()
+
 # ╔═╡ fbccc9c5-9d62-4085-9440-8c90523a2884
 TableOfContents(title="Schensted, RSK")
+
+# ╔═╡ 841127d7-436a-4572-87e8-5630897b5574
+1+1
 
 # ╔═╡ 571ddbe6-0cb5-405e-9900-89cdc9a46d6e
 md"""
@@ -68,6 +77,21 @@ rsk_pair( [1 1 2 2 3], [1 2 3 4 2]) # generalized permutation
 
 # ╔═╡ 63aafb87-41df-401e-b96e-f65ab919bcee
 rsk_pair(5:8,9:12)
+
+# ╔═╡ e4e1fb1a-7e3d-4a42-bb07-3f036311d0bf
+rsk_pair([1,2],[4,3])
+
+# ╔═╡ 32a01057-24f1-47e6-bfa6-29684f098fa1
+rsk_pair( ['a','b','c'], ['a','b','c'] )
+
+# ╔═╡ 4bbcc9d7-6037-49b7-bcf3-8ed0da1f5772
+rsk_pair(1:3,['a','b','c'])
+
+# ╔═╡ 1ea645e0-9f85-4088-a131-29018ae3c1ae
+rsk_pair(1:4,"abcd")
+
+# ╔═╡ 2e2b96f7-6adb-4a32-80a0-ace036267461
+
 
 # ╔═╡ 7b3aadec-4ec4-4f89-8ccb-c78c24bad000
 md"""
@@ -147,6 +171,15 @@ function schensted_insert!(rows, k, i=1)
 	return rows, i
 end
 
+# ╔═╡ a6972662-2ada-4d58-a538-498cd5a9d5c2
+# ╠═╡ disabled = true
+#=╠═╡
+r = [1,2,2,5]
+  ╠═╡ =#
+
+# ╔═╡ 82adcf46-bb51-42c6-ba78-86129e1ff4d5
+pairs( rand(3,3))
+
 # ╔═╡ 47e58152-f784-40e6-9616-eb7d31fa606c
 function rs_pair(j)
     T = eltype(j)
@@ -178,6 +211,27 @@ let
 	display(v)
 	rs_pair(v)
 end
+
+# ╔═╡ 02cad44e-3c70-454f-b401-45099038dcd8
+rs_pair([1,2,3])
+
+# ╔═╡ f748cb5d-04ef-4c57-b587-712fe0c7f19a
+rs_pair([1,3,2,4])
+
+# ╔═╡ 01883c20-57cf-470c-a888-acd1582ce038
+rs_pair([ (1,2) , (1,3), (2,3)])
+
+# ╔═╡ 36183dd6-47bf-4a9b-bf78-f6f87d0050fa
+rs_pair([2,2,2,1])
+
+# ╔═╡ e8c8d2f5-b759-4d8d-b7c6-1327e7192b22
+rs_pair(['a','b','c'])
+
+# ╔═╡ 6d67b673-4078-44c7-bd90-e747958ab561
+rs_pair("abc")
+
+# ╔═╡ 33e3d07e-06b5-450d-a3cd-0ce3dc10c330
+rs_pair(['a','b','c'])
 
 # ╔═╡ 9833165c-2b6f-41dc-9bfc-6a83be790b13
 rs_pair( randperm(4))
@@ -408,6 +462,62 @@ end
 # ╔═╡ c0b78cdc-5702-44c4-8989-ab86587daa2b
 small_yt(Z)
 
+# ╔═╡ 5f462919-2e1d-45ef-a513-92d61a3c5588
+# ╠═╡ disabled = true
+#=╠═╡
+r = findfirst( 2.5 .< [2,2,2,3])
+  ╠═╡ =#
+
+# ╔═╡ 21b9708c-f0ef-4886-a949-6151844d277a
+r = findfirst( 3 .< [2,2,2,3])
+
+# ╔═╡ e61be21c-a6dc-44d6-af9a-5752ecdda983
+pairs(r)
+
+# ╔═╡ c457b8ad-8014-48df-8da3-8def33edd291
+CartesianIndices(r)
+
+# ╔═╡ adf57baa-f901-4bad-99e1-c3909e78508a
+isnothing(r)
+
+# ╔═╡ b4ef1bdb-cdb1-4463-a79d-1aec3688675a
+rs_pair( [2,2,2,3,2.5])
+
+# ╔═╡ dfeb6844-fbe6-4a16-8fd5-708561541d24
+function my_rsk(v::Vector{T1}) where T1
+   diagram = Vector{T1}[]
+   n = length(v)
+	
+   for i = 1:n
+	   appendend = false
+	   for row = 1 : length(diagram)
+		   appendend = false
+		   f = findfirst( v[i] .< diagram[row] )
+		   if isnothing(f)    # append at the end
+			   push!(diagram[row],v[i]) 
+			   appendend = true
+			    break  ##  NEED TO NOT BUMP TO A NEW ROW
+		   else
+			   bumped = diagram[row][f]  # do the bump
+			   diagram[row][f] = v[i]
+			   v[i] = bumped
+		   end	# close if
+		  
+	   end  # close row loop
+	   if !appendend
+	 
+	     push!(diagram,[v[i]])  # bump to a new row
+	   end	   
+   end
+	diagram
+end
+
+# ╔═╡ d796a34d-4573-4d3b-856f-41b25b219d05
+my_rsk( [2,3,5,1,4])
+
+# ╔═╡ ad142660-2e4e-44f8-88ee-457a66eb5dc1
+rs_pair([2,3,5,1,4])
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -415,6 +525,7 @@ AbstractPlutoDingetjes = "6e696c72-6542-2067-7265-42206c756150"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
@@ -434,7 +545,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.11.1"
 manifest_format = "2.0"
-project_hash = "ba751de1460ffa51c076dea41ad0fac30c9ccfa6"
+project_hash = "d82b0be445bf6668cd8ef69dac834d31ed9ea489"
 
 [[deps.AbstractFFTs]]
 deps = ["LinearAlgebra"]
@@ -1885,9 +1996,9 @@ version = "1.5.1+0"
 
 [[deps.YoungTableaux]]
 deps = ["HypertextLiteral", "MappedArrays", "UUIDs"]
-git-tree-sha1 = "bdbeef28e2d2871dea307c5a76884911b0c48a3e"
+git-tree-sha1 = "06c47a46678eeaba01cb504587f273e405356fe0"
 uuid = "b7062236-b0aa-4473-bf76-66f344053691"
-version = "1.2.0"
+version = "1.2.2"
 weakdeps = ["GeometryBasics", "Makie"]
 
     [deps.YoungTableaux.extensions]
@@ -1988,7 +2099,10 @@ version = "3.6.0+0"
 
 # ╔═╡ Cell order:
 # ╟─fde56a41-8b99-4ccb-8746-fec175c74612
+# ╠═2edb0818-b2e7-41aa-adde-3f193391b4c5
+# ╠═1afa2ffe-f980-4f03-8efd-36abcfaf9cc1
 # ╠═fbccc9c5-9d62-4085-9440-8c90523a2884
+# ╠═841127d7-436a-4572-87e8-5630897b5574
 # ╟─571ddbe6-0cb5-405e-9900-89cdc9a46d6e
 # ╟─541dc805-dd27-4b2a-8cd8-287e41738989
 # ╠═3e607bf8-1565-4b6e-87a6-1f49a03dc356
@@ -1999,6 +2113,18 @@ version = "3.6.0+0"
 # ╠═b3aeec94-cb7a-428c-8929-2f74d85fabf8
 # ╠═ebf1b928-cc13-4ef2-8d23-beb191077f15
 # ╠═63aafb87-41df-401e-b96e-f65ab919bcee
+# ╠═e4e1fb1a-7e3d-4a42-bb07-3f036311d0bf
+# ╠═02cad44e-3c70-454f-b401-45099038dcd8
+# ╠═f748cb5d-04ef-4c57-b587-712fe0c7f19a
+# ╠═01883c20-57cf-470c-a888-acd1582ce038
+# ╠═36183dd6-47bf-4a9b-bf78-f6f87d0050fa
+# ╠═32a01057-24f1-47e6-bfa6-29684f098fa1
+# ╠═e8c8d2f5-b759-4d8d-b7c6-1327e7192b22
+# ╠═6d67b673-4078-44c7-bd90-e747958ab561
+# ╠═33e3d07e-06b5-450d-a3cd-0ce3dc10c330
+# ╠═4bbcc9d7-6037-49b7-bcf3-8ed0da1f5772
+# ╠═1ea645e0-9f85-4088-a131-29018ae3c1ae
+# ╠═2e2b96f7-6adb-4a32-80a0-ace036267461
 # ╠═7b3aadec-4ec4-4f89-8ccb-c78c24bad000
 # ╠═ef2fac57-ff72-400a-bc18-2e4eadafac11
 # ╟─4fe386fa-6f4b-4670-949f-b0de133907f6
@@ -2012,6 +2138,10 @@ version = "3.6.0+0"
 # ╟─1c274c6e-17a9-4412-bd0b-ca3a5a29bef4
 # ╟─9de61011-408a-4e73-b100-15e3594b7845
 # ╠═0acd1cda-9a65-4730-a451-6369dfbb92f8
+# ╠═a6972662-2ada-4d58-a538-498cd5a9d5c2
+# ╠═e61be21c-a6dc-44d6-af9a-5752ecdda983
+# ╠═82adcf46-bb51-42c6-ba78-86129e1ff4d5
+# ╠═c457b8ad-8014-48df-8da3-8def33edd291
 # ╠═47e58152-f784-40e6-9616-eb7d31fa606c
 # ╠═9833165c-2b6f-41dc-9bfc-6a83be790b13
 # ╟─a8ca7dae-72e6-4ff8-9171-8a22c48f0e49
@@ -2047,5 +2177,12 @@ version = "3.6.0+0"
 # ╠═322aec90-7ec6-4131-8625-bbd32afbe0b1
 # ╠═01059a74-a4e4-4962-8515-a8a333176a15
 # ╠═34f53853-c673-41be-9e20-e3208e72b09b
+# ╠═5f462919-2e1d-45ef-a513-92d61a3c5588
+# ╠═21b9708c-f0ef-4886-a949-6151844d277a
+# ╠═adf57baa-f901-4bad-99e1-c3909e78508a
+# ╠═b4ef1bdb-cdb1-4463-a79d-1aec3688675a
+# ╠═dfeb6844-fbe6-4a16-8fd5-708561541d24
+# ╠═d796a34d-4573-4d3b-856f-41b25b219d05
+# ╠═ad142660-2e4e-44f8-88ee-457a66eb5dc1
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
