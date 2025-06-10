@@ -362,9 +362,14 @@ visualize_step(STEPS_P[i], s, STEPS_Q; show_Q)
 visualize_step(STEPS_P_Π[i_π], π, STEPS_Q_Π; show_Q)
 
 # ╔═╡ 3abc835b-2f8a-4553-92c2-41e47b3e32f4
+# ╠═╡ disabled = true
+#=╠═╡
 @bind N SeekingSlider(0:20:700, 0)
+  ╠═╡ =#
 
 # ╔═╡ 200c88f2-159a-4693-bee8-e3ccc271d781
+# ╠═╡ disabled = true
+#=╠═╡
 begin
 	Z, _ = rs_pair(randperm(N))
 	X = getindex.(eachindex(Z), 2)
@@ -385,6 +390,7 @@ begin
 	)
 	fig
 end
+  ╠═╡ =#
 
 # ╔═╡ 01059a74-a4e4-4962-8515-a8a333176a15
 function small_yt(yt)
@@ -429,7 +435,7 @@ YoungTableaux = "~1.2.0"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.5"
+julia_version = "1.11.1"
 manifest_format = "2.0"
 project_hash = "ba751de1460ffa51c076dea41ad0fac30c9ccfa6"
 
@@ -1333,7 +1339,7 @@ version = "3.2.4+0"
 [[deps.OpenLibm_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "05823500-19ac-5b8b-9628-191a04bc5112"
-version = "0.8.5+0"
+version = "0.8.1+2"
 
 [[deps.OpenSSL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
