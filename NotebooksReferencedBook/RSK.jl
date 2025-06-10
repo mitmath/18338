@@ -66,6 +66,9 @@ end
 # ╔═╡ ebf1b928-cc13-4ef2-8d23-beb191077f15
 rsk_pair( [1 1 2 2 3], [1 2 3 4 2]) # generalized permutation
 
+# ╔═╡ 63aafb87-41df-401e-b96e-f65ab919bcee
+rsk_pair(5:8,9:12)
+
 # ╔═╡ 7b3aadec-4ec4-4f89-8ccb-c78c24bad000
 md"""
 # The RS algorithm visualized
@@ -362,14 +365,9 @@ visualize_step(STEPS_P[i], s, STEPS_Q; show_Q)
 visualize_step(STEPS_P_Π[i_π], π, STEPS_Q_Π; show_Q)
 
 # ╔═╡ 3abc835b-2f8a-4553-92c2-41e47b3e32f4
-# ╠═╡ disabled = true
-#=╠═╡
 @bind N SeekingSlider(0:20:700, 0)
-  ╠═╡ =#
 
 # ╔═╡ 200c88f2-159a-4693-bee8-e3ccc271d781
-# ╠═╡ disabled = true
-#=╠═╡
 begin
 	Z, _ = rs_pair(randperm(N))
 	X = getindex.(eachindex(Z), 2)
@@ -390,7 +388,6 @@ begin
 	)
 	fig
 end
-  ╠═╡ =#
 
 # ╔═╡ 01059a74-a4e4-4962-8515-a8a333176a15
 function small_yt(yt)
@@ -2001,6 +1998,7 @@ version = "3.6.0+0"
 # ╠═5aa96ccb-2df7-4988-9ab4-5a82d8ed089e
 # ╠═b3aeec94-cb7a-428c-8929-2f74d85fabf8
 # ╠═ebf1b928-cc13-4ef2-8d23-beb191077f15
+# ╠═63aafb87-41df-401e-b96e-f65ab919bcee
 # ╠═7b3aadec-4ec4-4f89-8ccb-c78c24bad000
 # ╠═ef2fac57-ff72-400a-bc18-2e4eadafac11
 # ╟─4fe386fa-6f4b-4670-949f-b0de133907f6
