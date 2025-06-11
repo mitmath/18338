@@ -196,6 +196,9 @@ end
 # ╔═╡ 3e607bf8-1565-4b6e-87a6-1f49a03dc356
 rs_pair( [ 1 3 2 4])
 
+# ╔═╡ be0adc4d-b933-4a16-8123-33c4718aa5af
+rs_pair( [1,3,2,4])
+
 # ╔═╡ b6ff0896-0a64-4789-b418-f5c8e25fd44a
 rs_pair( randperm(4))
 
@@ -490,33 +493,91 @@ function my_rsk(v::Vector{T1}) where T1
 	
    for i = 1:n
 	   appendend = false
+	   w = v[i]
 	   for row = 1 : length(diagram)
 		   appendend = false
-		   f = findfirst( v[i] .< diagram[row] )
+		    
+		   f = findfirst( w .< diagram[row] )
 		   if isnothing(f)    # append at the end
-			   push!(diagram[row],v[i]) 
+			   push!(diagram[row],w) 
 			   appendend = true
-			    break  ##  NEED TO NOT BUMP TO A NEW ROW
+			   break  ##  NEED TO NOT BUMP TO A NEW ROW
 		   else
 			   bumped = diagram[row][f]  # do the bump
-			   diagram[row][f] = v[i]
-			   v[i] = bumped
+			   diagram[row][f] = w
+			   w  = bumped
+			   
 		   end	# close if
 		  
 	   end  # close row loop
-	   if !appendend
-	 
-	     push!(diagram,[v[i]])  # bump to a new row
+	   println(appendend)
+	  if !appendend 
+	     push!(diagram,[w])  # bump to a new row
 	   end	   
-   end
+   end #close i loop
 	diagram
 end
 
-# ╔═╡ d796a34d-4573-4d3b-856f-41b25b219d05
-my_rsk( [2,3,5,1,4])
+# ╔═╡ 5d2d3d26-0a89-4643-8fa1-bf4fd45ea09a
+function my_rs(v::Vector) 
+   diagram = [[v[1]]]	
+   for i = 2:length(v)   
+	   w = v[i] 
+	   for row = 1 : length(diagram)
+		   f = findfirst( [w] .< diagram[row] )
+		   if isnothing(f)    # append at the end
+			   push!(diagram[row],w); break
+		   else # do the bump		  
+			   w, diagram[row][f] = diagram[row][f], w
+			   row == length(diagram) && push!(diagram,[w]) # new row
+		   end	  
+	   end  # close row loop	   
+   end # close i loop
+  diagram
+end
+
+# ╔═╡ 2c4eac2d-211d-423b-b6dd-7e57c5c6f91f
+function my_rs2(v::Vector{T1}) where T1
+   diagram = Vector{T1}[] 
+   for w ∈ v 
+	   for row = 1 : 1 + length(diagram)
+		   row > length(diagram) && (push!(diagram,[w]); break) # new row
+		   f = findfirst( [w] .< diagram[row] )
+		   isnothing(f)  &&  (push!(diagram[row],w); break) # end of row  
+		   w, diagram[row][f] = diagram[row][f], w	# bump		   
+	   end  	   
+   end 
+  diagram
+end
+
+# ╔═╡ f7f5dbc4-63d4-4736-a92d-7f3e78db8e16
+function my_rs3(v::Vector{T1}) where T1
+   diagram = ∅ = Vector{T1}[] 
+   for w ∈ v 
+	   for myrow ∈ [diagram; [∅]]
+		   isempty(myrow) && (push!(diagram,[w]); break) # new row	
+		   f = findfirst( [w] .< myrow )
+		   isnothing(f)  &&  (push!(myrow,w); break) # end of row  
+		   w, myrow[f] = myrow[f], w	# bump		   
+	   end  	   
+   end 
+  diagram
+end
+
+# ╔═╡ e887922b-7781-4093-9d99-b5d6041602e7
+
+
+# ╔═╡ 03935359-276f-4d00-895c-06d02689b611
+α = [(1,2),(1,2),(3,4)]
+
+# ╔═╡ b86a0347-5ec5-4333-8786-a323ab857b53
+my_rs3(α)
+
+# ╔═╡ e5d6cbfe-efd4-44ce-bc4e-400fd1f1613b
+
 
 # ╔═╡ ad142660-2e4e-44f8-88ee-457a66eb5dc1
-rs_pair([2,3,5,1,4])
+rs_pair(copy(α))
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -2106,6 +2167,7 @@ version = "3.6.0+0"
 # ╟─571ddbe6-0cb5-405e-9900-89cdc9a46d6e
 # ╟─541dc805-dd27-4b2a-8cd8-287e41738989
 # ╠═3e607bf8-1565-4b6e-87a6-1f49a03dc356
+# ╠═be0adc4d-b933-4a16-8123-33c4718aa5af
 # ╠═b6ff0896-0a64-4789-b418-f5c8e25fd44a
 # ╠═0bbe5c91-e518-46e0-a527-704b3cf13a51
 # ╠═90b7aa1a-d35f-4cfa-98c5-fc10e88e6a3f
@@ -2182,7 +2244,13 @@ version = "3.6.0+0"
 # ╠═adf57baa-f901-4bad-99e1-c3909e78508a
 # ╠═b4ef1bdb-cdb1-4463-a79d-1aec3688675a
 # ╠═dfeb6844-fbe6-4a16-8fd5-708561541d24
-# ╠═d796a34d-4573-4d3b-856f-41b25b219d05
+# ╠═5d2d3d26-0a89-4643-8fa1-bf4fd45ea09a
+# ╠═2c4eac2d-211d-423b-b6dd-7e57c5c6f91f
+# ╠═f7f5dbc4-63d4-4736-a92d-7f3e78db8e16
+# ╠═e887922b-7781-4093-9d99-b5d6041602e7
+# ╠═03935359-276f-4d00-895c-06d02689b611
+# ╠═b86a0347-5ec5-4333-8786-a323ab857b53
+# ╠═e5d6cbfe-efd4-44ce-bc4e-400fd1f1613b
 # ╠═ad142660-2e4e-44f8-88ee-457a66eb5dc1
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
