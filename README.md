@@ -1,4 +1,6 @@
-# 18.338: Eigenvalues of random matrices, Fall 2024
+# 18.338: Eigenvalues of random matrices, Fall 2025
+
+This is currently a copy of 2024, come back soon for 2025.
 
 ## Announcement
 
