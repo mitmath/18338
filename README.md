@@ -67,6 +67,41 @@ See if there’s any easier derivation of TW starting from their R, S recursion
 Simple TW derivation for GOE/GSE
 Simple TW derivation for LUE/JUE
 
+# Monday & Wednesday Schedule
+**September 3 - December 10, 2025**
+
+| # | Day | Date | Topic | Reading | HW Due |
+|---|-----|------|-------|---------|--------|
+| 1 | M | 09/03 | | | |
+| 2 | W | 09/05 | | | |
+| 3 | M | 09/08 | | | |
+| 4 | W | 09/10 | | | |
+| 5 | M | 09/15 | | | |
+| 6 | W | 09/17 | | | |
+| 7 | M | 09/22 | | | |
+| 8 | W | 09/24 | Guest Lecturer Alexei Borodin | | |
+| 9 | M | 09/29 | | | |
+| 10 | W | 10/01 | | | |
+| 11 | M | 10/06 | | | |
+| 12 | W | 10/08 | | | |
+| - | M | 10/13 | Indigenous Peoples Day | | |
+| 13 | W | 10/15 | | | |
+| 14 | M | 10/20 | | | |
+| 15 | W | 10/22 | | | |
+| 16 | M | 10/27 | | | |
+| 17 | W | 10/29 | | | |
+| 18 | M | 11/03 | | | |
+| 19 | W | 11/05 | | | |
+| - | M | 11/10 | Student Holiday | | |
+| 20 | W | 11/12 | | | |
+| 21 | M | 11/17 | | | |
+| 22 | W | 11/19 | | | |
+| 23 | M | 11/24 | | | |
+| 24 | W | 11/26 | | | |
+| 25 | M | 12/01 | | | |
+| 26 | W | 12/03 | | | |
+| 27 | M | 12/08 | | | |
+| 28 | W | 12/10 | | | |
 
 ## Schedule (Tentative)
 
