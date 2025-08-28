@@ -26,7 +26,7 @@ Announcements will be made in piazza most of the times. If you haven't already, 
 This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2024 semester.
 
 ## Location and Time
-The class will be held in 2-147 from 3--4:30pm every Monday and Wednesday. 
+The class will be held in 4-153 (in 2025) from 3--4:30pm every Monday and Wednesday. 
 
 ## Course Description:
 
