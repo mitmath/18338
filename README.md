@@ -72,17 +72,17 @@ Simple TW derivation for LUE/JUE
 
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
-| 1 | M | 09/03 | | | |
-| 2 | W | 09/05 | | | |
-| 3 | M | 09/08 | | | |
-| 4 | W | 09/10 | | | |
-| 5 | M | 09/15 | | | |
-| 6 | W | 09/17 | | | |
-| 7 | M | 09/22 | | | |
+| 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | | |
+| 2 | W | 09/05 | Semicircle, Quartercircle, Circular and other infinite RMT Laws | | |
+| 3 | M | 09/08 | Random Matrix Decomposition and Finite RMT | | |
+| 4 | W | 09/10 | Orthogonal Polynomial Intro  | | |
+| 5 | M | 09/15 | Introduction to Discrete DPP   | | |
+| 6 | W | 09/17 | DPPs in Random Matrix Theory  | | |
+| 7 | M | 09/22 |  Longest Increasing Subsequence | | |
 | 8 | W | 09/24 | Guest Lecturer Alexei Borodin | | |
-| 9 | M | 09/29 | | | |
-| 10 | W | 10/01 | | | |
-| 11 | M | 10/06 | | | |
+| 9 | M | 09/29 | Growth Processes, Aztec Diamonds and Tracy Widom     | | |
+| 10 | W | 10/01 | Brownian Motion and Airy Processes | | |
+| 11 | M | 10/06 | catch up | | |
 | 12 | W | 10/08 | | | |
 | - | M | 10/13 | Indigenous Peoples Day | | |
 | 13 | W | 10/15 | | | |
