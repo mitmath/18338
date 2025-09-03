@@ -1,12 +1,12 @@
 # 18.338: Eigenvalues of random matrices, Fall 2025
 
-This is currently a copy of 2024, come back soon for 2025.
 
 ## Announcement
 
-Announcements will be made in piazza most of the times. If you haven't already, please sign up at https://piazza.com/mit/fall2024/18338. 
+Announcements will be made in piazza most of the times. If you haven't already, please sign up at https://piazza.com/mit/fall2025/18338. 
 
 ## Previous versions:
+* [2024 Fall 18.338](https://github.com/mitmath/18338/tree/2024-fall)
 * [2023 Fall 18.338](https://github.com/mitmath/18338/tree/2023-fall)
 * [2022 Fall 18.338](https://github.com/mitmath/18338/tree/2022-fall)
 * [2021 Fall 18.338](https://github.com/mitmath/18338/tree/2021-fall)
@@ -23,7 +23,7 @@ Announcements will be made in piazza most of the times. If you haven't already, 
 
 ## Lecturer: Prof. Alan Edelman
 
-This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2024 semester.
+This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2025 semester.
 
 ## Location and Time
 The class will be held in 4-153 (in 2025) from 3--4:30pm every Monday and Wednesday. 
