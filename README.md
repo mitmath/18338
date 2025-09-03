@@ -31,6 +31,8 @@ The class will be held in 4-153 (in 2025) from 3--4:30pm every Monday and Wednes
 ## Course Description:
 
 We focus on the mathematics of random matrices - from the finite to the infinite, and beyond.
+I'd like this year to cover the basic RMT just quickly and slowly enough to get to 
+exciting developments in DPPs, growth processes, aztec diamonds, and some combinatorial structures.
 
 Our emphasis will be on interplay between the varying mathematical tools that have come to play in the modern understanding of random matrix theory. We will also discuss applications of random matrix techniques to problems in engineering and science. In 2024 we may focus on orthogonal polynomial theory. 
 
@@ -45,11 +47,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Due| Reading| Link |
 |-|---|----|------|
-| 1 | 9/16  Monday | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) |
-| 2 | 9/23 Monday | Ch 1, 2, 3 |  [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf)  |
-| 3 | 10/7  Monday | Ch 13, 14 | [HW 3](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw3.pdf) |
-| 4| 10/16 Wed || HW4 - Please describe briefly your selected class project, ideally (though not required) involving math and computation |
-| 5||||
+| ||||
 
 
 ## Research Questions
@@ -67,7 +65,7 @@ See if there’s any easier derivation of TW starting from their R, S recursion
 Simple TW derivation for GOE/GSE
 Simple TW derivation for LUE/JUE
 
-# Monday & Wednesday Schedule
+# Monday & Wednesday Schedule (Tentative)
 **September 3 - December 10, 2025**
 
 | # | Day | Date | Topic | Reading | HW Due |
@@ -103,7 +101,7 @@ Simple TW derivation for LUE/JUE
 | 27 | M | 12/08 | | | |
 | 28 | W | 12/10 | | | |
 
-## Schedule (Tentative)
+## Some old Schedules 
 
 |#|Day| Date |  Topic | Reading| HW Due |
 |-|-|------|------|-----|--|
