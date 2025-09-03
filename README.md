@@ -2,8 +2,8 @@
 
 
 ## Announcement
-
-Announcements will be made in piazza most of the times. If you haven't already, please sign up at https://piazza.com/mit/fall2025/18338. 
+We will only use canvas for homework submission.  This github repo is the official course home page.
+Announcements will be made in piazza most of the time. If you haven't already, please sign up at https://piazza.com/mit/fall2025/18338. 
 
 ## Previous versions:
 * [2024 Fall 18.338](https://github.com/mitmath/18338/tree/2024-fall)
