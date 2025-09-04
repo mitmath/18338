@@ -70,7 +70,7 @@ Simple TW derivation for LUE/JUE
 
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
-| 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | | |
+| 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  | |
 | 2 | W | 09/05 | Semicircle, Quartercircle, Circular and other infinite RMT Laws | | |
 | 3 | M | 09/08 | Random Matrix Decomposition and Finite RMT | | |
 | 4 | W | 09/10 | Orthogonal Polynomial Intro  | | |
