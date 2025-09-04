@@ -54,7 +54,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 |Topics|
 |-|
 |[Combinatorics of Wachter's Law](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing)|
-| [pdf listing from 2023](https://github.com/mitmath/18338/blob/master/project_lists/project_lists.pdf)|
+| [pdf listing from 2023](https://github.com/mitmath/18338/blob/master/project_lists/project_lists.pdf) |
 MOPS in Julia
 Lanczos on Multivariate Orthogonal Polynomials
 QR Multivariate implementation (in Julia, Symbolically if possible)
@@ -70,7 +70,7 @@ Simple TW derivation for LUE/JUE
 
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
-| 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  | |
+| 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  [[Growth Notebook]](https://github.com/mitmath/18338/blob/master/NotebooksReferencedBook/RandomGrowth.jl) | |
 | 2 | W | 09/05 | Semicircle, Quartercircle, Circular and other infinite RMT Laws | | |
 | 3 | M | 09/08 | Random Matrix Decomposition and Finite RMT | | |
 | 4 | W | 09/10 | Orthogonal Polynomial Intro  | | |
