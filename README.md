@@ -23,6 +23,8 @@ Announcements will be made in piazza most of the time. If you haven't already, p
 
 ## Lecturer: Prof. Alan Edelman
 
+## TA: Nicholas West
+
 This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2025 semester.
 
 ## Location and Time
