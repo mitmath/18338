@@ -49,7 +49,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Due| Reading| Link |
 |-|---|----|------|
-| 1| 9/17 | 5,10,11| https://github.com/mitmath/18338/blob/master/homeworks/fall2025hw1.pdf|
+| 1| 9/17 | 5,10,11| [HW1](https://github.com/mitmath/18338/blob/master/homeworks/fall2025hw1.pdf)|
 
 
 ## Research Questions
