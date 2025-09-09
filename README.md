@@ -23,6 +23,8 @@ Announcements will be made in piazza most of the time. If you haven't already, p
 
 ## Lecturer: Prof. Alan Edelman
 
+## TA: Nicholas West
+
 This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2025 semester.
 
 ## Location and Time
@@ -47,7 +49,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Due| Reading| Link |
 |-|---|----|------|
-| ||||
+| 1| 9/17 | 5,10,11| https://github.com/mitmath/18338/blob/master/homeworks/fall2025hw1.pdf|
 
 
 ## Research Questions
@@ -71,7 +73,7 @@ Simple TW derivation for LUE/JUE
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
 | 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  [[Growth Notebook]](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
-| 2 | W | 09/05 | Semicircle, Quartercircle, Circular and other infinite RMT Laws | | |
+| 2 | W | 09/05 | Semicircle &  TracyWidom  Laws (Fredholm Det, Diff Eq, & Wigner's Proof) | | |
 | 3 | M | 09/08 | Random Matrix Decomposition and Finite RMT | | |
 | 4 | W | 09/10 | Orthogonal Polynomial Intro  | | |
 | 5 | M | 09/15 | Introduction to Discrete DPP   | | |
