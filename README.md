@@ -73,7 +73,7 @@ Simple TW derivation for LUE/JUE
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
 | 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  [[Growth Notebook]](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
-| 2 | W | 09/05 | Semicircle, Quartercircle, Circular and other infinite RMT Laws | | |
+| 2 | W | 09/05 | Semicircle &  TracyWidom  Laws (Fredholm Det, Diff Eq, & Wigner's Proof) | | |
 | 3 | M | 09/08 | Random Matrix Decomposition and Finite RMT | | |
 | 4 | W | 09/10 | Orthogonal Polynomial Intro  | | |
 | 5 | M | 09/15 | Introduction to Discrete DPP   | | |
