@@ -72,36 +72,37 @@ Simple TW derivation for LUE/JUE
 
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
-| 1 | M | 09/03 | Hermite, Laguerre and Jacobi ensemble: the ubiquitous triad  | [[Slides]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf)  [[Growth Notebook]](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
-| 2 | W | 09/05 | Semicircle &  TracyWidom  Laws (Fredholm Det, Diff Eq, & Wigner's Proof) | | |
-| 3 | M | 09/08 | Random Matrix Decomposition and Finite RMT | | |
-| 4 | W | 09/10 | Orthogonal Polynomial Intro  | | |
-| 5 | M | 09/15 | Introduction to Discrete DPP   | | |
-| 6 | W | 09/17 | DPPs in Random Matrix Theory  | | |
-| 7 | M | 09/22 |  Longest Increasing Subsequence | | |
-| 8 | W | 09/24 | Guest Lecturer Alexei Borodin | | |
-| 9 | M | 09/29 | Growth Processes, Aztec Diamonds and Tracy Widom     | | |
-| 10 | W | 10/01 | Brownian Motion and Airy Processes | | |
-| 11 | M | 10/06 | catch up | | |
-| 12 | W | 10/08 | | | |
+| # | Day | Date (2025) | Topic | Reading | HW Due |
+|---|-----|-------------|-------|---------|--------|
+| 1 | W | 09/03 | Hermite, Laguerre, and Jacobi ensembles: the ubiquitous triad | [Slides](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf) · [Growth notebook](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
+| 2 | M | 09/08 | Semicircle & Tracy–Widom laws (Fredholm determinant, differential equations, and Wigner’s proof) | Reading 1,3 | |
+| 3 | W | 09/10 | Random matrix decomposition and finite RMT | | |
+| 4 | M | 09/15 | Orthogonal polynomials: introduction | | |
+| 5 | W | 09/17 | Introduction to discrete DPPs | | |
+| 6 | M | 09/22 | DPPs in random matrix theory | | |
+| 7 | W | 09/24 | Guest lecture: Alexei Borodin| | |
+| 8 | M | 09/29 |  Longest increasing subsequence  | | |
+| 9 | W | 10/01 | Growth processes, Aztec diamonds, and Tracy–Widom | | |
+| 10 | M | 10/06 | Brownian motion and Airy processes | | |
+| 11 | W | 10/08 |  Catch Up | | |
 | - | M | 10/13 | Indigenous Peoples Day | | |
-| 13 | W | 10/15 | | | |
-| 14 | M | 10/20 | | | |
-| 15 | W | 10/22 | | | |
-| 16 | M | 10/27 | | | |
-| 17 | W | 10/29 | | | |
-| 18 | M | 11/03 | | | |
-| 19 | W | 11/05 | | | |
-| - | M | 11/10 | Student Holiday | | |
-| 20 | W | 11/12 | | | |
-| 21 | M | 11/17 | | | |
-| 22 | W | 11/19 | | | |
-| 23 | M | 11/24 | | | |
-| 24 | W | 11/26 | | | |
-| 25 | M | 12/01 | | | |
-| 26 | W | 12/03 | | | |
-| 27 | M | 12/08 | | | |
-| 28 | W | 12/10 | | | |
+| 12 | W | 10/15 | | | |
+| 13 | M | 10/20 | | | |
+| 14 | W | 10/22 | | | |
+| 15 | M | 10/27 | | | |
+| 16 | W | 10/29 | | | |
+| 17 | M | 11/03 | | | |
+| 18 | W | 11/05 | | | |
+| -  | M | 11/10 | Student Holiday | | |
+| 19 | W | 11/12 | | | |
+| 20 | M | 11/17 | | | |
+| 21 | W | 11/19 | | | |
+| 22 | M | 11/24 | | | |
+| 23 | W | 11/26 | | | |
+| 24 | M | 12/01 | | | |
+| 25 | W | 12/03 | | | |
+| 26 | M | 12/08 | | | |
+| 27 | W | 12/10 | | | |
 
 ## Some old Schedules 
 
