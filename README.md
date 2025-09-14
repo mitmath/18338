@@ -72,8 +72,6 @@ Simple TW derivation for LUE/JUE
 
 | # | Day | Date | Topic | Reading | HW Due |
 |---|-----|------|-------|---------|--------|
-| # | Day | Date (2025) | Topic | Reading | HW Due |
-|---|-----|-------------|-------|---------|--------|
 | 1 | W | 09/03 | Hermite, Laguerre, and Jacobi ensembles: the ubiquitous triad | [Slides](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf) · [Growth notebook](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
 | 2 | M | 09/08 | Semicircle & Tracy–Widom laws (Fredholm determinant, differential equations, and Wigner’s proof) | Reading 1,3 | |
 | 3 | W | 09/10 | Random matrix decomposition and finite RMT | | |
