@@ -75,13 +75,13 @@ Simple TW derivation for LUE/JUE
 | 1 | W | 09/03 | Hermite, Laguerre, and Jacobi ensembles: the ubiquitous triad | [Slides](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf) · [Growth notebook](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
 | 2 | M | 09/08 | Semicircle & Tracy–Widom laws (Fredholm determinant, differential equations, and Wigner’s proof) | Reading 1,3 | |
 | 3 | W | 09/10 | Random matrix decomposition and finite RMT | Reading 5,6 | |
-| 4 | M | 09/15 | Orthogonal polynomials: introduction | | |
-| 5 | W | 09/17 | Introduction to discrete DPPs | | |
-| 6 | M | 09/22 | DPPs in random matrix theory | | |
+| 4 | M | 09/15 | Orthogonal polynomials: introduction | Reading 13,14  | |
+| 5 | W | 09/17 | Introduction to discrete DPPs | Reading 7,21 | |
+| 6 | M | 09/22 | DPPs in random matrix theory | Reading 21 | |
 | 7 | W | 09/24 | Guest lecture: Alexei Borodin| | |
-| 8 | M | 09/29 |  Longest increasing subsequence  | | |
-| 9 | W | 10/01 | Growth processes, Aztec diamonds, and Tracy–Widom | | |
-| 10 | M | 10/06 | Brownian motion and Airy processes | | |
+| 8 | M | 09/29 |  Longest increasing subsequence  | Reading 22 | |
+| 9 | W | 10/01 | Growth processes, Aztec diamonds, and Tracy–Widom |  Reading 15, 23 | |
+| 10 | M | 10/06 | Brownian motion and Airy processes | Reading 17,18 | |
 | 11 | W | 10/08 |  Catch Up | | |
 | - | M | 10/13 | Indigenous Peoples Day | | |
 | 12 | W | 10/15 | | | |
