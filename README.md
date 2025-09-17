@@ -1,10 +1,12 @@
-# 18.338: Eigenvalues of random matrices, Fall 2024
+# 18.338: Eigenvalues of random matrices, Fall 2025
+
 
 ## Announcement
-
-Announcements will be made in piazza most of the times. If you haven't already, please sign up at https://piazza.com/mit/fall2024/18338. 
+We will only use canvas for homework submission.  This github repo is the official course home page.
+Announcements will be made in piazza most of the time. If you haven't already, please sign up at https://piazza.com/mit/fall2025/18338. 
 
 ## Previous versions:
+* [2024 Fall 18.338](https://github.com/mitmath/18338/tree/2024-fall)
 * [2023 Fall 18.338](https://github.com/mitmath/18338/tree/2023-fall)
 * [2022 Fall 18.338](https://github.com/mitmath/18338/tree/2022-fall)
 * [2021 Fall 18.338](https://github.com/mitmath/18338/tree/2021-fall)
@@ -21,14 +23,18 @@ Announcements will be made in piazza most of the times. If you haven't already, 
 
 ## Lecturer: Prof. Alan Edelman
 
-This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2024 semester.
+## TA: Nicholas West
+
+This is the repository for public materials for the MIT course 18.338, *Eigenvalues of random matrices*, for the Fall 2025 semester.
 
 ## Location and Time
-The class will be held in 2-147 from 3--4:30pm every Monday and Wednesday. 
+The class will be held in 4-153 (in 2025) from 3--4:30pm every Monday and Wednesday. 
 
 ## Course Description:
 
 We focus on the mathematics of random matrices - from the finite to the infinite, and beyond.
+I'd like this year to cover the basic RMT just quickly and slowly enough to get to 
+exciting developments in DPPs, growth processes, aztec diamonds, and some combinatorial structures.
 
 Our emphasis will be on interplay between the varying mathematical tools that have come to play in the modern understanding of random matrix theory. We will also discuss applications of random matrix techniques to problems in engineering and science. In 2024 we may focus on orthogonal polynomial theory. 
 
@@ -43,18 +49,14 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 
 |#|Due| Reading| Link |
 |-|---|----|------|
-| 1 | 9/16  Monday | Ch 5, 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) |
-| 2 | 9/23 Monday | Ch 1, 2, 3 |  [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf)  |
-| 3 | 9/30  Monday | Ch 13, 14 |  |
-| 4||||
-| 5||||
+| 1| 9/17 | 5,10,11| [HW1](https://github.com/mitmath/18338/blob/master/homeworks/fall2025hw1.pdf)|
 
 
 ## Research Questions
 |Topics|
 |-|
 |[Combinatorics of Wachter's Law](https://docs.google.com/presentation/d/1CelJYt1GOMG8_HlvWqKK7__zFOSXWUGxsvOPwAxqTGo/edit?usp=sharing)|
-| [pdf listing from 2023](https://github.com/mitmath/18338/blob/master/project_lists/project_lists.pdf)|
+| [pdf listing from 2023](https://github.com/mitmath/18338/blob/master/project_lists/project_lists.pdf) |
 MOPS in Julia
 Lanczos on Multivariate Orthogonal Polynomials
 QR Multivariate implementation (in Julia, Symbolically if possible)
@@ -65,8 +67,42 @@ See if there’s any easier derivation of TW starting from their R, S recursion
 Simple TW derivation for GOE/GSE
 Simple TW derivation for LUE/JUE
 
+# Monday & Wednesday Schedule (Tentative)
+**September 3 - December 10, 2025**
 
-## Schedule (Tentative)
+| # | Day | Date | Topic | Reading | HW Due |
+|---|-----|------|-------|---------|--------|
+| 1 | W | 09/03 | Hermite, Laguerre, and Jacobi ensembles: the ubiquitous triad | [Slides](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/mit_18338_lecture1.pdf) · [Growth notebook](https://mitmath.github.io/18338/NotebooksReferencedBook/RandomGrowth.html) | |
+| 2 | M | 09/08 | Semicircle & Tracy–Widom laws (Fredholm determinant, differential equations, and Wigner’s proof) | Reading 1,3 | |
+| 3 | W | 09/10 | Random matrix decomposition and finite RMT | Reading 5,6 | |
+| 4 | M | 09/15 | Orthogonal polynomials: introduction | Reading 13,14  | |
+| 5 | W | 09/17 | Introduction to discrete DPPs | Reading 7,21 | |
+| 6 | M | 09/22 | DPPs in random matrix theory | Reading 21 | |
+| 7 | W | 09/24 | Guest lecture: Alexei Borodin| | |
+| 8 | M | 09/29 |  Longest increasing subsequence  | Reading 22 | |
+| 9 | W | 10/01 | Growth processes, Aztec diamonds, and Tracy–Widom |  Reading 15, 23 | |
+| 10 | M | 10/06 | Brownian motion and Airy processes | Reading 17,18 | |
+| 11 | W | 10/08 |  Catch Up | | |
+| - | M | 10/13 | Indigenous Peoples Day | | |
+| 12 | W | 10/15 | | | |
+| 13 | M | 10/20 | | | |
+| 14 | W | 10/22 | | | |
+| 15 | M | 10/27 | | | |
+| 16 | W | 10/29 | | | |
+| 17 | M | 11/03 | | | |
+| 18 | W | 11/05 | | | |
+| -  | M | 11/10 | Student Holiday | | |
+| 19 | W | 11/12 | | | |
+| 20 | M | 11/17 | | | |
+| 21 | W | 11/19 | | | |
+| 22 | M | 11/24 | | | |
+| 23 | W | 11/26 | | | |
+| 24 | M | 12/01 | | | |
+| 25 | W | 12/03 | | | |
+| 26 | M | 12/08 | | | |
+| 27 | W | 12/10 | | | |
+
+## Some old Schedules 
 
 |#|Day| Date |  Topic | Reading| HW Due |
 |-|-|------|------|-----|--|
@@ -75,8 +111,31 @@ Simple TW derivation for LUE/JUE
 | 3 | W | 11-Sep | Random Matrix Decomposition and Finite RMT  | Ch 5  | 
 | 4 | M | 16-Sep | Matrix Calculus and Jacobians of Matrix Decompositions | Ch 10, 11 | [HW 1](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw1.pdf) Due|
 | 5 | W | 18-Sep | Matrix Calculus and Differential Forms   |  Ch 11 |  |
-| | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||
-| 5 | W | 18-Sep | Orthogonal Polynomial Theory  | Project Ideas: MOPS, QR  |  |
+| 6 | M | 23-Sep | Orthogonal Polynomial Intro  | Project Idea: MOPS in Julia |  |
+| 7 | W | 25-Sep |Multivariate Orthogonal Polynomial Theory   |  |  |
+| 8 | M | 30-Sep |  Univariate Orthogonal Polynomial Theory  |  |  |
+| 9 | W | 2-Oct  |   Orthogonal Polynomials and RMT  | | |
+|10|  W | 7-Oct | Introduction to Discrete DPP |||
+| 11 | W | 9-Oct | DPPs in Random Matrix Theory |||
+|    | M | 14-Oct  | Indigenous People's Day    |  |  |
+| 12 | W | 16-Oct | Possible Class Projects  | | |
+| 13 | M | 21-Oct | Computational Experiments with DPP | | |
+| 14 | W | 23-Oct | Algorithms for DPPs | | |
+| 15 | M | 28-Oct | Projection DPP Algorithm / Kesten-McKay Law | | |
+| 16 | W | 30-Oct | Growth Processes, Aztec Diamonds and Tracy Widom | | |
+| 17 | M | 4-Nov |  Longest Increasing Subsequence |  |  |
+| 18 | W | 6-Nov | Brownian Motion | |  |
+|    | M | 11-Nov | Veterans Day  |  |  |
+| 19 | W | 13-Nov |  Project Plan Presentations |  |  |
+| 20 | M | 18-Nov | Free Probability Intro |  |  |
+| 21 | W | 20-Nov | Free Probability R-Transform |  |  |
+| 22 | M | 25-Nov | How many roots are real? |  |  |
+|    | W | 27-Nov | *Canceled for Thanksgiving travel*  |  |  |
+| 23 | M | 2-Dec |
+| 24 | W | 4-Dec  | Project Presentation I         |  |  |
+| 25 | M | 9-Dec  | Project Presentation II       |  |  |
+| 26 | W | 11-Dec  | Project Presentation III      |  |  |
+| | |  We are here ↑ ↑ Below is tentative  and maybe should be ignored| ||  |
 | 6 | M | 23-Sep | Multivariate Orthogonal Polynomials   |   [Aztec Notes](https://github.com/mitmath/18338/blob/master/notes/borodin_aztec.pdf)  | [HW 2](https://github.com/mitmath/18338/blob/master/homeworks/fall2024hw2.pdf) Due |
 | 7 | W | 25-Sep | Algorithms for Sampling DPPs   |  |  |
 | 8 | M | 30-Sep  |DPPs | [[Notebook]](https://github.com/mitmath/18338/blob/master/JuliaNotebooks/Can%20DPP%20really%20sample%20eigenvalues%3F.ipynb)  [[DPPnotes]](https://github.com/mitmath/18338/blob/master/notes/dppnotes.pdf) |  |
@@ -106,6 +165,14 @@ Simple TW derivation for LUE/JUE
 
 |Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
+| 2024 | Cecelia Chen | Computing Multivariate Orthogonal Bases ||[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907163_18_338_project%20(1).pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907164_MultivariateLanczos.jl%20copy.zip)
+| | Vaibhav Dixit | Evolution of Eigenvalue Spectrum of Fully Connected (Dense) Layers in DNNs || [link](https://github.com/mitmath/18338/blob/master/projects/2024/dixitvaibhav_153380_4902546_blan%20(1).pdf)|
+| | Jennifer Hritz | Constructing approximately Haar-random unitaries from GUEs| [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911299_final_project_presentation_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911297_final_project_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911298_project_plots.jl)
+| | Joonsoo Lee | Derivatives of Randomized Matrix Approximation Algorithms | | [link](https://github.com/mitmath/18338/blob/master/projects/2024/leejoonsoo_174493_4904826_18_338_Project-1.pdf)|
+| | Donald Stralkus | Universality in Inner-Product Random Geometric Graphs | | [link](https://github.com/mitmath/18338/blob/master/projects/2024/stralkusdonald_119864_4906139_18338_Final_Project.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/stralkusdonald_119864_4906140_graphSpectra.jl) |
+| | Nicholas West | Fast eigendecomposition of unitary upper Hessenberg matrices | [link](https://github.com/mitmath/18338/blob/master/projects/2024/RMT_Project_Presentation.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2024/RMT_Report_WEST.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/FastUnitaryEigenvalues.zip)
+| | Joanna Zou | k-DPPs: Fixed-Size Determinantal Point Processes for Diversity-Based Subsampling | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zoujoanna_129477_4904902_18338_project_presentation.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zoujoanna_129477_4904901_18_338_Final_Project_Report.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zoujoanna_129477_4904903_final_project.ipynb)
+| | Alec Zhu |  Spacing of Riemann Zeta Zeros in Julia | [link](https://github.com/mitmath/18338/blob/master/projects/2024/Riemann%20Zeta%20Zeros%20in%20Julia.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/zhualec_101690_4905049_submission.zip)|
 | 2023 |Gaurav Arya| Differentiable Determinental Point Processes |  |[link](https://github.com/mitmath/18338/blob/master/projects/2023/aryagaurav_LATE_101101_3887118_main.pdf)| 
 | |Andrey Bryutkin & Diego Chavez| Painlevé Systems and Eigenvalue Distributions |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887228_Painleve%CC%81%20Systems%20Presentation-1.pdf) |  [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887229_random_matrices_final_project-2-1.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/bryutkinandrey_LATE_152454_3887230_testing_painleve-2.m)|
 | |Bünyamin Kartal & Maison Clouâtré| Random Quantum Density Operators | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875544_RandomQuantumDensityOperators%E2%80%94Final.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875545_Code1.ipynb) [link](https://github.com/mitmath/18338/blob/master/projects/2023/clouatremaison_118505_3875546_Code2.ipynb)|
@@ -114,7 +181,7 @@ Simple TW derivation for LUE/JUE
 | |Tanshiq Kumar| Random Matrix Theory and Generalization in Neural Networks | [link](https://github.com/mitmath/18338/blob/master/projects/2023/kumartanishq_114210_3876069_338_Final_Project_Slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/kumartanishq_114210_3876068_TK_338_Final_Report_Complete.pdf)| |
 | |Yizhou Liu| Are Interactions Real | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/liuyizhou_134814_3871872_18_338_project_final.pdf)| |
 | |Shyam Narayan| Tail Bounds on the Smallest Singular Value of a Rectangular Random Matrix| [link](https://github.com/mitmath/18338/blob/master/projects/2023/NarayananShyamSlides.pptx) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/narayananshyam_86941_3874130_18.338%20Final%20Project.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2023/narayananshyam_86941_3874131_18.338%20Final%20Project%20Experiments.html) |
-| |Nicholas Stiles| | [link](https://github.com/mitmath/18338/blob/master/projects/2023/stilesnicholas18_338_project_presentation.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2023/stilesnicholas_LATE_120061_3879963_18.338%20project%20report.pdf)| |
+| |Nicholas Stiles| Eigenvectors of the Correlation Matrix | [link](https://github.com/mitmath/18338/blob/master/projects/2023/stilesnicholas18_338_project_presentation.pdf)| [link](https://github.com/mitmath/18338/blob/master/projects/2023/stilesnicholas_LATE_120061_3879963_18.338%20project%20report.pdf)| |
 | |Songchen Tan| Application of RMT in some Discrete Optimization Problems | | [link](https://github.com/mitmath/18338/blob/master/projects/2023/tansongchen_97375_3874845_Application%20of%20RMT%20in%20some%20Discrete%20Optimization%20Problems.pdf) | |
 | | Harry Walden | Roots of Random Polynomials with Integral Geometry | [link](https://github.com/mitmath/18338/blob/master/projects/2023/Roots%20of%20random%20Polynomials%20with%20integral%20geometry.pptx) | [link](https://github.com/mitmath/18338/blob/master/projects/2023/waldenharry_154930_3866094_hjw57_18338_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2023/code)|
 | 2022 |Xiaomin Li & Yi Tian | Limiting Spectral Distributions of Random Matrices under Finite-Rank Perturbations | [link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_slides.pdf) |[link](https://github.com/mitmath/18338/blob/master/projects/2022/XiaominLiandYiTian/xlyt_report.pdf) | [link](https://github.com/mitmath/18338/tree/master/projects/2022/XiaominLiandYiTian) |
@@ -156,5 +223,5 @@ Simple TW derivation for LUE/JUE
 | | Helen Xie | RMT Applications to Transport Property | [link](https://github.com/mitmath/18338/blob/master/projects/2012/hx_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/hx_report.pdf) | | 
 | | Yufei Zhao| Spectral Distributions of Random Graphs | [link](https://github.com/mitmath/18338/blob/master/projects/2012/yz_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/yz_report.pdf)| |
 | |Yi Zeng |North Pole Problem | [link](https://github.com/mitmath/18338/blob/master/projects/2012/zy_slides.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2012/zy_report.pdf) | |
-| 2009| Gregory Minton | | [link](https://github.com/mitmath/18338/blob/master/projects/2009/final-report.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2009/momentinterface.html)|
+| 2009| Gregory Minton | Moments of Random Orthogonal Matrices | [link](https://github.com/mitmath/18338/blob/master/projects/2009/final-report.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2009/momentinterface.html)|
  
