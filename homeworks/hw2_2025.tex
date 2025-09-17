@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+
+\title{Homework 2, Fall 2025 18338}
+\author{Due 9/16 11:59pm}
+\date{}
+\begin{document}
+\maketitle
+
+\noindent{\large\color{blue} Please submit your homework via canvas.mit.edu. \\
+If you are submitting .jl or .ipynb files, you must additionally submit .html or .pdf file that captures running notebook or code.}
+
+\subsection*{Reading and Notes}
+
+Read chapters 7, 13, 14, 21 of the class notes
+(The lecture notes  can be found in Piazza: http://piazza.com/mit/fall2025/18338.). 
+Optional, but if you do this I'll get to know you : Provide  feedback especially high level style and where things did not make sense, in addition to spelling or technical errors.
+
+
+\subsection*{Problem sets}
+\begin{enumerate}
+	\item Do at least four of the following problems. 
+\begin{itemize}
+\item Exercise 7.1 (page 124)
+\item Exercise 7.2 (page 124)
+\item Exercise 7.3 (page 126)
+\item Exercise 7.4 (page 129)
+\item Exercise 7.5 (page 130)
+\item Exercise 7.6 (page 131)
+\end{itemize}
+\item See Lanczos tridiagonalization at page 254. Prove that the following sequence readily solves for the red variables in the Lanczos tridiagonalization algorithm:
+\begin{equation*}
+\hat{w}_k = Dq_k, \alpha_k = \hat{w}_k^T q_k, w_k = \hat{w}_k - \alpha_k q_k - \beta_{k-1}q_{k-1}, \beta_k = ||w_k||, q_{k+1} = w_k/\beta_k
+\end{equation*}
+\item Do at least four of the following problems. 
+
+\begin{itemize}
+\item Exercise 13.1 (page 263)
+\item Exercise 13.2 (page 264)
+\item Exercise 13.3 (page 264)
+\item Exercise 13.4 (page 265)
+\item Exercise 13.5 (page 265)
+\item Exercise 13.6 (page 265)
+\end{itemize}
+
+
+
+\end{enumerate}
+
+
+\end{document}
+
+
