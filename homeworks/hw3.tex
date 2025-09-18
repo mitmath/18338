@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+\DeclareMathOperator{\Tr}{Tr}
+\usepackage{hyperref}
+
+\title{Homework 3, Fall 2024 18.338}
+\author{Due 10/7 Monday 11:59pm}
+\date{}
+\begin{document}
+\maketitle
+
+
+\noindent{\large\color{blue} Please submit your homework via canvas.mit.edu. \\
+If you are submitting .jl or .ipynb files, you must additionally submit .html or .pdf file that captures running notebook or code.}
+
+
+\subsection*{Problem sets}
+\begin{enumerate}
+   % \item Solve 3 out of 16 exercises in the DPP notes.
+    \item Kernels related to Scaling limits
+    \begin{enumerate}
+        \item (M) The Christoffel-Darboux formula (also see equation (5.6) on page 81) states
+        \begin{equation*}
+            \sum_{j=0}^n\pi_i(x)\pi_j(y) = \frac{k_n}{k_{n+1}}\frac{\pi_n(x)\pi_{n+1}(y)-\pi_n(y)\pi_{n+1}(x)}{y-x}
+        \end{equation*}
+        where $k_n$ is the leading coefficient of $\pi_n$. Let 
+        \begin{equation*}
+            \pi_j(x) = \frac{H_j(x)}{(2^j\sqrt\pi j!)^{1/2}}
+        \end{equation*}
+        for Hermite polynomials $H_j$, then $k_n/k_{n+1} = \sqrt{ (n+1)/2}$. Use the known asymptotics
+        \begin{equation*}
+            \lim_{m\to\infty}(-1)^m m^{1/4}\pi_{2m}(x)e^{-x^2/2} = \frac{\cos(\xi)}{\sqrt{\pi}}
+        \end{equation*}
+        \begin{equation*}
+            \lim_{m\to\infty}(-1)^m m^{1/4}\pi_{2m+1}(x)e^{-x^2/2} = \frac{\sin(\xi)}{\sqrt{\pi}}
+        \end{equation*}
+        where $\xi = 2\sqrt{m}x$, to prove 
+        \begin{equation*}
+            K_{2m}(x, y) = e^{-\frac{1}{2}(x^2+y^2)}\sum_{j=0}^{2m-1}\pi_j(x)\pi_j(y)
+        \end{equation*}
+        converges to the sine kernel, i.e., 
+        \begin{equation*}
+            \frac{1}{\sqrt{m}}K_{2m}(x, y) \to \frac{2\sin(\xi_1-\xi_2)}{\pi(\xi_1-\xi_2)},
+        \end{equation*}
+        where $\xi_1 = 2\sqrt{m}x, \xi_2 = 2\sqrt{m}y$, as $m\to\infty$.
+        \item (C) Numerically verify the last convergence in Problem 1-(a). It would be enough to compare points $x, y\in[0,1]^2$.
+        \item (C) Point out the numerical issues on the diagonal and corners. Probably on the diagonal, Christoffel-Darboux needs to be replaced by a derivative approximation. Suggest any alternatives. 
+        \item Numerically verify the convergence of $K_n$ to the Airy kernel, i.e., 
+        \begin{equation*}
+            \frac{1}{\sqrt{2}n^{1/6}}K_n(\sqrt{2n}+\frac{x}{\sqrt{2}n^{1/6}}, \sqrt{2n}+\frac{y}{\sqrt{2}n^{1/6}}) \to \frac{Ai(x)Ai'(y)-Ai'(x)Ai(y)}{x-y},
+        \end{equation*}
+        where $Ai(x)$ is the Airy function and as $n\to \infty$. 
+    \end{enumerate}
+%    \item (Sampling eigenvalues of the GUE without using the GUE) In this problem we will try to sample eigenvalues of the $5\times 5$ GUE using the Hermite kernel $K_n$ above and the continuous DPP. The kernel $K_n$ will play the role of the $K$ matrix in the DPP. 
+%    \begin{enumerate}
+%        \item First sample some $5\times 5$ GUE eigenvalues. (Your normalization should be correct when you have the largest eigenvalue roughly around $\sqrt{2n}$ when you have a large $n\times n$ GUE.) Based on your observation, truncate your eigenvalue space. (We will not care about the space where eigenvalues happen rarely.) A suggestion is $[-5, 5]$, but you can take some larger interval based on your observation.  
+%        \item Then discretize your space into $100$ intervals. You can then discretize your Hermite kernel into a $100\times 100$ matrix $K$. You may need Polynomials.jl and SpecialPolynomials.jl
+%        \item Take a look at the eigenvalues of $K$. Numerically compute the eigenvalues of $K$ and describe in what sense $K$ is close to a projection matrix. 
+%        \item The code for DPP sampling algorithm is given in course github homework/DPPsampler.jl. This code works with $L$ matrices. What is a simple modification to the algorithm so that it works with $K$ matrices? (Please do not use $K=L(I+L)^{-1}$.) 
+%        \item Try to sample a DPP from the $K$ you created in (b). (You might want to clamp some numerically zero or one eigenvalues.) What is the size of the sample? Is the sample size constant as the mathematics predicts?
+%        \item Using the DPP sampling algorithm (you can copy the code from the notes if you want), sample eigenvalues of $1,000,000$ $5\times 5$ GUEs. Histogram them and compare against $1,000,000$ $5\times 5$ GUEs. 
+%        \item Interpret the title statement of this problem, GUE without the GUE, in your own words. 
+%    \end{enumerate}
+    \item Narayana numbers, as introduced in equation (4.1) (page 52) of the class note, describes many combinatorial quantities on length $2n$ Dyck paths. Dyck paths of length $2n$ are all the paths consisted of $(1, 1)$ steps and $(1, -1)$ steps, that start at $(0, 0)$ and ends at $(2n, 0)$, that never goes under $x$-axis. Incredibly, Narayana numbers describe the distribution of (1) number of peaks (2) double ascents (3) ascents in even positions (4) long non-final sequences, in $2n$ Dyck paths. In Kreweras's paper \href{https://link.springer.com/content/pdf/10.1007/BFb0072516.pdf}{\color{blue} JOINT DISTRIBUTIONS OF THREE DESCRIPTIVE PARAMETERS OF BRIDGES}, (where $n$-bridges are just length $2n$ Dyck paths) these are explained with details. Especially in random matrix context, it is known that moments of Laguerre ensembles are related to the number of ascents in even positions (Chapter 4). Prove that Narayana numbers count the number of ascents in even positions, by doing one of the followings.
+    \begin{enumerate}
+        \item Krewaras, in his paper, wrote that the result is ``implied by the set of papers [1], [2] and [3]." Read carefully the three references, and prove that Narayana numbers count the number of ascents in even positions. 
+        \item (Challenging, Optional) Prove by finding a bijection from the set of all length $2n$ Dyck paths to itself, such that the number of peaks are mapped to the number of even ascents. 
+    \end{enumerate}
+\end{enumerate}
+
+
+ 
+\end{document}
