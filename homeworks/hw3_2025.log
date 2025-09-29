@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**hw2.tex
-(./hw2.tex
+**hw3_2025.tex
+(./hw3_2025.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -285,8 +285,9 @@ File: l3backend-xdvipdfmx.def 2020-03-12 L3 backend support: xdvipdfmx
 \l__pdf_internal_box=\box48
 \g__pdf_backend_object_int=\count199
 \g__pdf_backend_annotation_int=\count266
-) (./hw2.aux)
-\openout1 = `hw2.aux'.
+)
+No file hw3_2025.aux.
+\openout1 = `hw3_2025.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -299,7 +300,7 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 4.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 14.
@@ -365,12 +366,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
 LaTeX Info: Redefining \nameref on input line 14.
- (./hw2.out) (./hw2.out)
 \@outlinefile=\write3
-\openout3 = `hw2.out'.
+\openout3 = `hw3_2025.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
-
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -399,20 +402,27 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
  [2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
- (./hw2.aux)
+ (./hw3_2025.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
-Package rerunfilecheck Info: File `hw2.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `hw3_2025.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `hw3_2025.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 9491 strings out of 479418
- 136759 string characters out of 5884586
- 403684 words of memory out of 5000000
+ 9485 strings out of 479418
+ 136756 string characters out of 5884586
+ 403574 words of memory out of 5000000
  26885 multiletter control sequences out of 15000+600000
  539082 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 34i,6n,29p,577b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,29p,582b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hw2.pdf (2 pages).
+Output written on hw3_2025.pdf (2 pages).
