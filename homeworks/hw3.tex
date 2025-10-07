@@ -8,8 +8,8 @@
 \DeclareMathOperator{\Tr}{Tr}
 \usepackage{hyperref}
 
-\title{Homework 3, Fall 2024 18.338}
-\author{Due 10/7 Monday 11:59pm}
+\title{Homework 4, Fall 2025 18.338}
+\author{Due 10/16 Thursday 11:59pm}
 \date{}
 \begin{document}
 \maketitle
@@ -24,7 +24,7 @@ If you are submitting .jl or .ipynb files, you must additionally submit .html or
    % \item Solve 3 out of 16 exercises in the DPP notes.
     \item Kernels related to Scaling limits
     \begin{enumerate}
-        \item (M) The Christoffel-Darboux formula (also see equation (5.6) on page 81) states
+        \item (M) The Christoffel-Darboux formula (also see equation (5.9) on page 93) states
         \begin{equation*}
             \sum_{j=0}^n\pi_i(x)\pi_j(y) = \frac{k_n}{k_{n+1}}\frac{\pi_n(x)\pi_{n+1}(y)-\pi_n(y)\pi_{n+1}(x)}{y-x}
         \end{equation*}
@@ -66,7 +66,7 @@ If you are submitting .jl or .ipynb files, you must additionally submit .html or
 %        \item Using the DPP sampling algorithm (you can copy the code from the notes if you want), sample eigenvalues of $1,000,000$ $5\times 5$ GUEs. Histogram them and compare against $1,000,000$ $5\times 5$ GUEs. 
 %        \item Interpret the title statement of this problem, GUE without the GUE, in your own words. 
 %    \end{enumerate}
-    \item Narayana numbers, as introduced in equation (4.1) (page 52) of the class note, describes many combinatorial quantities on length $2n$ Dyck paths. Dyck paths of length $2n$ are all the paths consisted of $(1, 1)$ steps and $(1, -1)$ steps, that start at $(0, 0)$ and ends at $(2n, 0)$, that never goes under $x$-axis. Incredibly, Narayana numbers describe the distribution of (1) number of peaks (2) double ascents (3) ascents in even positions (4) long non-final sequences, in $2n$ Dyck paths. In Kreweras's paper \href{https://link.springer.com/content/pdf/10.1007/BFb0072516.pdf}{\color{blue} JOINT DISTRIBUTIONS OF THREE DESCRIPTIVE PARAMETERS OF BRIDGES}, (where $n$-bridges are just length $2n$ Dyck paths) these are explained with details. Especially in random matrix context, it is known that moments of Laguerre ensembles are related to the number of ascents in even positions (Chapter 4). Prove that Narayana numbers count the number of ascents in even positions, by doing one of the followings.
+    \item Narayana numbers, as introduced in equation (4.1) (page 56) of the class note, describes many combinatorial quantities on length $2n$ Dyck paths. Dyck paths of length $2n$ are all the paths consisted of $(1, 1)$ steps and $(1, -1)$ steps, that start at $(0, 0)$ and ends at $(2n, 0)$, that never goes under $x$-axis. Incredibly, Narayana numbers describe the distribution of (1) number of peaks (2) double ascents (3) ascents in even positions (4) long non-final sequences, in $2n$ Dyck paths. In Kreweras's paper \href{https://link.springer.com/content/pdf/10.1007/BFb0072516.pdf}{\color{blue} JOINT DISTRIBUTIONS OF THREE DESCRIPTIVE PARAMETERS OF BRIDGES}, (where $n$-bridges are just length $2n$ Dyck paths) these are explained with details. Especially in random matrix context, it is known that moments of Laguerre ensembles are related to the number of ascents in even positions (Chapter 4). Prove that Narayana numbers count the number of ascents in even positions, by doing one of the followings.
     \begin{enumerate}
         \item Krewaras, in his paper, wrote that the result is ``implied by the set of papers [1], [2] and [3]." Read carefully the three references, and prove that Narayana numbers count the number of ascents in even positions. 
         \item (Challenging, Optional) Prove by finding a bijection from the set of all length $2n$ Dyck paths to itself, such that the number of peaks are mapped to the number of even ascents. 
