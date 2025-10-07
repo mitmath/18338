@@ -1,0 +1,74 @@
+using SpecialFunctions, FastGaussQuadrature, ForwardDiff, Plots, Random, BenchmarkTools, StatsBase, LinearAlgebra, FHist, PlutoUI, DifferentialEquations
+
+function firstsmall(α, pt, lpt)
+    @inbounds for i in 1:lpt #length(pt)
+         if α < pt[i]
+             return i
+         end
+     end
+     return lpt+1
+ end     
+  function patiencesort1(p::Vector)
+     # p : Permutation
+     # Returns length of longest increasing subsequence
+     pile_tops = zeros( round(Int, 3*sqrt(length(p)))) # 3 * sqrt(length) is long enough
+     lengthpt = 0
+     @inbounds for α ∈ p     
+         whichpile = firstsmall(α, pile_tops, lengthpt)
+         if  whichpile ≤ lengthpt
+             @inbounds pile_tops[whichpile] = α   # put α on top of a pile  or ..
+         else
+             lengthpt += 1
+             @inbounds pile_tops[lengthpt] = α  # create a new pile      
+         end
+     end
+     return lengthpt
+ end
+
+ function patiencesort(n::Int)
+    # n : Integer
+    # Returns length of longest increasing subsequence
+    pile_tops = zeros( round(Int, 3*sqrt(n))) # 3 * sqrt(length) is long enough
+    lengthpt = 0
+     for i=1:n  
+        α = rand()
+        whichpile = firstsmall(α, pile_tops, lengthpt)
+        if  whichpile ≤ lengthpt
+            @inbounds pile_tops[whichpile] = α   # put α on top of a pile  or ..
+        else
+            lengthpt += 1
+            @inbounds pile_tops[lengthpt] = α  # create a new pile      
+        end
+    end
+    return lengthpt
+end
+
+
+ airy_kernel(x, y) = x==y ? (airyaiprime(x))^2 - x * (airyai(x))^2 :
+ (airyai(x) * airyaiprime(y) - airyai(y) * airyaiprime(x)) / (x - y)
+ϕ(ξ, s) =  s + 10*tan(π*(ξ+1)/4) # Transformation from [-1,1] to (s,∞)
+ϕ′(ξ) = (5π/2)*(sec(π*(ξ+1)/4))^2
+K(ξ,η,s) = sqrt(ϕ′(ξ) * ϕ′(η)) * airy_kernel(ϕ(ξ,s), ϕ(η,s))
+
+function K(s , n=100) 
+nodes,weights = gausslegendre(n)
+Symmetric( K.(nodes',nodes,s) .* (√).(weights) .* (√).(weights'))
+end
+
+TracyWidomPDF_via_Fredholm_Det(s) = ForwardDiff.derivative( t->det(I-K(t)),s)
+
+
+b = 8
+n = b^6
+dx = 1/b
+t = 10_000
+c = 2√n - .5
+
+h1 = Hist1D(Float64; bins= -5.0: dx: 2.0)
+
+Threads.@threads for i in 1:t
+    atomic_push!(h1, (patiencesort1(rand(n)) - c)/b)
+ end
+
+ bar(bincenters(h1),bincounts(h1)/(integral(h1)*dx), legend=false, color=:yellow  )
+ plot!(TracyWidomPDF_via_Fredholm_Det,-5,2,lw=5)
