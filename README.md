@@ -87,8 +87,8 @@ Simple TW derivation for LUE/JUE
 | 10 | M | 10/06 | Growth processes, Aztec diamonds, and Tracy–Widom |  Reading 15, 23 | |
 | 11 | W | 10/08 | Brownian motion and Airy processes | Reading 17,18 | |
 | - | M | 10/13 | Indigenous Peoples Day | | |
-| 12 | W | 10/15 | | | |
-| 13 | M | 10/20 | | | |
+| 12 | W | 10/15 | How many Roots of a Random Polynomial are Real? | | |
+| 13 | M | 10/20 | Free Probability | | |
 | 14 | W | 10/22 | | | |
 | 15 | M | 10/27 | | | |
 | 16 | W | 10/29 | | | |
