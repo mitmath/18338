@@ -53,6 +53,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 2| 9/25 | 7,13,14,21| [HW2](https://github.com/mitmath/18338/blob/master/homeworks/hw2_2025.pdf)|
 |3| 10/9 | 1,2,3 | [HW3](https://github.com/mitmath/18338/blob/master/homeworks/hw3_2025.pdf)|
 |4| 10/16 |  4   | [HW4](https://github.com/mitmath/18338/blob/master/homeworks/hw4_2025.pdf)|
+|5| 10/29 | | [PR](https://github.com/mitmath/18338/blob/master/project_lists/project_lists_2025.pdf)|
 
 
 ## Research Questions
