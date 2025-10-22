@@ -52,6 +52,7 @@ Submit your homework via canvas.mit.edu. If you are not enrolled in 18338 canvas
 | 1| 9/17 | 5,10,11| [HW1](https://github.com/mitmath/18338/blob/master/homeworks/fall2025hw1.pdf)|
 | 2| 9/25 | 7,13,14,21| [HW2](https://github.com/mitmath/18338/blob/master/homeworks/hw2_2025.pdf)|
 |3| 10/9 | 1,2,3 | [HW3](https://github.com/mitmath/18338/blob/master/homeworks/hw3_2025.pdf)|
+|4| 10/16 |  4   | [HW4](https://github.com/mitmath/18338/blob/master/homeworks/hw4_2025.pdf)|
 
 
 ## Research Questions
@@ -86,8 +87,8 @@ Simple TW derivation for LUE/JUE
 | 10 | M | 10/06 | Growth processes, Aztec diamonds, and Tracy–Widom |  Reading 15, 23 | |
 | 11 | W | 10/08 | Brownian motion and Airy processes | Reading 17,18 | |
 | - | M | 10/13 | Indigenous Peoples Day | | |
-| 12 | W | 10/15 | | | |
-| 13 | M | 10/20 | | | |
+| 12 | W | 10/15 | How many Roots of a Random Polynomial are Real? | | |
+| 13 | M | 10/20 | Free Probability | | |
 | 14 | W | 10/22 | | | |
 | 15 | M | 10/27 | | | |
 | 16 | W | 10/29 | | | |
