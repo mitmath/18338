@@ -89,12 +89,12 @@ Simple TW derivation for LUE/JUE
 | 11 | W | 10/08 | Brownian motion and Airy processes | Reading 17,18 | |
 | - | M | 10/13 | Indigenous Peoples Day | | |
 | 12 | W | 10/15 | How many Roots of a Random Polynomial are Real? | | |
-| 13 | M | 10/20 | Free Probability | | |
-| 14 | W | 10/22 | | | |
-| 15 | M | 10/27 | | | |
-| 16 | W | 10/29 | | | |
-| 17 | M | 11/03 | | | |
-| 18 | W | 11/05 | | | |
+| 13 | M | 10/20 | Free Probability: Adding Random Matrices | | |
+| 14 | W | 10/22 | Free Probability: The R-Transform| | |
+| 15 | M | 10/27 | Free Probability: Free Cumulants| | |
+| 16 | W | 10/29 | Free Probability: The non-commutative algebra | | |
+| 17 | M | 11/03 | Student Midterm Proposals | | |
+| 18 | W | 11/05 | Free Probability: The lattice of NC-partitions | | |
 | -  | M | 11/10 | Student Holiday | | |
 | 19 | W | 11/12 | | | |
 | 20 | M | 11/17 | | | |
@@ -103,8 +103,8 @@ Simple TW derivation for LUE/JUE
 | 23 | W | 11/26 | | | |
 | 24 | M | 12/01 | | | |
 | 25 | W | 12/03 | | | |
-| 26 | M | 12/08 | | | |
-| 27 | W | 12/10 | | | |
+| 26 | M | 12/08 | Student Final Projects| | |
+| 27 | W | 12/10 | Student Final Projects | | |
 
 ## Some old Schedules 
 
