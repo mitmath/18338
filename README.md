@@ -102,7 +102,7 @@ Simple TW derivation for LUE/JUE
 | 22 | M | 11/24 | | | |
 | -| W | 11/26 | *Canceled for Thanksgiving Travel* | | |
 | 23 | M | 12/01 | | | |
-| 24 | W | 12/03 | | | |
+| 24 | W | 12/03 | Student Final Projects  | | |
 | 25 | M | 12/08 | Student Final Projects| | |
 | 26 | W | 12/10 | Student Final Projects | | |
 
