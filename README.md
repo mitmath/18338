@@ -96,7 +96,7 @@ Simple TW derivation for LUE/JUE
 | 17 | M | 11/03 | Student Midterm Proposals | | |
 | 18 | W | 11/05 | Free Probability: The lattice of NC-partitions | | |
 | -  | M | 11/10 | Student Holiday | | |
-| 19 | W | 11/12 | | | |
+| 19 | W | 11/12 | Free Probability: Mobius Inversion NC-lattice | | |
 | 20 | M | 11/17 | | | |
 | 21 | W | 11/19 | | | |
 | 22 | M | 11/24 | | | |
