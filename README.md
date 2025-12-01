@@ -97,11 +97,11 @@ Simple TW derivation for LUE/JUE
 | 18 | W | 11/05 | Free Probability: The lattice of NC-partitions | | |
 | -  | M | 11/10 | Student Holiday | | |
 | 19 | W | 11/12 | Free Probability: Mobius Inversion NC-lattice | | |
-| 20 | M | 11/17 | | | |
-| 21 | W | 11/19 | | | |
-| 22 | M | 11/24 | | | |
+| 20 | M | 11/17 | Jack Polynomials 1| | |
+| 21 | W | 11/19 | Jack Polynomials and Representation Theory | | |
+| 22 | M | 11/24  |Jack Polynomials and Representation Theory   | | |
 | -| W | 11/26 | *Canceled for Thanksgiving Travel* | | |
-| 23 | M | 12/01 | | | |
+| 23 | M | 12/01 | Student Final Projects | | |
 | 24 | W | 12/03 | Student Final Projects  | | |
 | 25 | M | 12/08 | Student Final Projects| | |
 | 26 | W | 12/10 | Student Final Projects | | |
