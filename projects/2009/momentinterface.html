@@ -1,0 +1,421 @@
+<html>
+<head><title>Moments of 3 x 3 random orthogonal matrices</title></head>
+<body>
+<h3>Moments of 3 x 3 random orthogonal matrices</h3>
+
+<p>Input a polynomial in the entries of a random
+orthogonal matrix X.  Note that at present, moments
+are only supported up to degree 8.</p>
+
+<p>You might try, for example,
+<center>3*X(1,1)^2*X2(2,1)</center>
+for three times the expected value of the
+square of the 1,1 entry of <i>X</i>
+times the 2,1 entry of <i>X<sup>2</sup></i>.
+</p>
+
+<form name="inputform">
+Input moment: <input type="text" size="50" name="moment" />
+<input type="button" name="calculate" value="Compute" onclick="compute();" />
+</form>
+
+<br><br><br>
+
+<div id="outputField"></div>
+<script language="javascript" type="text/javascript">
+function error() {
+    var oField = document.getElementById("outputField");
+    oField.innerHTML = "<center>Error parsing input.</center>";
+}
+function toobig() {
+    var oField = document.getElementById("outputField");
+    oField.innerHTML = "<center>Remember not to exceed degree 8 with your moments.</center>";
+}
+function computegcd(x, y) {
+    var a = x;
+    var b = y;
+    if (a < 0) a = -a;
+    if (b < 0) b = -b;
+    if (a < b) { var c = b; b = a; a = c; }
+    while (b > 0) {
+        var r = a%b;
+        var q = (a-r)/b;
+        a = b;
+        b = r;
+    }
+    return a;
+}
+function addrationals(r1, r2) {
+    var n1 = r1[0]*r2[1] + r1[1]*r2[0];
+    var d1 = r1[1]*r2[1];
+    var g = computegcd(n1,d1);
+    return [n1/g,d1/g];
+}
+function multiplyrationals(r1, r2) {
+    var n1 = r1[0]*r2[0];
+    var d1 = r1[1]*r2[1];
+    var g = computegcd(n1,d1);
+    return [n1/g,d1/g];
+}
+function increment(destobj, mon, coef) {
+    if (destobj[mon] == null) {
+        destobj[mon] = coef;
+    } else {
+        destobj[mon] += coef;
+    }
+}
+function multiply(m1, m2) {
+    var resp = new Object();
+    for (var mon1 in m1) for (var mon2 in m2) {
+        var summon = '';
+        for (var x = 0 ; x < 9 ; x++) summon += (mon1.charAt(x)*1 + mon2.charAt(x)*1);
+        increment(resp, summon, m1[mon1] * m2[mon2]);
+    }
+    return resp;
+}
+function add(m1, m2) {
+    var resp = new Object();
+    for (var mon1 in m1) {
+        increment(resp, mon1, m1[mon1]);
+    }
+    for (var mon2 in m2) {
+        increment(resp, mon2, m2[mon2]);
+    }
+    return resp;
+}
+function subtract(m1, m2) {
+    var resp = new Object();
+    for (var mon1 in m1) {
+        increment(resp, mon1, m1[mon1]);
+    }
+    for (var mon2 in m2) {
+        increment(resp, mon2, -m2[mon2]);
+    }
+    return resp;
+}
+function isNumber(c) {
+    return (c >= '0' && c <= '9');
+}
+function isNumberString(s) {
+    for (var i = 0 ; i < s.length ; i++)
+        if (!isNumber(s.charAt(i))) return false;
+    return true;
+}
+function Polynomial(string) {
+    this.monomials = new Object();
+    this.prettyprint = '';
+    this.parsed = false;
+
+    if (string.length == 0) { error(); return null; }
+
+    // sanity check: parenthesizing is fine.
+    var depth = 0;
+    var neverSteppedOut = (string.length > 1);
+    for (var pos = 0 ; pos < string.length ; pos++) {
+        if (pos > 0 && depth == 0) neverSteppedOut = false;
+        if (string.charAt(pos) == '(') depth++;
+        else if (string.charAt(pos) == ')') depth--;
+        if (depth < 0) { error(); return null; }
+    }
+    if (depth > 0) { error(); return null; }
+
+    // do i have 'global' parens?
+    if (neverSteppedOut) {
+        var recursiveanswer = new Polynomial(string.substring(1, string.length-1));
+        if (recursiveanswer == null) return null;
+        this.parsed = recursiveanswer.parsed;
+        this.monomials = recursiveanswer.monomials;
+        this.prettyprint = '('+recursiveanswer.prettyprint+')';
+        return this;
+    }
+
+    // find a highest-level add or subtract
+    depth = 0;
+    for (var pos = 0 ; pos < string.length ; pos++) {
+        if (string.charAt(pos) == '(') depth++;
+        else if (string.charAt(pos) == ')') depth--;
+        if (depth == 0 && (string.charAt(pos) == '+' || string.charAt(pos) == '-')) {
+            var answer1 = new Polynomial(string.substring(0, pos));
+            var answer2 = new Polynomial(string.substring(pos+1, string.length));
+            if (answer1 == null || answer2 == null)
+                return null;
+            this.parsed = answer1.parsed && answer2.parsed;
+            if (string.charAt(pos) == '+') {
+                this.monomials = add(answer1.monomials, answer2.monomials);
+                this.prettyprint = answer1.prettyprint+' + '+answer2.prettyprint;
+            } else {
+                this.monomials = subtract(answer1.monomials, answer2.monomials);
+                this.prettyprint = answer1.prettyprint+' - '+answer2.prettyprint;
+            }
+            return this;
+        }
+    }
+
+    // find a highest-level multiply
+    depth = 0;
+    for (var pos = 0 ; pos < string.length ; pos++) {
+        if (string.charAt(pos) == '(') depth++;
+        else if (string.charAt(pos) == ')') depth--;
+        if (depth == 0 && string.charAt(pos) == '*') {
+            var answer1 = new Polynomial(string.substring(0, pos));
+            var answer2 = new Polynomial(string.substring(pos+1, string.length));
+            if (answer1 == null || answer2 == null)
+                return null;
+            this.parsed = answer1.parsed && answer2.parsed;
+            this.monomials = multiply(answer1.monomials, answer2.monomials);
+            //this.prettyprint = answer1.prettyprint+' * '+answer2.prettyprint;
+            this.prettyprint = answer1.prettyprint+' '+answer2.prettyprint;
+            return this;
+        }
+    }
+
+    // power?  it is unary, so better be at the end.
+    if (string.length > 2 && string.charAt(string.length-2) == '^'
+                          && isNumber(string.charAt(string.length-1))) {
+        var e = string.charAt(string.length-1) * 1;
+        var answer1 = new Polynomial(string.substring(0, string.length-2));
+        if (answer1 == null) return null;
+        if (e == 0) { error(); return null; }
+        if (e > 8) { toobig(); return null; }
+        this.monomials = answer1.monomials;
+        for (var x = 1 ; x < e ; x++) {
+            var resp = multiply(this.monomials, answer1.monomials);
+            this.monomials = resp;
+        }
+        this.prettyprint = answer1.prettyprint+"<sup>"+e+"</sup>";
+        this.parsed = answer1.parsed;
+        return this;
+    }
+
+    // if we're still here, i guess it better be a basic
+    // element.  could be an integer, could be
+    // X(i,j), or could be Xn(i,j)
+    if (isNumberString(string)) {
+        var v = string * 1;
+        this.monomials['000000000'] = v;
+        this.prettyprint = ''+v;
+        this.parsed = true;
+        return this;
+    }
+    if (string.length == 6 &&
+        string.charAt(0) == 'X' &&
+        string.charAt(1) == '(' &&
+        isNumber(string.charAt(2)) &&
+        string.charAt(3) == ',' &&
+        isNumber(string.charAt(4)) &&
+        string.charAt(5) == ')') {
+        var r = string.charAt(2) * 1;
+        var c = string.charAt(4) * 1;
+        if (r == 0 || c == 0 || r > 3 || c > 3) { error(); return; }
+        var pos = (r-1)*3+(c-1);
+        var mon = '';
+        for (var x = 0 ; x < 9 ; x++)
+            if (x != pos) mon += '0';
+                     else mon += '1';
+        this.monomials[mon] = 1;
+        this.prettyprint = 'X<sub>'+r+','+c+'</sub>';
+        this.parsed = true;
+        return this;
+    }
+    if (string.length == 7 &&
+        string.charAt(0) == 'X' &&
+        isNumber(string.charAt(1)) &&
+        string.charAt(2) == '(' &&
+        isNumber(string.charAt(3)) &&
+        string.charAt(4) == ',' &&
+        isNumber(string.charAt(5)) &&
+        string.charAt(6) == ')') {
+        var n = string.charAt(1) * 1;
+        var r = string.charAt(3) * 1;
+        var c = string.charAt(5) * 1;
+        if (r == 0 || c == 0 || r > 3 || c > 3) { error(); return null; }
+        if (n == 0) { error(); return null; }
+        if (n > 8) { toobig(); return null; }
+        if (n == 1) {
+            var pos = (r-1)*3+(c-1);
+            var mon = '';
+            for (var x = 0 ; x < 9 ; x++)
+                if (x != pos) mon += '0';
+                         else mon += '1';
+            this.monomials[mon] = 1;
+        } else {
+            var arr = new Array(n+1);
+            arr[0] = r;
+            arr[n] = c;
+            for (var x = 1 ; x < n ; x++) arr[x] = 0;
+            while (arr[n] == c) {
+                // this term
+                var monlist = [0,0,0,0,0,0,0,0,0];
+                for (var x = 0 ; x < n ; x++)
+                    monlist[3*arr[x]+arr[x+1]] += 1;
+                increment(this.monomials, monlist.join(''), 1);
+                // increment list
+                arr[1] += 1;
+                for (var x = 1 ; x < n && arr[x] == 3 ; x++) {
+                    arr[x] = 0; 
+                    arr[x+1] += 1;
+                }
+            }
+        }
+        this.prettyprint = '(X<sup>'+n+'</sup>)<sub>'+r+','+c+'</sub>';
+        this.parsed = true;
+        return this;
+    }
+    error(); return null;
+}
+function mustbezero(mon) {
+    var rowsums = [0,0,0];
+    var colsums = [0,0,0];
+    var p = 0;
+    for (var r = 0 ; r < 3 ; r++)
+    for (var c = 0 ; c < 3 ; c++) {
+        rowsums[r] += mon.charAt(p)*1;
+        colsums[c] += mon.charAt(p)*1;
+        p++;
+    }
+    for (var x = 0 ; x < 3 ; x++) {
+        if ((rowsums[x] & 0x1) == 0x1) return true;
+        if ((colsums[x] & 0x1) == 0x1) return true;
+    }
+    return false;
+}
+function applyrowperm(mon, perm) {
+    var arr = [null,null,null,null,null,null,null,null,null];
+    for (var r = 0 ; r < 3 ; r++)
+    for (var c = 0 ; c < 3 ; c++)
+        arr[perm[r]*3+c] = mon.charAt(r*3+c);
+    return arr.join("");
+}
+function applycolperm(mon, perm) {
+    var arr = [null,null,null,null,null,null,null,null,null];
+    for (var r = 0 ; r < 3 ; r++)
+    for (var c = 0 ; c < 3 ; c++)
+        arr[r*3+perm[c]] = mon.charAt(r*3+c);
+    return arr.join("");
+}
+function monisless(m1, m2) {
+    for (var x = 0 ; x < 9 ; x++)
+        if (m1.charAt(x) != m2.charAt(x))
+            return (m1.charAt(x) < m2.charAt(x));
+    return false;
+}
+function canonicalize(mon) {
+    if (mustbezero(mon)) return null;
+
+    // put it in canonical form.  how?
+    // try all the 36 permutations and
+    // take the lexicographically smallest
+    var currentbest = mon;
+    var perms = [ [0,1,2] , [0,2,1] , [1,0,2] , [1,2,0] , [2,0,1] , [2,1,0] ];
+    for (var pr = 0 ; pr < 6 ; pr++) {
+        var thismon = applyrowperm(mon, perms[pr]);
+        for (var pc = 0 ; pc < 6 ; pc++) {
+            var thisfinalmon = applycolperm(thismon, perms[pc]);
+            if (monisless(thisfinalmon, currentbest)) {
+                currentbest = thisfinalmon;
+            }
+        }
+    }
+    return currentbest;
+}
+var gMoments = {
+    "000000002" : [1,3] ,
+    "000000004" : [1,5] ,
+    "000000006" : [1,7] ,
+    "000000008" : [1,9] ,
+    "000000022" : [1,15] ,
+    "000000024" : [1,35] ,
+    "000000026" : [1,63] ,
+    "000000044" : [1,105] ,
+    "000000222" : [1,105] ,
+    "000000224" : [1,315] ,
+    "000002002" : [1,15] ,
+    "000002004" : [1,35] ,
+    "000002006" : [1,63] ,
+    "000002020" : [2,15] ,
+    "000002022" : [2,105] ,
+    "000002024" : [2,315] ,
+    "000002040" : [3,35] ,
+    "000002042" : [1,105] ,
+    "000002060" : [4,63] ,
+    "000002220" : [1,35] ,
+    "000002222" : [1,315] ,
+    "000002240" : [4,315] ,
+    "000004004" : [1,105] ,
+    "000004022" : [1,105] ,
+    "000004040" : [2,35] ,
+    "000004220" : [2,105] ,
+    "000011011" : [-1,30] ,
+    "000011013" : [-1,70] ,
+    "000011015" : [-1,126] ,
+    "000011033" : [-1,210] ,
+    "000011211" : [-1,210] ,
+    "000011213" : [-1,630] ,
+    "000011411" : [-1,630] ,
+    "000013013" : [-1,210] ,
+    "000013031" : [-1,140] ,
+    "000013211" : [-1,420] ,
+    "000022022" : [1,210] ,
+    "000022202" : [1,210] ,
+    "000112112" : [0,1] ,
+    "002002002" : [1,105] ,
+    "002002004" : [1,315] ,
+    "002002020" : [1,35] ,
+    "002002022" : [1,315] ,
+    "002002040" : [2,105] ,
+    "002002220" : [2,315] ,
+    "002004020" : [4,315] ,
+    "002011011" : [-1,210] ,
+    "002011013" : [-1,630] ,
+    "002011031" : [-1,420] ,
+    "002011211" : [-1,1260] ,
+    "002020022" : [1,210] ,
+    "002020200" : [8,105] ,
+    "002020202" : [1,90] ,
+    "002020400" : [17,315] ,
+    "002110110" : [-1,42] ,
+    "002110112" : [-1,315] ,
+    "002110130" : [-13,1260] ,
+    "004011011" : [-1,630] ,
+    "004110110" : [-11,630] ,
+    "011011022" : [0,1] ,
+    "011011202" : [-1,315] ,
+    "011101110" : [1,105] ,
+    "011101112" : [1,630] ,
+    "011101130" : [1,252]
+}
+function lookupmoment(mon) {
+    var canon = canonicalize(mon);
+    if (canon == null) return [0,1];
+    return gMoments[canon];
+}
+function computeexpval(mons) {
+    var resp = [0,1];
+    for (var m in mons) {
+        var d = 0;
+        for (var x = 0 ; x < 9 ; x++) d += m.charAt(x)*1;
+        if (d > 8) { toobig(); return null; }
+        var thisterm = lookupmoment(m);
+        resp = addrationals(resp, multiplyrationals(thisterm,[mons[m],1]));
+    }
+    return resp;
+}
+function formatrational(r) {
+    if (r[1] == 1) return ''+r[0];
+    return r[0]+'/'+r[1];
+}
+function compute() {
+    var oField = document.getElementById("outputField");
+    oField.innerHTML = '';
+    var iField = document.inputform.moment;
+    poly = new Polynomial(iField.value.split(' ').join(''));
+    if (poly == null || !poly.parsed) return;
+
+    var expval = computeexpval(poly.monomials);
+    if (expval == null) return;
+    oField.innerHTML = '<center><b>E</b>['+poly.prettyprint+'] = '+formatrational(expval)+'</center>';
+}
+</script>
+
+</body>
+</html>
