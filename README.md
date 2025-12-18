@@ -169,6 +169,11 @@ Simple TW derivation for LUE/JUE
 
 |Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
+| 2025 | James Chen | Moments via S transform ||[link](https://github.com/mitmath/18338/blob/master/projects/2025/chen_james_moments_via_s_transform/chenjames_189288_5943922_main.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2025/chen_james_moments_via_s_transform/chenjames_189288_5943923_examples.ipynb)
+
+
+|Year|Name|Topic|Slides|Report|code,etc..|
+|-|---|-------------|-|-|-|
 | 2024 | Cecelia Chen | Computing Multivariate Orthogonal Bases ||[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907163_18_338_project%20(1).pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2024/chencecilia_100854_4907164_MultivariateLanczos.jl%20copy.zip)
 | | Vaibhav Dixit | Evolution of Eigenvalue Spectrum of Fully Connected (Dense) Layers in DNNs || [link](https://github.com/mitmath/18338/blob/master/projects/2024/dixitvaibhav_153380_4902546_blan%20(1).pdf)|
 | | Jennifer Hritz | Constructing approximately Haar-random unitaries from GUEs| [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911299_final_project_presentation_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911297_final_project_hritz.pdf) | [link](https://github.com/mitmath/18338/blob/master/projects/2024/hritzjennifer_161909_4911298_project_plots.jl)
