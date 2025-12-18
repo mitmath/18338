@@ -169,7 +169,7 @@ Simple TW derivation for LUE/JUE
 
 |Year|Name|Topic|Slides|Report|code,etc..|
 |-|---|-------------|-|-|-|
-| | James Chen | Moments via S transform ||[link](https://github.com/mitmath/18338/blob/master/projects/2025/chen_james_moments_via_s_transform/chenjames_189288_5943922_main.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2025/chen_james_moments_via_s_transform/chenjames_189288_5943923_examples.ipynb)|
+| 2025 | James Chen | Moments via S transform ||[link](https://github.com/mitmath/18338/blob/master/projects/2025/chen_james_moments_via_s_transform/chenjames_189288_5943922_main.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2025/chen_james_moments_via_s_transform/chenjames_189288_5943923_examples.ipynb)|
 | | Kyuhyeon Choi | Weingarten calculus for Haar unitary ||[link](https://github.com/mitmath/18338/blob/master/projects/2025/choi_kyuhyeon_wiengarten_for_haar_unitary/choikyuhyeon_190889_5960156_Kyuhyeon%20final%20report.pdf)||
 | | Alex Fan | Preconditioning optimizers ||[link](https://github.com/mitmath/18338/blob/master/projects/2025/fan_alex_preconditioning_optimizers/fanalex_156713_5942993_Final%20Paper%20Report.pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2025/fan_alex_preconditioning_optimizers/fanalex_156713_5942994_Experiment%20Notebook.pdf)|
 | | Ishan Ganguly | RMT for signal–noise decomposition |[link](https://github.com/mitmath/18338/blob/master/projects/2025/ganguly_ishan_rmt_for_signal_noise_decomposition/gangulyishan_100007_5963724_presentation%20(2).pdf)|[link](https://github.com/mitmath/18338/blob/master/projects/2025/ganguly_ishan_rmt_for_signal_noise_decomposition/gangulyishan_100007_5963725_report%20(2).pdf)||
