@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+
+\title{Homework 1, Fall 2025 18338}
+\author{Due 9/17 11:59pm}
+\date{}
+\begin{document}
+\maketitle
+
+\noindent{\large\color{blue} Please submit your homework via canvas.mit.edu. \\
+If you are submitting .jl or .ipynb files, you must additionally submit .html or .pdf file that captures running notebook or code.}
+
+\subsection*{Reading and Notes}
+
+Read chapter 5, 10, 11 of the class notes
+(The lecture notes  can be found in  Piazza: \\  http://piazza.com/mit/fall2025/18338.). 
+Optional, but if you do this I'll get to know you : Provide  feedback especially high level style and where things did not make sense, in addition to spelling or technical errors.
+I'd be thrilled to meet with you and go over any of these.  Also a really
+good reading of notes can substitute for a hw problem or two.
+
+
+\subsection*{Problem sets}
+Do at least four out of the following problems (Computational/Theoretical problems are denoted as C/T). Exercise with numbers and pages are from the class notes.
+
+\begin{enumerate}
+    \item (T) Exercise 5.3 (page 101) (You don't have to do the Monte-Carlo simulation. Let's only work on theoretical derivation of the Level densities of Laguerre and Jacobi, $\beta=2$ case. You can use orthogonal polynomial recurrence relationships or any code to plot the "Theoretical Level density" of complex Laguerre and Jacobi in this problem. No randomness needed for this problem.)
+    \item (C) Implement your own Codes 5.2, 5.3 and 5.4 and compare them with your favorite package in Julia that evaluates orthogonal polynomials.  
+    \item (C) Exercise 5.6 (page 101) (Please use Julia for this problem. For evaluating Hermite polynomials, \verb|SpecialPolynomials.jl| is an option.)
+    \item (C) Exercise 5.7 (page 101) (This part we will concentrate more on the random part. You don't need to work with the orthogonal polynomials, but rather work with complex Laguerre and Jacobi ensembles. Sample random complex Laguerre and Jacobi ensembles and plot their eigenvalues. You can use singular value or gsvdvals format if you want.)
+    \item (T) Exercise 10.1 (page 195)
+    \item (T) Exercise 10.2 (page 195)
+    \item (T) Exercise 10.3 (page 196)
+    \item (T) Exercise 11.1 (page 230)
+    \item (T) Exercise 11.2 (page 230)
+    \item (T) Exercise 11.4 (page 231)
+    \item (T) Exercise 11.5 (page 231)
+\end{enumerate}
+ 
+\end{document}
+
+

@@ -1,0 +1,38 @@
+# explore subsets
+using Combinatorics, Printf, LinearAlgebra
+N = 6
+k = 3
+𝒫  = powerset(1:N)
+println("here")
+
+# # First make K (nearly) a projection
+Y = randn(N,k)
+Y = Matrix(qr(Y).Q)
+println("----K projection--(note it's already a k-DPP)--")
+L = 10^3 * Y*Y'
+printpdfcdf(L)
+
+# Now make L a projection
+#Y = randn(N,k)
+# L = Y*Y'
+# println("----L projection----")
+# printpdfcdf(L)
+# Y = randn(N,k)
+# Y = Matrix(qr(Y).Q)
+# K = Y*Diagonal([.99999999,.3,.2]) *Y'
+# L = K/(I-K)
+# printpdfcdf(L)
+
+function printpdfcdf(L)
+#  K = L/(L+I)
+ pr(𝓘) = det(L[𝓘,𝓘])/det(L+I)
+ cdf(𝓘) = det(K[𝓘,𝓘])
+
+
+ for 𝓘 ∈ 𝒫
+   @printf(" %10s :",𝓘 )
+   @printf(" %s ," , round(pr(𝓘),digits=4))
+   @printf(" %s \n" , round(cdf(𝓘),digits=4) )
+ end
+end
+println("there")
